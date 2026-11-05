@@ -44,6 +44,10 @@ assets/voices/*.wav
 *.webm
 *.mkv
 
-# OS Specific
+# OS Specific & Archives
 .DS_Store
 Thumbs.db
+*.zip
+*.tar.gz
+*.tgz
+sketch-skill/

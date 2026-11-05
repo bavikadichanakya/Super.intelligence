@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}SUPER.INTELLIGENCEEE{% endblock %} — Autonomous Media Engine</title>
+  <style>
+    :root {
+      --bg-dark: #07090e;
+      --bg-card: #0f131f;
+      --bg-card-hover: #161c2e;
+      --border-color: #1e263d;
+      --cyan: #00e5ff;
+      --purple: #8b5cf6;
+      --gold: #ffd700;
+      --green: #10b981;
+      --red: #ef4444;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: rgba(15, 19, 31, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0 2rem;
+    }
+    .nav-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+    .brand-badge {
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      color: #000;
+      font-weight: 900;
+      font-size: 14px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      letter-spacing: 1px;
+    }
+    .brand-name {
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: -0.5px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--cyan);
+      background: rgba(0, 229, 255, 0.08);
+    }
+    main {
+      flex: 1;
+      max-width: 1400px;
+      width: 100%;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--cyan);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      box-shadow: 0 0 16px rgba(0, 229, 255, 0.4);
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: #1e263d;
+      color: var(--text-main);
+    }
+    .btn-secondary:hover {
+      background: #2b3552;
+      box-shadow: none;
+    }
+    .btn-danger {
+      background: rgba(239, 68, 68, 0.15);
+      color: var(--red);
+      border: 1px solid var(--red);
+    }
+    .btn-danger:hover {
+      background: var(--red);
+      color: #fff;
+    }
+    .btn-success {
+      background: var(--green);
+      color: #000;
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-cyan { background: rgba(0, 229, 255, 0.15); color: var(--cyan); border: 1px solid var(--cyan); }
+    .badge-green { background: rgba(16, 185, 129, 0.15); color: var(--green); border: 1px solid var(--green); }
+    .badge-gold { background: rgba(255, 215, 0, 0.15); color: var(--gold); border: 1px solid var(--gold); }
+    .badge-purple { background: rgba(139, 92, 246, 0.15); color: var(--purple); border: 1px solid var(--purple); }
+    .badge-red { background: rgba(239, 68, 68, 0.15); color: var(--red); border: 1px solid var(--red); }
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      background: var(--bg-dark);
+    }
+  </style>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="/" class="brand-logo">
+        <span class="brand-badge">PRO V2</span>
+        <span class="brand-name">SUPER.INTELLIGENCEEE</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Overview</a></li>
+        <li><a href="/research">Research</a></li>
+        <li><a href="/scripts">Script Studio</a></li>
+        <li><a href="/production">Production</a></li>
+        <li><a href="/review">Video Review</a></li>
+        <li><a href="/queue">Weekly Queue</a></li>
+        <li><a href="/intelligence">Intelligence Lab</a></li>
+      </ul>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span class="badge badge-green">⚡ PIPER TTS READY</span>
+        <span class="badge badge-cyan">HYPERFRAMES OK</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>SUPER.INTELLIGENCEEE V2 — Zero-Budget Autonomous Media Production Engine. Running locally on Python 3.11.</p>
+  </footer>
+</body>
+</html>
+

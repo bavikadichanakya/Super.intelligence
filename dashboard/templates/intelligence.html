@@ -1,0 +1,727 @@
+{% extends "base.html" %}
+
+{% block title %}Content Intelligence Lab — SUPER.INTELLIGENCEEE{% endblock %}
+
+{% block head %}
+<style>
+  .intel-tabs {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .intel-tab {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .intel-tab.active, .intel-tab:hover {
+    color: var(--cyan);
+    background: rgba(0, 229, 255, 0.08);
+  }
+  .intel-pane {
+    display: none;
+  }
+  .intel-pane.active {
+    display: block;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  @media (max-width: 900px) {
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+  .form-control {
+    width: 100%;
+    background: #080b14;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: var(--text-main);
+    font-family: inherit;
+    font-size: 0.95rem;
+  }
+  .form-control:focus {
+    outline: none;
+    border-color: var(--cyan);
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+  }
+  textarea.form-control {
+    min-height: 110px;
+    resize: vertical;
+  }
+  .result-box {
+    background: #060911;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-top: 1rem;
+  }
+  .score-display {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--cyan);
+  }
+  .feed-preview {
+    background: #000;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #f8fafc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div style="margin-bottom: 1.5rem;">
+  <h1 style="font-size: 2rem; font-weight: 800; letter-spacing: -0.5px;">Omnichannel Content Intelligence Lab</h1>
+  <p style="color: var(--text-muted);">Unified heuristics, viral packaging, audience retention, and multi-channel research connectors.</p>
+</div>
+
+<!-- Navigation Tabs -->
+<div class="intel-tabs">
+  <button class="intel-tab active" onclick="switchTab('hook-tab')">⚡ Hook & Beat Lab</button>
+  <button class="intel-tab" onclick="switchTab('caption-tab')">📝 Caption & Slop Linter</button>
+  <button class="intel-tab" onclick="switchTab('youtube-tab')">📺 YouTube Packaging & SEO</button>
+  <button class="intel-tab" onclick="switchTab('retention-tab')">📉 Retention Curve Analyzer</button>
+  <button class="intel-tab" onclick="switchTab('reach-tab')">🌐 Agent Reach Multi-Source</button>
+  <button class="intel-tab" onclick="switchTab('accounts-tab')">🔑 Channel Connections</button>
+</div>
+
+<!-- PANE 1: HOOK & BEAT LAB -->
+<div id="hook-tab" class="intel-pane active">
+  <div class="grid-2">
+    <div class="card">
+      <h2 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--cyan);">Hook Evaluation (Reels & Shorts)</h2>
+      <div class="form-group">
+        <label>Spoken Hook Draft</label>
+        <textarea id="hookInput" class="form-control" placeholder="e.g. Engineers benchmarked a 3.8x speedup in neural pruning today.">Engineers benchmarked a 3.8x speedup in neural pruning today.</textarea>
+      </div>
+      <div style="display: flex; gap: 10px;">
+        <button class="btn" onclick="scoreHook('instagram')">Score Instagram Reel Hook</button>
+        <button class="btn btn-secondary" onclick="scoreHook('youtube')">Score YouTube Hook</button>
+      </div>
+      <div id="hookResult" class="result-box" style="display: none;"></div>
+    </div>
+
+    <div class="card">
+      <h2 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--purple);">Spoken Beat Timing Analyzer</h2>
+      <div class="form-group">
+        <label>Full Script Text (One thought per line)</label>
+        <textarea id="scriptBeatsInput" class="form-control" style="min-height: 140px;">Engineers benchmarked a 3.8x inference speedup in neural pruning.
+The new architecture cuts memory overhead without degrading precision.
+Standard models require massive clusters to achieve million-token context.
+This localized approach runs directly on consumer workstations.
+Here is what this means for your daily AI workflow.</textarea>
+      </div>
+      <div class="form-group" style="display: flex; gap: 15px;">
+        <div style="flex: 1;">
+          <label>Speaking Rate (WPM)</label>
+          <input type="number" id="wpmInput" class="form-control" value="165" />
+        </div>
+        <div style="flex: 1;">
+          <label>Target Duration (sec)</label>
+          <input type="number" id="targetSecInput" class="form-control" value="38" />
+        </div>
+      </div>
+      <button class="btn" onclick="analyzeBeats()">Analyze Script Pacing</button>
+      <div id="beatsResult" class="result-box" style="display: none;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- PANE 2: CAPTION & SLOP LINTER -->
+<div id="caption-tab" class="intel-pane">
+  <div class="grid-2">
+    <div class="card">
+      <h2 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--cyan);">Instagram Caption Feed Preview (125 Chars)</h2>
+      <div class="form-group">
+        <label>Caption Text</label>
+        <textarea id="captionInput" class="form-control" style="min-height: 140px;">Autonomous AI architectures just jumped 3.8x in speed! Engineers removed 60% of idle weights with zero loss in output accuracy.
+
+Comment PRUNE below to get the full benchmark code.
+
+#superintelligence #artificialintelligence #machinelearning #neuralnetworks #techtrends</textarea>
+      </div>
+      <button class="btn" onclick="lintCaption()">Lint Caption & Simulate Feed</button>
+      <div id="captionResult" class="result-box" style="display: none;"></div>
+    </div>
+
+    <div class="card">
+      <h2 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--gold);">AI Slop Detector & Humanizer</h2>
+      <div class="form-group">
+        <label>Draft Text to Audit for Robotic Buzzwords</label>
+        <textarea id="slopInput" class="form-control" style="min-height: 140px;">In today's fast-paced digital landscape, we delve into the tapestry of cutting-edge AI breakthroughs. It is crucial to remember that this game-changing tool unlocks boundless opportunities.</textarea>
+      </div>
+      <div style="display: flex; gap: 10px;">
+        <button class="btn" onclick="checkSlop()">Audit AI Slop</button>
+        <button class="btn btn-secondary" onclick="humanizeText()">Humanize Draft</button>
+      </div>
+      <div id="slopResult" class="result-box" style="display: none;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- PANE 3: YOUTUBE PACKAGING & SEO -->
+<div id="youtube-tab" class="intel-pane">
+  <div class="grid-2">
+    <div class="card">
+      <h2 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--cyan);">Title & Thumbnail Pairing Checker</h2>
+      <div class="form-group">
+        <label>YouTube Video Title</label>
+        <input type="text" id="ytTitleInput" class="form-control" value="Engineers Achieved 3.8x Neural Pruning in 2026" />
+      </div>
+      <div class="form-group">
+        <label>Thumbnail Text Overlay</label>
+        <input type="text" id="ytThumbInput" class="form-control" value="3.8X FASTER" />
+      </div>
+      <button class="btn" onclick="checkTitle()">Check Title/Thumbnail Pairing</button>
+      <div id="titleResult" class="result-box" style="display: none;"></div>
+    </div>
+
+    <div class="card">
+      <h2 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--purple);">YouTube Chapters & Dead-Air EDL</h2>
+      <div class="form-group">
+        <label>Transcript Cues (SRT or JSON format)</label>
+        <textarea id="ytTranscriptInput" class="form-control" style="min-height: 140px;">1
+00:00:00,000 --> 00:00:08,500
+Engineers achieved an autonomous 3.8x throughput increase.
+
+2
+00:00:10,000 --> 00:00:22,000
+The breakthrough centers on dynamic token pruning in active layers.
+
+3
+00:00:23,500 --> 00:00:38,000
+Here is how consumer GPUs run million-token contexts locally.</textarea>
+      </div>
+      <div style="display: flex; gap: 10px;">
+        <button class="btn" onclick="generateChapters()">Generate YouTube Chapters</button>
+        <button class="btn btn-secondary" onclick="generateDeadAir()">Scan Dead-Air EDL</button>
+      </div>
+      <div id="ytChaptersResult" class="result-box" style="display: none;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- PANE 4: RETENTION CURVE ANALYZER -->
+<div id="retention-tab" class="intel-pane">
+  <div class="card">
+    <h2 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--cyan);">YouTube Studio Audience Retention CSV Analyzer</h2>
+    <p style="color: var(--text-muted); margin-bottom: 1rem;">Paste the raw two-column CSV export from YouTube Studio (Position %, Watching %).</p>
+    <div class="form-group">
+      <label>Retention CSV Content</label>
+      <textarea id="retentionCsvInput" class="form-control" style="min-height: 160px; font-family: monospace;">0,100
+10,84
+20,77
+30,73
+45,62
+60,58
+90,54
+120,50</textarea>
+    </div>
+    <div class="form-group" style="width: 200px;">
+      <label>Video Duration (seconds)</label>
+      <input type="number" id="retentionDurInput" class="form-control" value="120" />
+    </div>
+    <button class="btn" onclick="analyzeRetention()">Analyze Retention & Drop-off Cliffs</button>
+    <div id="retentionResult" class="result-box" style="display: none;"></div>
+  </div>
+</div>
+
+<!-- PANE 5: AGENT REACH MULTI-SOURCE -->
+<div id="reach-tab" class="intel-pane">
+  <div class="card">
+    <h2 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--cyan);">Agent Reach Public Research Bridge</h2>
+    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+      Query public YouTube transcripts, GitHub trending repositories, Reddit discussions, and web content.
+      Zero personal cookies, zero paid API keys, and rate-limit compliant.
+    </p>
+
+    <div class="grid-2">
+      <div>
+        <div class="form-group">
+          <label>Research Channel</label>
+          <select id="reachChannel" class="form-control">
+            <option value="github">GitHub Repositories & READMEs</option>
+            <option value="youtube">YouTube Video Subtitles & Metadata</option>
+            <option value="reddit">Reddit Public Discussions</option>
+            <option value="web">Web Page Reader</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Query or Target URL / ID</label>
+          <input type="text" id="reachQuery" class="form-control" value="pytorch" />
+        </div>
+        <button class="btn" onclick="executeReachResearch()">Query Agent Reach</button>
+      </div>
+
+      <div id="reachOutput" class="result-box" style="min-height: 200px;">
+        <span style="color: var(--text-muted);">Results will appear here...</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PANE 6: CHANNEL CONNECTIONS -->
+<div id="accounts-tab" class="intel-pane">
+  <div class="grid-2">
+    <div class="card">
+      <h2 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--cyan);">YouTube Data API v3 (Google OAuth)</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1rem;">
+        Official OAuth 2.0 connection. Videos are uploaded with privacy status <code>private</code> or <code>unlisted</code> only after explicit human approval.
+      </p>
+      <div id="ytAuthStatus" class="result-box" style="margin-bottom: 1rem;">
+        Checking connection...
+      </div>
+      <a href="/oauth/youtube/connect" class="btn">Connect YouTube Channel</a>
+    </div>
+
+    <div class="card">
+      <h2 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--purple);">Instagram API (Meta Unified Login)</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">
+        Official Meta Graph API v21.0 connection for Instagram Professional accounts (Business & Creator) using Unified Login. Credentials encrypted at rest with Fernet.
+      </p>
+      <div id="igAuthStatus" class="result-box" style="margin-bottom: 1rem;">
+        Checking Instagram status...
+      </div>
+      <div id="igActions" style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <a id="igConnectBtn" href="/oauth/instagram/connect" class="btn">Connect Instagram Account</a>
+        <button id="igDisconnectBtn" class="btn btn-secondary" style="display:none; border-color:var(--red); color:var(--red);" onclick="disconnectInstagram()">Disconnect</button>
+        <button class="btn btn-secondary" onclick="checkPublishingStatus()">Refresh Status</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function switchTab(tabId) {
+    document.querySelectorAll('.intel-tab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.intel-pane').forEach(p => p.classList.remove('active'));
+    event.target.classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+  }
+
+  async function scoreHook(platform) {
+    const hook = document.getElementById('hookInput').value;
+    const resDiv = document.getElementById('hookResult');
+    resDiv.style.display = 'block';
+    resDiv.innerHTML = 'Scoring hook...';
+
+    const resp = await fetch('/api/intelligence/hook/score', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({hook, platform})
+    });
+    const data = await resp.json();
+
+    let html = `<div style="display: flex; justify-content: space-between; align-items: center;">
+      <span style="font-size: 1.1rem; font-weight: 700;">${platform.toUpperCase()} Hook Score</span>
+      <span class="score-display">${data.score}/100</span>
+    </div>`;
+
+    if (data.dealbreakers && data.dealbreakers.length > 0) {
+      html += `<div style="margin-top: 10px; color: var(--red); font-weight: 600;">🚨 Dealbreakers: ${data.dealbreakers.join('<br>')}</div>`;
+    }
+    if (data.subscores) {
+      html += `<div style="margin-top: 12px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;">`;
+      for (const [k, v] of Object.entries(data.subscores)) {
+        html += `<div style="background: #0f131f; padding: 6px 10px; border-radius: 6px; font-size: 0.85rem;">${k}: <b>${v}</b></div>`;
+      }
+      html += `</div>`;
+    }
+    if (data.recommendations && data.recommendations.length > 0) {
+      html += `<ul style="margin-top: 10px; padding-left: 20px; font-size: 0.85rem; color: var(--gold);">
+        ${data.recommendations.map(r => `<li>${r}</li>`).join('')}
+      </ul>`;
+    }
+    resDiv.innerHTML = html;
+  }
+
+  async function analyzeBeats() {
+    const text = document.getElementById('scriptBeatsInput').value;
+    const wpm = parseInt(document.getElementById('wpmInput').value) || 165;
+    const target = parseFloat(document.getElementById('targetSecInput').value) || 38.0;
+    const resDiv = document.getElementById('beatsResult');
+    resDiv.style.display = 'block';
+    resDiv.innerHTML = 'Calculating beat timing...';
+
+    const resp = await fetch('/api/intelligence/script/beats', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({script_text: text, wpm, target_seconds: target})
+    });
+    const data = await resp.json();
+
+    let html = `<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span>Total Spoken Time: <b style="color: var(--cyan);">${data.total_duration_seconds}s</b> (${data.total_words} words)</span>
+      <span>Delta from ${data.target_seconds}s: <b>${data.target_delta_seconds > 0 ? '+' : ''}${data.target_delta_seconds}s</b></span>
+    </div>`;
+
+    if (data.flags && data.flags.length > 0) {
+      html += `<div style="color: var(--red); margin-bottom: 10px; font-size: 0.85rem;">⚠️ Pacing Flags: ${data.flags.join('<br>')}</div>`;
+    }
+
+    html += `<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+      <thead><tr style="border-bottom: 1px solid var(--border-color); color: var(--text-muted); text-align: left;">
+        <th style="padding: 4px;">#</th><th>Start</th><th>Dur</th><th>Words</th><th>Beat Text</th><th>Status</th>
+      </tr></thead><tbody>`;
+
+    for (const b of data.beats) {
+      html += `<tr style="border-bottom: 1px solid #141a29;">
+        <td style="padding: 6px 4px;">${b.beat_index}</td>
+        <td>${b.start_seconds}s</td>
+        <td><b>${b.duration_seconds}s</b></td>
+        <td>${b.word_count}</td>
+        <td style="max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${b.text}</td>
+        <td>${b.flag ? `<span style="color: var(--red);">${b.flag}</span>` : '<span style="color: var(--green);">OK</span>'}</td>
+      </tr>`;
+    }
+    html += `</tbody></table>`;
+    resDiv.innerHTML = html;
+  }
+
+  async function lintCaption() {
+    const text = document.getElementById('captionInput').value;
+    const resDiv = document.getElementById('captionResult');
+    resDiv.style.display = 'block';
+
+    const resp = await fetch('/api/intelligence/caption/lint', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({caption_text: text})
+    });
+    const data = await resp.json();
+
+    let html = `<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-weight: 700;">Caption Score</span>
+      <span class="score-display">${data.quality_score}/100</span>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label style="font-size: 0.8rem; color: var(--text-muted);">Mobile Feed Truncation Simulation:</label>
+      <div class="feed-preview">${data.feed_preview_box}</div>
+    </div>`;
+
+    html += `<ul style="font-size: 0.85rem; padding-left: 15px;">`;
+    for (const c of data.checks) {
+      const col = c.status === 'PASS' ? 'var(--green)' : (c.status === 'WARN' ? 'var(--gold)' : 'var(--red)');
+      html += `<li><b style="color: ${col};">[${c.status}] ${c.check}</b>: ${c.detail}</li>`;
+    }
+    html += `</ul>`;
+    resDiv.innerHTML = html;
+  }
+
+  async function checkSlop() {
+    const text = document.getElementById('slopInput').value;
+    const resDiv = document.getElementById('slopResult');
+    resDiv.style.display = 'block';
+
+    const resp = await fetch('/api/intelligence/text/slop', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({text})
+    });
+    const data = await resp.json();
+
+    let html = `<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+      <span style="font-weight: 700;">Human Voice Score</span>
+      <span class="score-display" style="color: ${data.human_score >= 70 ? 'var(--green)' : 'var(--gold)'};">${data.human_score}/100</span>
+    </div>`;
+
+    if (data.slop_hits_count > 0) {
+      html += `<div style="color: var(--red); margin-bottom: 8px; font-size: 0.85rem;">Detected stock AI phrases: <b>${data.slop_hits.join(', ')}</b></div>`;
+    } else {
+      html += `<div style="color: var(--green); margin-bottom: 8px; font-size: 0.85rem;">Clean: Zero stock robotic phrases found.</div>`;
+    }
+
+    if (data.metrics) {
+      html += `<div style="font-size: 0.8rem; color: var(--text-muted);">
+        Burstiness: ${data.metrics.burstiness_score} | Specificity: ${data.metrics.specificity_score} | Slop Score: ${data.metrics.slop_score}
+      </div>`;
+    }
+    resDiv.innerHTML = html;
+  }
+
+  async function humanizeText() {
+    const text = document.getElementById('slopInput').value;
+    const resDiv = document.getElementById('slopResult');
+    resDiv.style.display = 'block';
+
+    const resp = await fetch('/api/intelligence/text/humanize', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({text})
+    });
+    const data = await resp.json();
+
+    resDiv.innerHTML = `<h4 style="color: var(--green); margin-bottom: 6px;">Humanized Version:</h4>
+      <div class="feed-preview" style="margin-bottom: 8px;">${data.humanized_text}</div>
+      <div style="font-size: 0.8rem; color: var(--text-muted);">${data.replacements_applied.length} replacements made.</div>`;
+  }
+
+  async function checkTitle() {
+    const title = document.getElementById('ytTitleInput').value;
+    const thumb = document.getElementById('ytThumbInput').value;
+    const resDiv = document.getElementById('titleResult');
+    resDiv.style.display = 'block';
+
+    const resp = await fetch('/api/intelligence/youtube/title', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({title, thumb_text: thumb})
+    });
+    const data = await resp.json();
+
+    let html = `<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+      <span style="font-weight: 700;">Packaging Score</span>
+      <span class="score-display">${data.score}/100</span>
+    </div>`;
+
+    if (data.issues && data.issues.length > 0) {
+      html += `<ul style="color: var(--red); font-size: 0.85rem; padding-left: 15px; margin-bottom: 8px;">
+        ${data.issues.map(i => `<li><b>${i.category}</b>: ${i.message}</li>`).join('')}
+      </ul>`;
+    }
+    if (data.strengths && data.strengths.length > 0) {
+      html += `<ul style="color: var(--green); font-size: 0.85rem; padding-left: 15px;">
+        ${data.strengths.map(s => `<li>${s}</li>`).join('')}
+      </ul>`;
+    }
+    resDiv.innerHTML = html;
+  }
+
+  async function generateChapters() {
+    const text = document.getElementById('ytTranscriptInput').value;
+    const resDiv = document.getElementById('ytChaptersResult');
+    resDiv.style.display = 'block';
+
+    const resp = await fetch('/api/intelligence/youtube/chapters', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({transcript: text})
+    });
+    const data = await resp.json();
+
+    let html = `<h4 style="color: var(--cyan); margin-bottom: 6px;">YouTube Description Chapters (${data.chapter_count}):</h4>
+      <pre style="background: #000; padding: 10px; border-radius: 6px; font-size: 0.85rem; white-space: pre-wrap;">${data.formatted_block}</pre>
+      <div style="font-size: 0.8rem; color: ${data.valid_for_youtube ? 'var(--green)' : 'var(--gold)'}; margin-top: 6px;">
+        ${data.notes}
+      </div>`;
+    resDiv.innerHTML = html;
+  }
+
+  async function generateDeadAir() {
+    const text = document.getElementById('ytTranscriptInput').value;
+    const resDiv = document.getElementById('ytChaptersResult');
+    resDiv.style.display = 'block';
+
+    const resp = await fetch('/api/intelligence/youtube/deadair', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({transcript: text, floor_seconds: 0.45})
+    });
+    const data = await resp.json();
+
+    let html = `<h4 style="color: var(--purple); margin-bottom: 6px;">Dead-Air & Filler Cuts (${data.cut_count}):</h4>
+      <div style="margin-bottom: 8px; font-size: 0.85rem;">
+        Removed: <b>${data.removed_seconds}s</b> (${data.percent_shorter}% shorter) | Runtime: <b>${data.projected_duration_seconds}s</b>
+      </div>
+      <ul style="font-size: 0.85rem; max-height: 160px; overflow-y: auto; padding-left: 15px;">
+        ${data.cuts.map(c => `<li><b>${c.kind}</b> at ${c.start}s - ${c.end}s: ${c.reason}</li>`).join('')}
+      </ul>`;
+    resDiv.innerHTML = html;
+  }
+
+  async function analyzeRetention() {
+    const csvData = document.getElementById('retentionCsvInput').value;
+    const dur = parseFloat(document.getElementById('retentionDurInput').value) || 120;
+    const resDiv = document.getElementById('retentionResult');
+    resDiv.style.display = 'block';
+
+    const resp = await fetch('/api/intelligence/youtube/retention', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({csv_content: csvData, duration_seconds: dur})
+    });
+    const data = await resp.json();
+
+    if (!data.ok) {
+      resDiv.innerHTML = `<span style="color: var(--red);">${data.error}</span>`;
+      return;
+    }
+
+    const col = data.verdict === 'healthy' ? 'var(--green)' : (data.verdict === 'leaking' ? 'var(--gold)' : 'var(--red)');
+    let html = `<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span>Verdict: <b style="color: ${col}; text-transform: uppercase;">${data.verdict}</b></span>
+      <span>Opening Hook Leak: <b style="color: var(--cyan);">${data.hook_leak_percent}%</b></span>
+    </div>
+    <div style="margin-bottom: 10px; font-size: 0.85rem; color: var(--gold);">${data.advice}</div>`;
+
+    if (data.cliffs && data.cliffs.length > 0) {
+      html += `<h4 style="font-size: 0.9rem; margin-bottom: 6px;">Drop-off Cliffs (Moments Viewers Left):</h4>
+      <ul style="font-size: 0.85rem; padding-left: 15px;">
+        ${data.cliffs.map(c => `<li>Lost <b>-${c.percentage_lost}%</b> at ${c.at_seconds ? c.at_seconds + 's' : c.from_point + '%'}</li>`).join('')}
+      </ul>`;
+    }
+    resDiv.innerHTML = html;
+  }
+
+  async function executeReachResearch() {
+    const channel = document.getElementById('reachChannel').value;
+    const query = document.getElementById('reachQuery').value;
+    const outDiv = document.getElementById('reachOutput');
+    outDiv.innerHTML = 'Querying Agent Reach...';
+
+    const resp = await fetch('/api/intelligence/research/reach', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({channel, query})
+    });
+    const data = await resp.json();
+
+    if (!data.ok) {
+      outDiv.innerHTML = `<span style="color: var(--red);">Error: ${data.error?.hint || data.error?.code || 'Failed'}</span>`;
+      return;
+    }
+
+    let html = `<h4 style="color: var(--cyan); margin-bottom: 8px;">Results for ${channel.toUpperCase()}:</h4>`;
+
+    if (channel === 'youtube') {
+      html += `<div><b>${data.result.title}</b> (${data.result.duration_seconds}s)</div>
+      <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">${data.result.url}</div>
+      <pre style="max-height: 180px; overflow-y: auto; background: #000; padding: 8px; font-size: 0.8rem;">${data.result.transcript || data.result.description}</pre>`;
+    } else if (channel === 'github') {
+      html += `<ul style="font-size: 0.85rem; padding-left: 15px;">`;
+      for (const item of data.result) {
+        html += `<li style="margin-bottom: 6px;"><b>${item.title}</b> (${item.stars} ⭐)<br><span style="color: var(--text-muted);">${item.description}</span><br><a href="${item.url}" target="_blank" style="color: var(--cyan);">${item.url}</a></li>`;
+      }
+      html += `</ul>`;
+    } else {
+      html += `<pre style="max-height: 200px; overflow-y: auto; background: #000; padding: 8px; font-size: 0.8rem;">${JSON.stringify(data.result, null, 2)}</pre>`;
+    }
+
+    html += `<button class="btn btn-secondary" style="margin-top: 10px;" onclick="ingestReachResults()">Ingest into Discovery Queue</button>`;
+    outDiv.innerHTML = html;
+  }
+
+  async function checkPublishingStatus() {
+    const resp = await fetch('/api/publishing/status');
+    const data = await resp.json();
+
+    document.getElementById('ytAuthStatus').innerHTML = `
+      <div>Status: <b style="color: ${data.youtube.authenticated ? 'var(--green)' : 'var(--gold)'};">${data.youtube.status}</b></div>
+      <div style="font-size: 0.85rem; color: var(--text-muted);">Client ID: ${data.youtube.client_id ? 'Configured' : 'Missing'}</div>
+    `;
+
+    const ig = data.instagram || {};
+    const igConnectBtn = document.getElementById('igConnectBtn');
+    const igDisconnectBtn = document.getElementById('igDisconnectBtn');
+
+    let igHtml = '';
+    if (ig.connected) {
+      igHtml += `
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+          <span style="display:inline-flex; align-items:center; gap:6px; background:rgba(34,197,94,0.15); color:var(--green); padding:4px 10px; border-radius:20px; font-weight:bold; font-size:0.85rem;">
+            ● CONNECTED
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-muted);">${ig.mode}</span>
+        </div>
+        <div style="margin-bottom:6px;">
+          <b>Account:</b> <span style="color:var(--cyan); font-weight:700;">@${ig.username || 'Not Available'}</span>
+          ${ig.display_name ? ` <span style="color:var(--text-muted);">(${ig.display_name})</span>` : ''}
+        </div>
+        <div style="margin-bottom:6px; font-size:0.85rem; color:var(--text-muted);">
+          <b>Instagram ID:</b> <code style="color:var(--gold); font-size:0.8rem;">${ig.account_id || 'N/A'}</code>
+        </div>
+        <div style="margin-bottom:6px; font-size:0.85rem;">
+          <b>Token Status:</b> <span style="color:${ig.token_status === 'VALID' ? 'var(--green)' : 'var(--red)'}; font-weight:bold;">${ig.token_status}</span>
+          ${ig.expires_at ? ` <span style="font-size:0.75rem; color:var(--text-muted);">(Expires: ${ig.expires_at.slice(0, 10)})</span>` : ' <span style="font-size:0.75rem; color:var(--text-muted);">(Long-Lived/SUAT)</span>'}
+        </div>
+        <div style="margin-top:8px;">
+          <b style="font-size:0.8rem; color:var(--text-muted);">Granted Permissions:</b>
+          <div style="display:flex; flex-wrap:wrap; gap:4px; margin-top:4px;">
+            ${(ig.permissions || []).map(p => `<span style="background:rgba(0,229,255,0.1); border:1px solid rgba(0,229,255,0.25); color:var(--cyan); padding:2px 8px; border-radius:4px; font-size:0.75rem;">${p}</span>`).join('')}
+          </div>
+        </div>
+      `;
+      igConnectBtn.textContent = 'Reconnect Account';
+      igConnectBtn.classList.remove('btn-primary');
+      igConnectBtn.classList.add('btn-secondary');
+      igDisconnectBtn.style.display = 'inline-block';
+    } else {
+      igHtml += `
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+          <span style="display:inline-flex; align-items:center; gap:6px; background:rgba(239,68,68,0.15); color:var(--red); padding:4px 10px; border-radius:20px; font-weight:bold; font-size:0.85rem;">
+            ○ ${ig.status || 'DISCONNECTED'}
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-muted);">${ig.mode || 'Manual Export Mode'}</span>
+        </div>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:6px;">
+          ${ig.is_configured ? 'Meta credentials configured. Ready for Unified Login authorization.' : 'Meta App ID and Secret not configured in .env or config.yaml.'}
+        </p>
+        <div style="font-size:0.8rem; color:var(--text-muted);">
+          <b>Storage:</b> Encrypted at rest (Fernet AES-128-CBC + HMAC) | Zero plaintext token storage.
+        </div>
+      `;
+      igConnectBtn.textContent = 'Connect Instagram Account';
+      igConnectBtn.classList.add('btn-primary');
+      igConnectBtn.classList.remove('btn-secondary');
+      igDisconnectBtn.style.display = 'none';
+    }
+
+    document.getElementById('igAuthStatus').innerHTML = igHtml;
+  }
+
+  async function disconnectInstagram() {
+    if (!confirm('Are you sure you want to disconnect your Instagram account and wipe stored credentials?')) {
+      return;
+    }
+    try {
+      const resp = await fetch('/api/instagram/disconnect', {method: 'POST'});
+      const data = await resp.json();
+      if (data.ok) {
+        alert('Instagram account disconnected.');
+        checkPublishingStatus();
+      }
+    } catch (e) {
+      alert('Error disconnecting: ' + e);
+    }
+  }
+
+  // Check URL parameters for OAuth status notifications
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('connected') === 'instagram') {
+    alert('Instagram Professional account successfully authenticated and encrypted via Meta Unified Login!');
+  } else if (urlParams.get('connected') === 'youtube') {
+    alert('YouTube Channel successfully authenticated via Google OAuth!');
+  }
+
+  // Initial check
+  checkPublishingStatus();
+</script>
+{% endblock %}
+

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}Research Engine — SUPER.INTELLIGENCEEE{% endblock %}
+
+{% block content %}
+<div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:2rem;">
+  <div>
+    <h1 style="font-size:2rem; font-weight:800; letter-spacing:-1px;">Research & Topic Discovery</h1>
+    <p style="color:var(--text-muted); margin-top:4px;">Multi-source RSS and public web intake with multi-dimensional scoring.</p>
+  </div>
+  <button onclick="triggerDiscovery()" id="discBtn" class="btn">⚡ Discover & Rank Topics</button>
+</div>
+
+<!-- Active Feeds -->
+<div class="card" style="margin-bottom:2rem;">
+  <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:0.75rem;">Configured Intelligence Feeds</h2>
+  <div style="display:flex; flex-wrap:wrap; gap:10px;">
+    {% for s in sources %}
+    <div style="background:#141a2a; border:1px solid var(--border-color); padding:8px 14px; border-radius:8px; font-size:0.85rem;">
+      <span style="color:var(--cyan); font-weight:700;">●</span> {{ s.name }} 
+      <span style="color:var(--text-muted); font-size:0.75rem;">({{ s.category }})</span>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Topics Table -->
+<div class="card">
+  <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:1rem;">Ranked Technology Topics (Top Candidates)</h2>
+  {% if topics %}
+  <table style="width:100%; border-collapse:collapse; text-align:left;">
+    <thead>
+      <tr style="border-bottom:1px solid var(--border-color); color:var(--text-muted); font-size:0.85rem;">
+        <th style="padding:10px;">SCORE</th>
+        <th style="padding:10px;">TITLE & SUMMARY</th>
+        <th style="padding:10px;">CATEGORY</th>
+        <th style="padding:10px;">SOURCE</th>
+        <th style="padding:10px;">ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for t in topics %}
+      <tr style="border-bottom:1px solid #141a29; font-size:0.9rem;">
+        <td style="padding:12px 10px;">
+          <span class="badge {% if t.score >= 70 %}badge-cyan{% elif t.score >= 50 %}badge-gold{% else %}badge-purple{% endif %}">
+            {{ "%.1f"|format(t.score) }}
+          </span>
+        </td>
+        <td style="padding:12px 10px; max-width:550px;">
+          <div style="font-weight:700; color:var(--text-main); margin-bottom:4px;">{{ t.title }}</div>
+          <div style="color:var(--text-muted); font-size:0.8rem;">{{ t.summary[:150] }}...</div>
+        </td>
+        <td style="padding:12px 10px;">
+          <span style="color:var(--cyan); font-size:0.8rem; font-weight:600;">{{ t.category }}</span>
+        </td>
+        <td style="padding:12px 10px; color:var(--text-muted); font-size:0.8rem;">
+          <a href="{{ t.source_url }}" target="_blank" rel="noopener" style="color:var(--text-muted); text-decoration:none;">🔗 Link</a>
+        </td>
+        <td style="padding:12px 10px;">
+          <form method="POST" action="/api/production/produce" style="display:inline;" onsubmit="return confirmProduction(this);">
+            <input type="hidden" name="topic_id" value="{{ t.id }}">
+            <button type="submit" class="btn" style="padding:6px 14px; font-size:0.8rem;">Produce Reel</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p style="color:var(--text-muted); padding:1rem 0;">No topics discovered yet. Click "Discover & Rank Topics" above.</p>
+  {% endif %}
+</div>
+
+<script>
+async function triggerDiscovery() {
+  const btn = document.getElementById("discBtn");
+  btn.disabled = true;
+  btn.innerText = "Discovering & Scoring...";
+  try {
+    const res = await fetch("/api/research/discover", { method: "POST" });
+    const data = await res.json();
+    alert(data.message || "Discovery completed!");
+    window.location.reload();
+  } catch (e) {
+    alert("Discovery failed: " + e);
+  } finally {
+    btn.disabled = false;
+    btn.innerText = "⚡ Discover & Rank Topics";
+  }
+}
+
+function confirmProduction(form) {
+  return confirm("Launch autonomous production for this topic? (Narration, HyperFrames, and FFmpeg pipeline will execute sequentially).");
+}
+</script>
+{% endblock %}
+

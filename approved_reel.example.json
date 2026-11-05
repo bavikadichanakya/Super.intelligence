@@ -1,0 +1,89 @@
+{
+  "title": "Sub-Quadratic Attention Scaled to 1M Tokens",
+  "publisher": "Frontier AI Benchmark Institute",
+  "category": "New AI Models & Releases",
+  "source_url": "https://arxiv.org/abs/2403.00000",
+  "hook": "Researchers just proved that one million token context windows can run four times faster without accuracy loss.",
+  "context": "Published via the Frontier AI Benchmark Institute, this paper resolves persistent quadratic memory bottlenecks in transformer inference.",
+  "development": "By introducing adaptive sparse attention heads and sub-quadratic token pruning, memory allocation scales linearly even under heavy loads.",
+  "explanation": "Architecturally, the model dynamically filters redundant token states, dedicating full attention compute only to semantically high-value activations.",
+  "implications": "For production engineering teams, this unlocks real-time document search, multi-hour video understanding, and localized reasoning on consumer hardware.",
+  "limitations": "However, authors emphasize that distributed latency across multi-node clusters and edge-device thermal throttling require further optimization.",
+  "takeaway": "As frontier models mature, architectural compute efficiency—not raw parameter count—is becoming the real moat.",
+  "word_count": 96,
+  "est_duration": 37.0,
+  "status": "APPROVED",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "name": "Opening Hook",
+      "narration": "Researchers just proved that one million token context windows can run four times faster without accuracy loss.",
+      "visual_type": "hook_card",
+      "badge": "AI BREAKTHROUGH",
+      "headline": "1M TOKEN CONTEXT 4X FASTER",
+      "subtext": "SUPER.INTELLIGENCEEE EXCLUSIVE",
+      "duration": 5.2
+    },
+    {
+      "scene_number": 2,
+      "name": "Context & Provenance",
+      "narration": "Published via the Frontier AI Benchmark Institute, this paper resolves persistent quadratic memory bottlenecks in transformer inference.",
+      "visual_type": "editorial_headline",
+      "badge": "SOURCE: FRONTIER AI INSTITUTE",
+      "headline": "VERIFIED BENCHMARKS",
+      "subtext": "PRIMARY LAB DOCUMENTATION",
+      "duration": 5.4
+    },
+    {
+      "scene_number": 3,
+      "name": "The Core Development",
+      "narration": "By introducing adaptive sparse attention heads and sub-quadratic token pruning, memory allocation scales linearly even under heavy loads.",
+      "visual_type": "data_card",
+      "badge": "EFFICIENCY METRIC",
+      "headline": "LINEAR MEMORY SCALING",
+      "subtext": "+4.2X THROUGHPUT MULTIPLIER",
+      "duration": 5.6
+    },
+    {
+      "scene_number": 4,
+      "name": "Technical Architecture",
+      "narration": "Architecturally, the model dynamically filters redundant token states, dedicating full attention compute only to semantically high-value activations.",
+      "visual_type": "system_diagram",
+      "badge": "SYSTEM DESIGN",
+      "headline": "ADAPTIVE STATE PRUNING",
+      "subtext": "DYNAMIC ATTENTION FILTERING",
+      "duration": 5.8
+    },
+    {
+      "scene_number": 5,
+      "name": "Practical Impact",
+      "narration": "For production engineering teams, this unlocks real-time document search, multi-hour video understanding, and localized reasoning on consumer hardware.",
+      "visual_type": "impact_card",
+      "badge": "PRODUCTION IMPACT",
+      "headline": "EDGE DEPLOYMENTS UNLOCKED",
+      "subtext": "CONSUMER HARDWARE INFERENCE",
+      "duration": 5.5
+    },
+    {
+      "scene_number": 6,
+      "name": "Limitations & Reality Check",
+      "narration": "However, authors emphasize that distributed latency across multi-node clusters and edge-device thermal throttling require further optimization.",
+      "visual_type": "critical_card",
+      "badge": "CRITICAL PERSPECTIVE",
+      "headline": "MULTI-NODE LATENCY CAVEATS",
+      "subtext": "THERMAL THROTTLING LIMITS",
+      "duration": 5.3
+    },
+    {
+      "scene_number": 7,
+      "name": "Takeaway & Brand Outro",
+      "narration": "As frontier models mature, architectural compute efficiency—not raw parameter count—is becoming the real moat.",
+      "visual_type": "brand_closing",
+      "badge": "SUPER.INTELLIGENCEEE",
+      "headline": "THE REAL MOAT: EFFICIENCY",
+      "subtext": "FOLLOW FOR NEXT-GEN DEEP TECH",
+      "duration": 5.2
+    }
+  ]
+}
+

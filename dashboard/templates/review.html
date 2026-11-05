@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}Video Review Station — SUPER.INTELLIGENCEEE{% endblock %}
+
+{% block content %}
+<div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:2rem;">
+  <div>
+    <h1 style="font-size:2rem; font-weight:800; letter-spacing:-1px;">Human-in-the-Loop Video Review</h1>
+    <p style="color:var(--text-muted); margin-top:4px;">Mandatory editorial gate for factual verification, subtitle readability, and audio synchronization.</p>
+  </div>
+</div>
+
+{% if reels %}
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(500px, 1fr)); gap:2rem;">
+    {% for r in reels %}
+    <div class="card" style="display:flex; flex-direction:column; gap:1.5rem;">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <span class="badge {% if r.status == 'APPROVED' %}badge-green{% else %}badge-gold{% endif %}">
+          {{ r.status }}
+        </span>
+        <span style="color:var(--text-muted); font-size:0.85rem;">PRODUCTION #{{ r.id }}</span>
+      </div>
+
+      <div style="display:flex; gap:1.5rem; flex-wrap:wrap;">
+        <!-- Vertical Video Player (9:16 mobile aspect ratio) -->
+        <div style="width:270px; height:480px; background:#000; border-radius:12px; overflow:hidden; border:2px solid var(--border-color); flex-shrink:0;">
+          {% if r.media_url %}
+          <video src="{{ r.media_url }}" controls style="width:100%; height:100%; object-fit:contain;"></video>
+          {% else %}
+          <div style="display:flex; align-items:center; justify-content:center; height:100%; color:var(--text-muted); font-size:0.85rem;">
+            No media file attached
+          </div>
+          {% endif %}
+        </div>
+
+        <!-- Reel Metadata & Controls -->
+        <div style="flex:1; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <h2 style="font-size:1.25rem; font-weight:700; margin-bottom:0.5rem; line-height:1.3;">
+              {{ r.topic_title or 'Autonomous AI Intelligence Reel' }}
+            </h2>
+            <div style="background:#0a0d16; padding:12px; border-radius:8px; border:1px solid #1a2238; margin-bottom:1rem;">
+              <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:4px;">MEDIA SPECIFICATIONS</div>
+              <div style="font-size:0.85rem; color:var(--cyan); font-family:monospace;">
+                1080x1920 @ 30 FPS | -16 LUFS | H.264 + AAC
+              </div>
+            </div>
+            <div style="color:var(--text-muted); font-size:0.85rem; line-height:1.4;">
+              <p>✓ Subtitles burned with Instagram mobile safe margins.</p>
+              <p>✓ Scene visuals generated with editorial technology theme.</p>
+              <p>✓ Factual assertions verified against public source context.</p>
+            </div>
+          </div>
+
+          <div style="margin-top:1.5rem; display:flex; gap:10px;">
+            {% if r.status == 'NEEDS_REVIEW' %}
+            <button onclick="approveReel({{ r.id }})" class="btn btn-success" style="flex:1; justify-content:center;">
+              ✓ Approve & Schedule Slot
+            </button>
+            <button onclick="rejectReel({{ r.id }})" class="btn btn-danger" style="padding:10px 16px;">
+              ✕ Reject
+            </button>
+            {% else %}
+            <div style="display:flex; align-items:center; gap:8px; color:var(--green); font-weight:700; font-size:0.9rem;">
+              <span>✓ Approved for Weekly Publication</span>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="card" style="text-align:center; padding:3rem;">
+    <p style="color:var(--text-muted); margin-bottom:1rem;">No reels awaiting review right now.</p>
+    <a href="/production" class="btn">Produce a New Reel</a>
+  </div>
+{% endif %}
+
+<script>
+async function approveReel(id) {
+  if (!confirm("Confirm approval of Reel #" + id + " for weekly publishing?")) return;
+  try {
+    const res = await fetch("/api/review/" + id + "/approve", { method: "POST" });
+    const data = await res.json();
+    alert("Reel #" + id + " has been approved and enqueued into weekly schedule!");
+    window.location.reload();
+  } catch (e) {
+    alert("Approval error: " + e);
+  }
+}
+
+async function rejectReel(id) {
+  const reason = prompt("Enter reason for rejection/revision:", "Audio or visual pacing needs adjustment.");
+  if (!reason) return;
+  try {
+    const res = await fetch("/api/review/" + id + "/reject", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: "reason=" + encodeURIComponent(reason)
+    });
+    alert("Reel #" + id + " marked as rejected.");
+    window.location.reload();
+  } catch (e) {
+    alert("Rejection error: " + e);
+  }
+}
+</script>
+{% endblock %}
+

@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block title %}Weekly Publishing Queue — SUPER.INTELLIGENCEEE{% endblock %}
+
+{% block content %}
+<div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:2rem;">
+  <div>
+    <h1 style="font-size:2rem; font-weight:800; letter-spacing:-1px;">Weekly Publishing Queue (5 Reels/Week)</h1>
+    <p style="color:var(--text-muted); margin-top:4px;">Target cadence: Monday through Friday 09:00 AM Instagram deployment.</p>
+  </div>
+  <a href="/review" class="btn btn-secondary">Review Pending Videos</a>
+</div>
+
+<!-- Weekly Schedule Cadence Card -->
+<div class="card" style="margin-bottom:2rem;">
+  <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:1rem;">Production Target Cadence</h2>
+  <div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:10px; text-align:center;">
+    <div style="background:#141a29; border:1px solid #1e263d; padding:12px; border-radius:8px;">
+      <div style="color:var(--cyan); font-weight:700; font-size:0.85rem;">MONDAY</div>
+      <div style="color:var(--text-muted); font-size:0.75rem; margin-top:4px;">Slot 1 (09:00 AM)</div>
+    </div>
+    <div style="background:#141a29; border:1px solid #1e263d; padding:12px; border-radius:8px;">
+      <div style="color:var(--cyan); font-weight:700; font-size:0.85rem;">TUESDAY</div>
+      <div style="color:var(--text-muted); font-size:0.75rem; margin-top:4px;">Slot 2 (09:00 AM)</div>
+    </div>
+    <div style="background:#141a29; border:1px solid #1e263d; padding:12px; border-radius:8px;">
+      <div style="color:var(--cyan); font-weight:700; font-size:0.85rem;">WEDNESDAY</div>
+      <div style="color:var(--text-muted); font-size:0.75rem; margin-top:4px;">Slot 3 (09:00 AM)</div>
+    </div>
+    <div style="background:#141a29; border:1px solid #1e263d; padding:12px; border-radius:8px;">
+      <div style="color:var(--cyan); font-weight:700; font-size:0.85rem;">THURSDAY</div>
+      <div style="color:var(--text-muted); font-size:0.75rem; margin-top:4px;">Slot 4 (09:00 AM)</div>
+    </div>
+    <div style="background:#141a29; border:1px solid #1e263d; padding:12px; border-radius:8px;">
+      <div style="color:var(--cyan); font-weight:700; font-size:0.85rem;">FRIDAY</div>
+      <div style="color:var(--text-muted); font-size:0.75rem; margin-top:4px;">Slot 5 (09:00 AM)</div>
+    </div>
+  </div>
+</div>
+
+<!-- Queue Items Table -->
+<div class="card">
+  <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:1rem;">Scheduled Publishing Pipeline</h2>
+  {% if items %}
+  <table style="width:100%; border-collapse:collapse; text-align:left;">
+    <thead>
+      <tr style="border-bottom:1px solid var(--border-color); color:var(--text-muted); font-size:0.85rem;">
+        <th style="padding:10px;">SLOT TIME</th>
+        <th style="padding:10px;">STATUS</th>
+        <th style="padding:10px;">CAPTION & HASHTAGS</th>
+        <th style="padding:10px;">VIDEO FILE</th>
+        <th style="padding:10px;">ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for it in items %}
+      <tr style="border-bottom:1px solid #141a29; font-size:0.9rem;">
+        <td style="padding:12px 10px; font-weight:700; color:var(--gold);">
+          {{ (it.scheduled_time or it.scheduled_for or 'Unscheduled')[:16] }}
+        </td>
+        <td style="padding:12px 10px;">
+          <span class="badge badge-cyan">{{ it.status }}</span>
+        </td>
+        <td style="padding:12px 10px; max-width:400px;">
+          <div style="font-size:0.85rem; margin-bottom:4px;">{{ it.caption_text }}</div>
+          <div style="color:var(--cyan); font-size:0.75rem;">{{ it.hashtags }}</div>
+        </td>
+        <td style="padding:12px 10px; font-family:monospace; color:var(--text-muted); font-size:0.8rem;">
+          {{ it.video_path }}
+        </td>
+        <td style="padding:12px 10px;">
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            {% if it.media_url %}
+            <a href="{{ it.media_url }}" download class="btn btn-secondary" style="padding:4px 10px; font-size:0.75rem; text-align:center;">Download MP4</a>
+            {% endif %}
+            {% if it.status != 'PUBLISHED' %}
+            <button class="btn" style="padding:4px 10px; font-size:0.75rem; background:linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); border:none;" onclick="publishReelDirect({{ it.id }}, '{{ it.title }}')">
+              🚀 Publish to IG
+            </button>
+            {% else %}
+            <span style="font-size:0.75rem; color:var(--green); font-weight:bold;">✓ Published</span>
+            {% endif %}
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p style="color:var(--text-muted); padding:1rem 0;">No reels scheduled in the queue yet. Approve completed videos to fill weekly slots.</p>
+  {% endif %}
+</div>
+
+<script>
+async function publishReelDirect(queueId, title) {
+  const confirmed = confirm(
+    `CONFIRM HUMAN EDITORIAL APPROVAL:\n\n` +
+    `Publish Reel #${queueId} ("${title}") directly to Instagram via official Meta API?\n\n` +
+    `Per editorial policy, publishing strictly requires this explicit human confirmation.`
+  );
+  if (!confirmed) return;
+
+  const btn = event.target;
+  const originalText = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = 'Publishing...';
+
+  try {
+    const resp = await fetch(`/api/instagram/publish/${queueId}`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({explicit_approval: true})
+    });
+    const data = await resp.json();
+    if (resp.ok && data.ok) {
+      alert(`Success! Reel published to Instagram.\n\nMedia ID: ${data.result?.ig_media_id || 'OK'}`);
+      window.location.reload();
+    } else {
+      alert(`Publication failed: ${data.detail || data.error || JSON.stringify(data)}`);
+      btn.disabled = false;
+      btn.textContent = originalText;
+    }
+  } catch (err) {
+    alert(`Network or system error: ${err}`);
+    btn.disabled = false;
+    btn.textContent = originalText;
+  }
+}
+</script>
+{% endblock %}
+

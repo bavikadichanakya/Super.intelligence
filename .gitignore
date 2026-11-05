@@ -1,0 +1,49 @@
+# SUPER.INTELLIGENCEEE .gitignore
+
+# Environment & Secrets (NEVER COMMIT)
+.env
+*.env
+*.token.json
+credentials.json
+client_secret*.json
+data/secure/
+.master_key
+*.enc
+
+# SQLite Databases & Local Runtime Storage
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+data/*.db
+
+# Python & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+env/
+venv/
+
+# Runtimes, Logs & Temp
+.temp/
+.external_repos/
+logs/
+*.log
+
+# Generated Media Outputs & Scratch
+output/
+renderer/assets/reel_*
+renderer/compositions/reel_*
+assets/voices/*.wav
+*.mp4
+*.mov
+*.webm
+*.mkv
+
+# OS Specific
+.DS_Store
+Thumbs.db

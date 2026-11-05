@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --ground: #07090e;
+        --ink: #f8fafc;
+        --cyan: #00e5ff;
+        --purple: #8b5cf6;
+        --gold: #ffd700;
+        --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html, body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--ground);
+        font-family: var(--font-main);
+      }
+      #root {
+        width: 1080px;
+        height: 1920px;
+        position: relative;
+        background: radial-gradient(circle at 50% 30%, #151a2e 0%, #07090e 100%);
+        overflow: hidden;
+      }
+      .scene-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1080px;
+        height: 1920px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .scene-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1080px;
+        height: 1920px;
+        object-fit: cover;
+      }
+      .scene-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1080px;
+        height: 1920px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 240px 80px 320px 80px;
+        pointer-events: none;
+      }
+      .tech-hud {
+        display: flex;
+        justify-content: center;
+      }
+      .hud-pill {
+        background: rgba(14, 20, 36, 0.85);
+        color: var(--cyan);
+        border: 2px solid var(--cyan);
+        padding: 12px 32px;
+        border-radius: 24px;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        box-shadow: 0 0 20px rgba(0, 229, 255, 0.25);
+      }
+      .scene-headline {
+        color: var(--ink);
+        font-size: 54px;
+        font-weight: 800;
+        text-align: center;
+        line-height: 1.25;
+        letter-spacing: -0.5px;
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+      }
+      .scanlines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1080px;
+        height: 1920px;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+        background-size: 100% 4px;
+        pointer-events: none;
+        z-index: 10;
+        opacity: 0.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"
+         data-composition-id="main"
+         data-start="0"
+         data-duration="9.00"
+         data-width="1080"
+         data-height="1920"
+         data-fps="30">
+      
+      
+      <!-- SCENE 1 -->
+      <div id="scene-1" class="clip scene-container" 
+           data-start="0.00" 
+           data-duration="4.00" 
+           data-track-index="0">
+        <img class="scene-bg" src="assets/v1.png" alt="Scene Visual" />
+        <div class="scene-overlay">
+          <div class="tech-hud">
+            <span class="hud-pill">⚡ PULSE 01 / 02</span>
+          </div>
+          <h2 class="scene-headline">HOOK HEADLINE</h2>
+        </div>
+      </div>
+
+      <!-- SCENE 2 -->
+      <div id="scene-2" class="clip scene-container" 
+           data-start="4.00" 
+           data-duration="5.00" 
+           data-track-index="0">
+        <img class="scene-bg" src="assets/v2.png" alt="Scene Visual" />
+        <div class="scene-overlay">
+          <div class="tech-hud">
+            <span class="hud-pill">⚡ PULSE 02 / 02</span>
+          </div>
+          <h2 class="scene-headline">DEVELOPMENT DETAILS</h2>
+        </div>
+      </div>
+
+      
+      <div class="scanlines"></div>
+      
+    </div>
+
+    <script>
+      // HyperFrames Paused Timeline Contract
+      const tl = gsap.timeline({ paused: true });
+      
+      // Build subtle cinematic punch-in and text animations for each scene
+      const sceneCount = 2;
+      let curStart = 0;
+      
+      for (let s = 1; s <= sceneCount; s++) {
+        const scEl = document.querySelector("#scene-" + s);
+        if (!scEl) continue;
+        const sDur = parseFloat(scEl.getAttribute("data-duration") || "5.0");
+        const bg = scEl.querySelector(".scene-bg");
+        const title = scEl.querySelector(".scene-headline");
+        
+        // Background slow push/zoom
+        if (bg) {
+          tl.fromTo(bg, 
+            { scale: 1.0, transformOrigin: "50% 50%" }, 
+            { scale: 1.05, duration: sDur, ease: "none" }, 
+            curStart
+          );
+        }
+        
+        // Headline fade-in and rise
+        if (title) {
+          tl.fromTo(title, 
+            { opacity: 0, y: 30 }, 
+            { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 
+            curStart + 0.15
+          );
+        }
+        
+        curStart += sDur;
+      }
+      
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

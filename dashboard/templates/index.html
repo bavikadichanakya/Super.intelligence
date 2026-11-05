@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ brand_name }} — Autonomous Content Production Engine</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand-header">
+        <span class="brand-badge">Frontier Media Engine</span>
+        <h1 class="brand-title">{{ brand_name }}</h1>
+        <p class="brand-handle">{{ brand_handle }}</p>
+      </div>
+
+      <ul class="nav-menu">
+        <li class="nav-item"><a class="nav-link active" data-tab="tab-overview">⚡ 1. Overview</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="tab-research">🔬 2. Research Queue</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="tab-scripts">📝 3. Approved Scripts</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="tab-media">🎨 4. Media Assets</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="tab-production">⚙️ 5. Video Production</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="tab-reels">🎬 6. Rendered Reels</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="tab-publishing">📅 7. Publishing Queue</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="tab-analytics">📊 8. Analytics & Reports</a></li>
+        <li class="nav-item"><a class="nav-link" data-tab="tab-settings">🛠️ 9. Settings & Health</a></li>
+      </ul>
+
+      <div class="sidebar-telemetry">
+        <div class="telemetry-row">
+          <span>Process Memory:</span>
+          <span class="telemetry-val" id="telemetry-ram">{{ resources.ram_process_mb }} MB ({{ resources.ram_system_percent }}%)</span>
+        </div>
+        <div class="telemetry-row">
+          <span>CPU Usage:</span>
+          <span class="telemetry-val" id="telemetry-cpu">{{ resources.cpu_percent }}%</span>
+        </div>
+        <div class="telemetry-row">
+          <span>RAM Bound:</span>
+          <span class="telemetry-val" style="color: var(--color-cyan);">8 GB Limit</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Live Task Monitor Banner -->
+      <div class="task-monitor" id="task-monitor">
+        <div class="task-monitor-header">
+          <span id="task-name">Task Running...</span>
+          <span id="task-pct">0%</span>
+        </div>
+        <p id="task-msg" style="font-size: 12.5px; color: #CBD5E1; margin-bottom: 8px;">Processing...</p>
+        <div class="task-progress-bar">
+          <div class="task-progress-fill" id="task-fill"></div>
+        </div>
+      </div>
+
+      <!-- ========================================================= -->
+      <!-- TAB 1: OVERVIEW -->
+      <!-- ========================================================= -->
+      <section class="tab-panel active" id="tab-overview">
+        <div class="top-bar">
+          <div>
+            <h2 class="page-title">Executive Production Overview</h2>
+            <p class="page-subtitle">Zero-budget autonomous production pipeline targeting 5 weekly Instagram Reels</p>
+          </div>
+          <div class="action-group">
+            <button class="btn btn-secondary" onclick="triggerDiscover()">📡 Run RSS Discovery</button>
+            <button class="btn btn-primary" onclick="renderBatchReels()">⚡ Batch Render 5 Reels</button>
+          </div>
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-label">Discovered Stories</div>
+            <div class="kpi-value">{{ stats.discovered_topics }}</div>
+            <div class="kpi-sub">{{ stats.verified_topics }} verified stories</div>
+          </div>
+          <div class="kpi-card cyan">
+            <div class="kpi-label">Ready Scripts</div>
+            <div class="kpi-value">{{ stats.scripts_approved + stats.scripts_draft }}</div>
+            <div class="kpi-sub">{{ stats.scripts_approved }} editorial approved</div>
+          </div>
+          <div class="kpi-card violet">
+            <div class="kpi-label">Rendered Reels</div>
+            <div class="kpi-value">{{ stats.rendered_videos }}</div>
+            <div class="kpi-sub">Target: 5 / week</div>
+          </div>
+          <div class="kpi-card success">
+            <div class="kpi-label">Publishing Queue</div>
+            <div class="kpi-value">{{ stats.queued_videos }}</div>
+            <div class="kpi-sub">{{ stats.published_videos }} published all-time</div>
+          </div>
+        </div>
+
+        <!-- Weekly Plan Callout -->
+        <div class="banner-card">
+          <div>
+            <span class="banner-pill">Today: {{ schedule_info.day_name }} — {{ schedule_info.recommended_action }}</span>
+            <h3 class="banner-title">{{ schedule_info.recommended_action }} Stage</h3>
+            <p class="banner-desc">{{ schedule_info.description }}</p>
+          </div>
+          <div>
+            <span style="font-weight: 700; font-size: 14px; color: var(--color-blue);">
+              Weekly Target: {{ stats.rendered_videos }} / 5 Reels
+            </span>
+          </div>
+        </div>
+
+        <!-- 7-Day Production Calendar Matrix -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Weekly 5-Reel Production Workflow Calendar</h3>
+          </div>
+          <div class="card-body">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px;">
+              {% for day in full_week %}
+              <div style="border: 1px solid {{ 'var(--color-blue)' if day.is_today else 'var(--border-color)' }}; background: {{ 'var(--color-accent-bg)' if day.is_today else '#FFF' }}; border-radius: var(--radius-sm); padding: 14px;">
+                <div style="font-size: 11px; font-weight: 700; color: {{ 'var(--color-blue)' if day.is_today else 'var(--text-muted)' }}; text-transform: uppercase;">
+                  {{ day.day }} {{ '• TODAY' if day.is_today else '' }}
+                </div>
+                <div style="font-size: 13.5px; font-weight: 700; color: var(--text-main); margin: 6px 0;">
+                  {{ day.action }}
+                </div>
+                <div style="font-size: 11.5px; color: var(--text-muted);">
+                  {{ day.description }}
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- TAB 2: RESEARCH QUEUE -->
+      <!-- ========================================================= -->
+      <section class="tab-panel" id="tab-research">
+        <div class="top-bar">
+          <div>
+            <h2 class="page-title">Research & Story Discovery</h2>
+            <p class="page-subtitle">Curated stories from official technology publishers with verification safeguards</p>
+          </div>
+          <div class="action-group">
+            <button class="btn btn-secondary" onclick="openModal('modal-add-article')">+ Add Story Manually</button>
+            <button class="btn btn-primary" onclick="triggerDiscover()">📡 Scan RSS Feeds</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Discovered Technology Stories ({{ articles|length }})</h3>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Score</th>
+                  <th>Title & Original Source</th>
+                  <th>Publisher</th>
+                  <th>Category</th>
+                  <th>Status Workflow</th>
+                  <th>Editorial Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for art in articles %}
+                <tr>
+                  <td><strong style="color: var(--color-blue);">{{ art.score }}</strong></td>
+                  <td>
+                    <div style="font-weight: 700; color: var(--text-main); margin-bottom: 2px;">{{ art.title }}</div>
+                    <a href="{{ art.url }}" target="_blank" style="font-size: 11.5px; color: var(--color-blue); text-decoration: none;">🔗 Verify Source URL</a>
+                  </td>
+                  <td>{{ art.publisher }}</td>
+                  <td><span style="font-size: 12px; color: var(--text-muted);">{{ art.category }}</span></td>
+                  <td>
+                    <span class="badge badge-{{ art.status|lower }}">{{ art.status }}</span>
+                  </td>
+                  <td>
+                    <div style="display: flex; gap: 6px;">
+                      {% if art.status == 'DISCOVERED' %}
+                      <button class="btn btn-secondary btn-sm" onclick="updateArticleStatus({{ art.id }}, 'SHORTLISTED')">Shortlist</button>
+                      {% elif art.status == 'SHORTLISTED' %}
+                      <button class="btn btn-primary btn-sm" onclick="updateArticleStatus({{ art.id }}, 'VERIFIED')">Verify</button>
+                      {% elif art.status == 'VERIFIED' %}
+                      <button class="btn btn-cyan btn-sm" onclick="generateScript({{ art.id }})">Generate Script</button>
+                      {% elif art.status == 'SCRIPT_READY' %}
+                      <span style="font-size: 12px; color: var(--color-cyan); font-weight: 600;">Script Generated</span>
+                      {% endif %}
+                      <button class="btn btn-secondary btn-sm" style="color: var(--color-danger);" onclick="updateArticleStatus({{ art.id }}, 'REJECTED')">✕</button>
+                    </div>
+                  </td>
+                </tr>
+                {% else %}
+                <tr>
+                  <td colspan="6" style="text-align: center; padding: 32px; color: var(--text-muted);">
+                    No stories discovered yet. Click "Scan RSS Feeds" above to populate the queue.
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- TAB 3: APPROVED SCRIPTS -->
+      <!-- ========================================================= -->
+      <section class="tab-panel" id="tab-scripts">
+        <div class="top-bar">
+          <div>
+            <h2 class="page-title">Content Intelligence & Script Registry</h2>
+            <p class="page-subtitle">7-section structured JSON scripts optimized for 30–45s narration</p>
+          </div>
+        </div>
+
+        <div class="items-grid">
+          {% for sc in scripts %}
+          <div class="item-card">
+            <div class="item-meta">
+              <span class="badge badge-{{ sc.status|lower }}">{{ sc.status }}</span>
+              <span style="color: var(--text-muted);">{{ sc.word_count }} words (~{{ sc.est_duration }}s)</span>
+            </div>
+            <h3 class="item-title">{{ sc.title }}</h3>
+            <div class="item-body">
+              <p><strong>Hook:</strong> "{{ sc.hook }}"</p>
+              <p style="margin-top: 6px;"><strong>Takeaway:</strong> "{{ sc.takeaway }}"</p>
+            </div>
+            <div class="item-footer">
+              <span style="color: var(--color-blue); font-weight: 600;">7 Planned Scenes</span>
+              <div style="display: flex; gap: 8px;">
+                <button class="btn btn-primary btn-sm" onclick="renderSingleReel({{ sc.id }})">Render Reel</button>
+              </div>
+            </div>
+          </div>
+          {% else %}
+          <div style="grid-column: 1 / -1; text-align: center; padding: 48px; background: #FFF; border-radius: var(--radius-md); border: 1px solid var(--border-color); color: var(--text-muted);">
+            No scripts prepared yet. Shortlist and verify stories in the Research Queue to generate scripts.
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- TAB 4: MEDIA ASSETS -->
+      <!-- ========================================================= -->
+      <section class="tab-panel" id="tab-media">
+        <div class="top-bar">
+          <div>
+            <h2 class="page-title">Media Asset Registry & Licensing Provenance</h2>
+            <p class="page-subtitle">Strict copyright tracking: Editorial Generated, CC0, and Public Domain verified</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Registered Assets ({{ assets|length }})</h3>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Filename</th>
+                  <th>Type</th>
+                  <th>Resolution / Duration</th>
+                  <th>License Provenance</th>
+                  <th>Creator / Attribution</th>
+                  <th>Permissions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for a in assets %}
+                <tr>
+                  <td><strong>{{ a.filename }}</strong></td>
+                  <td><span class="badge badge-discovered">{{ a.asset_type }}</span></td>
+                  <td>{{ a.width }}x{{ a.height }}</td>
+                  <td><strong style="color: var(--color-blue);">{{ a.license }}</strong></td>
+                  <td>{{ a.creator }}</td>
+                  <td><span style="color: var(--color-success); font-weight: 600;">{{ a.permissions }}</span></td>
+                </tr>
+                {% else %}
+                <tr>
+                  <td colspan="6" style="text-align: center; padding: 32px; color: var(--text-muted);">
+                    Media assets are automatically cataloged during the video rendering cycle.
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- TAB 5: VIDEO PRODUCTION -->
+      <!-- ========================================================= -->
+      <section class="tab-panel" id="tab-production">
+        <div class="top-bar">
+          <div>
+            <h2 class="page-title">Video Production Engine</h2>
+            <p class="page-subtitle">Sequential FFmpeg rendering with Ken Burns motion, neural audio, and subtitles</p>
+          </div>
+          <div class="action-group">
+            <button class="btn btn-primary" onclick="renderBatchReels()">⚡ Start Sequential Batch (5 Reels)</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Production Jobs History</h3>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Job ID</th>
+                  <th>Title</th>
+                  <th>Status</th>
+                  <th>Render Time</th>
+                  <th>File Size</th>
+                  <th>Output Video</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for j in jobs %}
+                <tr>
+                  <td>#{{ j.id }}</td>
+                  <td><strong>{{ j.title }}</strong></td>
+                  <td><span class="badge badge-{{ j.status|lower }}">{{ j.status }}</span></td>
+                  <td>{{ j.render_time_seconds or 0 }}s</td>
+                  <td>{{ j.file_size_mb or 0 }} MB</td>
+                  <td>
+                    {% if j.output_video_path %}
+                    <span style="color: var(--color-success); font-weight: 600;">✓ Rendered</span>
+                    {% else %}
+                    <span style="color: var(--text-muted);">Pending</span>
+                    {% endif %}
+                  </td>
+                </tr>
+                {% else %}
+                <tr>
+                  <td colspan="6" style="text-align: center; padding: 32px; color: var(--text-muted);">
+                    No production jobs run yet.
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- TAB 6: RENDERED REELS -->
+      <!-- ========================================================= -->
+      <section class="tab-panel" id="tab-reels">
+        <div class="top-bar">
+          <div>
+            <h2 class="page-title">Rendered Instagram Reels Gallery</h2>
+            <p class="page-subtitle">1080x1920 30FPS H.264 verified outputs ready for publishing</p>
+          </div>
+        </div>
+
+        <div class="items-grid">
+          {% for j in jobs if j.status == 'COMPLETED' and j.output_video_path %}
+          <div class="item-card">
+            <div class="video-player-container">
+              <video controls preload="metadata">
+                <source src="/output/reels/{{ j.output_video_path.split('\\')[-1].split('/')[-1] }}" type="video/mp4">
+              </video>
+            </div>
+            <h3 class="item-title" style="font-size: 15px;">{{ j.title }}</h3>
+            <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">
+              <span>Duration: {{ j.render_time_seconds }}s render</span> • <span>Size: {{ j.file_size_mb }} MB</span>
+            </div>
+            <div class="item-footer">
+              <span class="badge badge-completed">1080x1920 H.264</span>
+              <a href="/output/reels/{{ j.output_video_path.split('\\')[-1].split('/')[-1] }}" download class="btn btn-secondary btn-sm">Download MP4</a>
+            </div>
+          </div>
+          {% else %}
+          <div style="grid-column: 1 / -1; text-align: center; padding: 48px; background: #FFF; border-radius: var(--radius-md); border: 1px solid var(--border-color); color: var(--text-muted);">
+            No completed video reels rendered yet. Use "Render Reel" on an approved script.
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- TAB 7: PUBLISHING QUEUE -->
+      <!-- ========================================================= -->
+      <section class="tab-panel" id="tab-publishing">
+        <div class="top-bar">
+          <div>
+            <h2 class="page-title">Weekly Publishing Queue & Packages</h2>
+            <p class="page-subtitle">Human-verified publishing schedule with export packages</p>
+          </div>
+          <div class="action-group">
+            <button class="btn btn-secondary" onclick="assignWeeklySlots()">📅 Auto-Assign Weekly Slots</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Scheduled Content Pipeline ({{ queue|length }})</h3>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Scheduled Date</th>
+                  <th>Title</th>
+                  <th>Status</th>
+                  <th>Captions & Hashtags</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for item in queue %}
+                <tr>
+                  <td><strong>{{ item.scheduled_for or 'Unassigned' }}</strong></td>
+                  <td>{{ item.title }}</td>
+                  <td><span class="badge badge-{{ item.status|lower }}">{{ item.status }}</span></td>
+                  <td style="max-width: 320px; font-size: 12px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                    {{ item.caption }}
+                  </td>
+                  <td>
+                    <div style="display: flex; gap: 6px;">
+                      <button class="btn btn-secondary btn-sm" onclick="exportPublishPackage({{ item.id }})">Export Bundle</button>
+                      {% if item.status != 'PUBLISHED' %}
+                      <button class="btn btn-sm" style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); border: none; color: #fff;" onclick="publishToInstagramDirect({{ item.id }}, '{{ item.title }}')">Publish IG</button>
+                      <button class="btn btn-primary btn-sm" onclick="markAsPublished({{ item.id }})">Mark Published</button>
+                      {% endif %}
+                    </div>
+                  </td>
+                </tr>
+                {% else %}
+                <tr>
+                  <td colspan="5" style="text-align: center; padding: 32px; color: var(--text-muted);">
+                    Publishing queue is empty. Rendered reels are automatically enrolled here.
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- TAB 8: ANALYTICS -->
+      <!-- ========================================================= -->
+      <section class="tab-panel" id="tab-analytics">
+        <div class="top-bar">
+          <div>
+            <h2 class="page-title">Performance Intelligence & Reports</h2>
+            <p class="page-subtitle">Track authentic audience engagement, watch time, and generate weekly editorial digests</p>
+          </div>
+          <div class="action-group">
+            <button class="btn btn-secondary" onclick="openModal('modal-add-analytics')">+ Log Reel Metrics</button>
+            <button class="btn btn-primary" onclick="generateWeeklyReport()">📄 Generate Weekly Report</button>
+          </div>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-label">Total Views</div>
+            <div class="kpi-value">{{ analytics.total_views }}</div>
+          </div>
+          <div class="kpi-card cyan">
+            <div class="kpi-label">Total Saves</div>
+            <div class="kpi-value">{{ analytics.total_saves }}</div>
+            <div class="kpi-sub">Save Rate: {{ analytics.avg_save_rate }}%</div>
+          </div>
+          <div class="kpi-card violet">
+            <div class="kpi-label">Total Shares</div>
+            <div class="kpi-value">{{ analytics.total_shares }}</div>
+          </div>
+          <div class="kpi-card success">
+            <div class="kpi-label">Avg Engagement</div>
+            <div class="kpi-value">{{ analytics.avg_engagement_rate }}%</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Tracked Reels Performance</h3>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Reel Title</th>
+                  <th>Views</th>
+                  <th>Likes</th>
+                  <th>Comments</th>
+                  <th>Shares</th>
+                  <th>Saves</th>
+                  <th>Engagement Rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for r in analytics.records %}
+                <tr>
+                  <td><strong>{{ r.reel_title }}</strong></td>
+                  <td>{{ r.views }}</td>
+                  <td>{{ r.likes }}</td>
+                  <td>{{ r.comments }}</td>
+                  <td>{{ r.shares }}</td>
+                  <td><strong style="color: var(--color-cyan);">{{ r.saves }}</strong></td>
+                  <td>{{ r.engagement_rate }}%</td>
+                </tr>
+                {% else %}
+                <tr>
+                  <td colspan="7" style="text-align: center; padding: 32px; color: var(--text-muted);">
+                    No metrics recorded yet. Click "Log Reel Metrics" once published on Instagram.
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- TAB 9: SETTINGS -->
+      <!-- ========================================================= -->
+      <section class="tab-panel" id="tab-settings">
+        <div class="top-bar">
+          <div>
+            <h2 class="page-title">Engine Configuration & Health</h2>
+            <p class="page-subtitle">Zero-budget architecture parameters and environment diagnostics</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header"><h3 class="card-title">Zero-Budget System Audit</h3></div>
+          <div class="card-body">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+              <div style="background: #F8FAFC; padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                <div style="font-weight: 700; color: var(--color-blue); margin-bottom: 6px;">RAM & Hardware Protection</div>
+                <div style="font-size: 13px; color: var(--text-muted);">Strict sequential rendering (1 render at a time). No large local LLMs or video diffusion loaded. 8 GB memory constraint respected.</div>
+              </div>
+              <div style="background: #F8FAFC; padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                <div style="font-weight: 700; color: var(--color-cyan); margin-bottom: 6px;">Dual Voice Synthesis</div>
+                <div style="font-size: 13px; color: var(--text-muted);">Free neural edge-tts voice synthesis with offline Windows SAPI pyttsx3 fallback. $0 budget required.</div>
+              </div>
+              <div style="background: #F8FAFC; padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                <div style="font-weight: 700; color: var(--color-violet); margin-bottom: 6px;">Instagram Compliance</div>
+                <div style="font-size: 13px; color: var(--text-muted);">100% human-verified publishing export packages. Zero unauthorized botting or credential scraping.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal: Add Custom Article -->
+  <div class="modal-overlay" id="modal-add-article">
+    <div class="modal-content">
+      <h3 style="margin-bottom: 16px;">Add Custom Technology Story</h3>
+      <form onsubmit="submitCustomArticle(event)">
+        <div class="form-group">
+          <label class="form-label">Story Headline</label>
+          <input type="text" id="art-title" class="form-control" required placeholder="e.g. OpenAI Unveils Next-Gen Inference Architecture">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Primary Source URL</label>
+          <input type="url" id="art-url" class="form-control" required placeholder="https://...">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Publisher / Lab</label>
+          <input type="text" id="art-publisher" class="form-control" placeholder="e.g. arXiv / MIT Tech Review">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Category</label>
+          <select id="art-category" class="form-control">
+            <option>Artificial Intelligence News</option>
+            <option>New AI Models & Releases</option>
+            <option>AI Tools & Workflows</option>
+            <option>Emerging Technologies</option>
+            <option>Cybersecurity & Threats</option>
+            <option>Robotics & Automation</option>
+            <option>Technology Experiments</option>
+            <option>AI Tutorials & Explainers</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Summary / Key Facts</label>
+          <textarea id="art-summary" class="form-control" placeholder="Brief summary of key technical takeaways..."></textarea>
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('modal-add-article')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Story</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Log Metrics -->
+  <div class="modal-overlay" id="modal-add-analytics">
+    <div class="modal-content">
+      <h3 style="margin-bottom: 16px;">Log Reel Performance Metrics</h3>
+      <form id="form-analytics" onsubmit="event.preventDefault(); submitAnalytics();">
+        <div class="form-group">
+          <label class="form-label">Reel Title</label>
+          <input type="text" id="m-title" class="form-control" required placeholder="Reel Title">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label class="form-label">Views</label>
+            <input type="number" id="m-views" class="form-control" value="0">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Reach</label>
+            <input type="number" id="m-reach" class="form-control" value="0">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Likes</label>
+            <input type="number" id="m-likes" class="form-control" value="0">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Comments</label>
+            <input type="number" id="m-comments" class="form-control" value="0">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Shares</label>
+            <input type="number" id="m-shares" class="form-control" value="0">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Saves</label>
+            <input type="number" id="m-saves" class="form-control" value="0">
+          </div>
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('modal-add-analytics')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Record Metrics</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <script>
+    async function submitAnalytics() {
+      const payload = {
+        reel_title: document.getElementById('m-title').value,
+        views: parseInt(document.getElementById('m-views').value) || 0,
+        reach: parseInt(document.getElementById('m-reach').value) || 0,
+        likes: parseInt(document.getElementById('m-likes').value) || 0,
+        comments: parseInt(document.getElementById('m-comments').value) || 0,
+        shares: parseInt(document.getElementById('m-shares').value) || 0,
+        saves: parseInt(document.getElementById('m-saves').value) || 0
+      };
+      const res = await fetch('/api/analytics/record', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (res.ok) {
+        closeModal('modal-add-analytics');
+        window.location.reload();
+      }
+    }
+  </script>
+</body>
+</html>
+

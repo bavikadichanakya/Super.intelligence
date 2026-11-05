@@ -1,0 +1,5 @@
+# SUPER.INTELLIGENCEEE V2 — Optional Enhancements
+# Non-blocking, only install if local hardware permits
+
+faster-whisper>=1.0.0
+

@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% block title %}System Overview — SUPER.INTELLIGENCEEE{% endblock %}
+
+{% block content %}
+<div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:2rem;">
+  <div>
+    <h1 style="font-size:2rem; font-weight:800; letter-spacing:-1px;">Command & Control Overview</h1>
+    <p style="color:var(--text-muted); margin-top:4px;">Autonomous local-first Instagram Reel production pipeline.</p>
+  </div>
+  <div style="display:flex; gap:12px;">
+    <button onclick="triggerDiscovery()" class="btn btn-secondary">⚡ Run Discovery</button>
+    <a href="/production" class="btn">▶ Produce Next Reel</a>
+  </div>
+</div>
+
+<!-- Key Metric Cards -->
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:1.5rem; margin-bottom:2rem;">
+  <div class="card">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <span style="color:var(--text-muted); font-size:0.85rem; font-weight:600;">WEEKLY REEL TARGET</span>
+      <span class="badge badge-cyan">TARGET: {{ weekly_target }}/WEEK</span>
+    </div>
+    <div style="font-size:2.5rem; font-weight:900; color:var(--cyan); margin:0.5rem 0;">{{ approved_count }} / {{ weekly_target }}</div>
+    <div style="background:#1e263d; height:8px; border-radius:4px; overflow:hidden;">
+      <div style="background:var(--cyan); height:100%; width:{{ (approved_count / weekly_target * 100) if weekly_target > 0 else 0 }}%;"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <span style="color:var(--text-muted); font-size:0.85rem; font-weight:600;">PENDING HUMAN REVIEW</span>
+      <span class="badge badge-gold">ACTION REQUIRED</span>
+    </div>
+    <div style="font-size:2.5rem; font-weight:900; color:var(--gold); margin:0.5rem 0;">{{ pending_review_count }}</div>
+    <p style="color:var(--text-muted); font-size:0.85rem;"><a href="/review" style="color:var(--gold); text-decoration:none;">Review completed renders &rarr;</a></p>
+  </div>
+
+  <div class="card">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <span style="color:var(--text-muted); font-size:0.85rem; font-weight:600;">DISCOVERED TOPICS</span>
+      <span class="badge badge-purple">LIVE RSS</span>
+    </div>
+    <div style="font-size:2.5rem; font-weight:900; color:var(--purple); margin:0.5rem 0;">{{ total_topics }}</div>
+    <p style="color:var(--text-muted); font-size:0.85rem;"><a href="/research" style="color:var(--purple); text-decoration:none;">Inspect ranked tech stories &rarr;</a></p>
+  </div>
+
+  <div class="card">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <span style="color:var(--text-muted); font-size:0.85rem; font-weight:600;">SCRIPTS READY</span>
+      <span class="badge badge-green">FACT CHECKED</span>
+    </div>
+    <div style="font-size:2.5rem; font-weight:900; color:var(--green); margin:0.5rem 0;">{{ total_scripts }}</div>
+    <p style="color:var(--text-muted); font-size:0.85rem;"><a href="/scripts" style="color:var(--green); text-decoration:none;">Manage 7-scene scripts &rarr;</a></p>
+  </div>
+</div>
+
+<!-- Architecture & Diagnostics Strip -->
+<div class="card" style="margin-bottom:2rem;">
+  <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:1rem;">Environment & Resource Diagnostics (8 GB RAM Safe Mode)</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem;">
+    <div>
+      <div style="color:var(--text-muted); font-size:0.75rem;">HOST ENVIRONMENT</div>
+      <div style="font-weight:600;">Windows 11 64-bit</div>
+    </div>
+    <div>
+      <div style="color:var(--text-muted); font-size:0.75rem;">RUNTIME PYTHON</div>
+      <div style="font-weight:600; color:var(--cyan);">Python 3.11.15 (.venv)</div>
+    </div>
+    <div>
+      <div style="color:var(--text-muted); font-size:0.75rem;">OFFLINE TTS ENGINE</div>
+      <div style="font-weight:600; color:var(--green);">Piper TTS (en_US-lessac)</div>
+    </div>
+    <div>
+      <div style="color:var(--text-muted); font-size:0.75rem;">RENDER ENGINE</div>
+      <div style="font-weight:600; color:var(--purple);">HyperFrames CLI (v0.9.12)</div>
+    </div>
+    <div>
+      <div style="color:var(--text-muted); font-size:0.75rem;">MEDIA PROCESSOR</div>
+      <div style="font-weight:600;">FFmpeg 9.0.1 (libx264/aac)</div>
+    </div>
+  </div>
+</div>
+
+<!-- Recent Production Jobs -->
+<div class="card">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+    <h2 style="font-size:1.15rem; font-weight:700;">Recent Production Runs</h2>
+    <a href="/production" style="color:var(--cyan); font-size:0.85rem; text-decoration:none;">View all runs &rarr;</a>
+  </div>
+  {% if recent_jobs %}
+  <table style="width:100%; border-collapse:collapse; text-align:left;">
+    <thead>
+      <tr style="border-bottom:1px solid var(--border-color); color:var(--text-muted); font-size:0.85rem;">
+        <th style="padding:10px;">ID</th>
+        <th style="padding:10px;">STATUS</th>
+        <th style="padding:10px;">OUTPUT PATH</th>
+        <th style="padding:10px;">UPDATED AT</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for j in recent_jobs %}
+      <tr style="border-bottom:1px solid #141a29; font-size:0.9rem;">
+        <td style="padding:12px 10px; font-weight:700;">#{{ j.id }}</td>
+        <td style="padding:12px 10px;">
+          {% if j.status == 'APPROVED' %}
+            <span class="badge badge-green">APPROVED</span>
+          {% elif j.status == 'NEEDS_REVIEW' %}
+            <span class="badge badge-gold">NEEDS REVIEW</span>
+          {% elif j.status == 'FAILED' %}
+            <span class="badge badge-red">FAILED</span>
+          {% else %}
+            <span class="badge badge-cyan">{{ j.status }}</span>
+          {% endif %}
+        </td>
+        <td style="padding:12px 10px; font-family:monospace; color:var(--text-muted); font-size:0.8rem;">
+          {{ j.output_video_path or 'In preparation...' }}
+        </td>
+        <td style="padding:12px 10px; color:var(--text-muted);">{{ (j.updated_at or j.created_at or 'N/A')[:19] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p style="color:var(--text-muted); padding:1rem 0;">No production runs recorded yet. Start by generating a reel.</p>
+  {% endif %}
+</div>
+
+<script>
+async function triggerDiscovery() {
+  const btn = event.target;
+  btn.disabled = true;
+  btn.innerText = "Discovering...";
+  try {
+    const res = await fetch("/api/research/discover", { method: "POST" });
+    const data = await res.json();
+    alert(data.message || "Discovery complete.");
+    window.location.reload();
+  } catch (e) {
+    alert("Discovery failed: " + e);
+  } finally {
+    btn.disabled = false;
+    btn.innerText = "⚡ Run Discovery";
+  }
+}
+</script>
+{% endblock %}
+

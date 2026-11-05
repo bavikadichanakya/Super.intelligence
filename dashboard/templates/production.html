@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}Production & Rendering — SUPER.INTELLIGENCEEE{% endblock %}
+
+{% block content %}
+<div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:2rem;">
+  <div>
+    <h1 style="font-size:2rem; font-weight:800; letter-spacing:-1px;">Production & Rendering Engine</h1>
+    <p style="color:var(--text-muted); margin-top:4px;">Sequential job queue executing Piper TTS synthesis, HyperFrames rendering, and FFmpeg muxing.</p>
+  </div>
+  <form method="POST" action="/api/production/produce" style="display:inline;">
+    <button type="submit" class="btn">▶ Run New Production Job</button>
+  </form>
+</div>
+
+<!-- Architecture Pipeline Card -->
+<div class="card" style="margin-bottom:2rem;">
+  <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:1rem;">Production Pipeline Flow</h2>
+  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px; font-size:0.85rem; font-weight:600;">
+    <span class="badge badge-purple">1. TOPIC</span> &rarr;
+    <span class="badge badge-purple">2. 7-SCENE SCRIPT</span> &rarr;
+    <span class="badge badge-purple">3. FACT CHECK</span> &rarr;
+    <span class="badge badge-green">4. PIPER TTS</span> &rarr;
+    <span class="badge badge-cyan">5. -16 LUFS MIX</span> &rarr;
+    <span class="badge badge-cyan">6. HYPERFRAMES COMP</span> &rarr;
+    <span class="badge badge-gold">7. FFPROBE QA</span> &rarr;
+    <span class="badge badge-green">8. HUMAN REVIEW</span>
+  </div>
+</div>
+
+<!-- Jobs Table -->
+<div class="card">
+  <h2 style="font-size:1.15rem; font-weight:700; margin-bottom:1rem;">Production Runs History</h2>
+  {% if jobs %}
+  <table style="width:100%; border-collapse:collapse; text-align:left;">
+    <thead>
+      <tr style="border-bottom:1px solid var(--border-color); color:var(--text-muted); font-size:0.85rem;">
+        <th style="padding:10px;">JOB ID</th>
+        <th style="padding:10px;">TOPIC</th>
+        <th style="padding:10px;">STATUS</th>
+        <th style="padding:10px;">OUTPUT FILE</th>
+        <th style="padding:10px;">UPDATED AT</th>
+        <th style="padding:10px;">ACTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for j in jobs %}
+      <tr style="border-bottom:1px solid #141a29; font-size:0.9rem;">
+        <td style="padding:12px 10px; font-weight:700;">#{{ j.id }}</td>
+        <td style="padding:12px 10px; max-width:350px;">
+          <div style="font-weight:600;">{{ j.topic_title or 'Autonomous Intel Update' }}</div>
+        </td>
+        <td style="padding:12px 10px;">
+          {% if j.status == 'APPROVED' %}
+            <span class="badge badge-green">APPROVED</span>
+          {% elif j.status == 'NEEDS_REVIEW' %}
+            <span class="badge badge-gold">NEEDS REVIEW</span>
+          {% elif j.status == 'FAILED' %}
+            <span class="badge badge-red">FAILED</span>
+          {% else %}
+            <span class="badge badge-cyan">{{ j.status }}</span>
+          {% endif %}
+        </td>
+        <td style="padding:12px 10px; font-family:monospace; color:var(--text-muted); font-size:0.8rem;">
+          {{ j.output_video_path or 'In progress...' }}
+        </td>
+        <td style="padding:12px 10px; color:var(--text-muted); font-size:0.8rem;">{{ (j.updated_at or j.created_at or 'N/A')[:19] }}</td>
+        <td style="padding:12px 10px;">
+          {% if j.status == 'NEEDS_REVIEW' %}
+            <a href="/review" class="btn" style="padding:4px 12px; font-size:0.8rem;">Review Reel</a>
+          {% elif j.status == 'APPROVED' %}
+            <span style="color:var(--green); font-size:0.85rem; font-weight:600;">✓ Ready</span>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p style="color:var(--text-muted); padding:1rem 0;">No production runs recorded yet.</p>
+  {% endif %}
+</div>
+{% endblock %}
+

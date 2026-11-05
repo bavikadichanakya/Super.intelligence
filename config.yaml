@@ -1,0 +1,113 @@
+project:
+  name: "SUPER.INTELLIGENCEEE"
+  root: "A:\\SUPER.INTELLIGENCEEE"
+  handle: "@super.intelligenceee"
+  tagline: "Autonomous Technology & Artificial Intelligence Media Engine"
+  weekly_target: 5
+
+niche:
+  categories:
+    - "Artificial Intelligence News"
+    - "New AI Models & Releases"
+    - "AI Tools & Workflows"
+    - "Emerging Technologies"
+    - "Cybersecurity & Threats"
+    - "Robotics & Automation"
+    - "Technology Experiments"
+    - "AI Tutorials & Explainers"
+
+research:
+  timeout_seconds: 12.0
+  max_articles_per_feed: 15
+  feeds:
+    - name: "TechCrunch AI"
+      url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+      publisher: "TechCrunch"
+      category: "Artificial Intelligence News"
+      weight: 1.2
+    - name: "Ars Technica Tech"
+      url: "https://arstechnica.com/tag/ai/feed/"
+      publisher: "Ars Technica"
+      category: "Artificial Intelligence News"
+      weight: 1.1
+    - name: "The Verge AI"
+      url: "https://www.theverge.com/rss/index.xml"
+      publisher: "The Verge"
+      category: "Emerging Technologies"
+      weight: 1.1
+    - name: "MIT Technology Review"
+      url: "https://www.technologyreview.com/feed/"
+      publisher: "MIT Technology Review"
+      category: "Emerging Technologies"
+      weight: 1.3
+    - name: "VentureBeat AI"
+      url: "https://venturebeat.com/category/ai/feed/"
+      publisher: "VentureBeat"
+      category: "New AI Models & Releases"
+      weight: 1.0
+    - name: "ArXiv Computer Science AI"
+      url: "https://export.arxiv.org/rss/cs.AI"
+      publisher: "arXiv.org"
+      category: "Technology Experiments"
+      weight: 0.9
+
+content:
+  target_duration_seconds: 40.0
+  min_duration_seconds: 30.0
+  max_duration_seconds: 60.0
+  target_word_count_min: 70
+  target_word_count_max: 120
+  scene_count: 7
+  require_human_approval: true
+
+video:
+  width: 1080
+  height: 1920
+  aspect_ratio: "9:16"
+  fps: 30
+  codec: "libx264"
+  audio_codec: "aac"
+  audio_bitrate: "192k"
+  pixel_format: "yuv420p"
+  quality_preset: "veryfast"
+  crf: 22
+
+narration:
+  primary_engine: "piper"
+  fallback_engine: "pyttsx3"
+  piper_voice: "en_US-lessac-medium"
+  piper_voice_dir: "assets/voices"
+  pyttsx3_rate: 180
+  pyttsx3_volume: 1.0
+  normalize_lufs: -16.0
+
+captions:
+  burn_in: true
+  font_size: 18
+  safe_margin_v: 260
+  max_chars_per_line: 32
+
+audio:
+  background_music_enabled: false
+  background_music_volume: 0.08
+  music_dir: "assets/music"
+
+system:
+  max_workers: 1
+  ram_limit_gb: 8.0
+  cleanup_temp: true
+
+publishing:
+  weekly_target: 5
+  instagram:
+    redirect_uri: "http://127.0.0.1:5000/oauth/instagram/callback"
+
+paths:
+  data_dir: "data"
+  database: "data/super_intelligence.db"
+  renderer_dir: "renderer"
+  output_drafts: "output/drafts"
+  output_approved: "output/approved"
+  output_failed: "output/failed"
+  logs_dir: "logs"
+

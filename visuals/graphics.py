@@ -295,9 +295,14 @@ class EditorialGraphicsGenerator:
         output_path: Path | str,
     ) -> Path:
         """Generates the appropriate styled card based on scene data."""
-        scene_type = scene.get("scene_type", "tech_b_roll").lower()
-        title = scene.get("on_screen_text", scene.get("narration_text", "AI Update"))
-        text = scene.get("narration_text", "")
+        scene_type = (
+            scene.get("scene_type")
+            or scene.get("visual_type")
+            or scene.get("visual_archetype")
+            or "tech_b_roll"
+        ).lower()
+        title = scene.get("on_screen_text") or scene.get("headline") or scene.get("narration_text") or scene.get("narration") or "AI Update"
+        text = scene.get("narration_text") or scene.get("narration") or ""
 
         # Route by scene type
         if scene_index == 1 or "hook" in scene_type:

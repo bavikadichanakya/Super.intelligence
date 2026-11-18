@@ -10,6 +10,10 @@ import argparse
 import logging
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Ensure environment variables are loaded immediately
+load_dotenv(Path(__file__).resolve().parent / ".env")
 
 import uvicorn
 from fastapi import FastAPI

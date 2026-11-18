@@ -75,7 +75,8 @@ video:
 narration:
   primary_engine: "piper"
   fallback_engine: "pyttsx3"
-  piper_voice: "en_US-lessac-medium"
+  piper_voice: "jarvis-high"
+  piper_voice_gender: "male"
   piper_voice_dir: "assets/voices"
   pyttsx3_rate: 180
   pyttsx3_volume: 1.0
@@ -100,6 +101,7 @@ system:
 publishing:
   weekly_target: 5
   instagram:
+    api_version: "v21.0"  # Supported: v21.0 (verified), v22.0 (verified migration target)
     redirect_uri: "http://127.0.0.1:5000/oauth/instagram/callback"
 
 paths:

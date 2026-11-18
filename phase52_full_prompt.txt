@@ -1,0 +1,583 @@
+<USER_REQUEST>
+# PHASE 5.2 — REFERENCE-FAITHFUL VISUAL RECONSTRUCTION & AUTONOMOUS EXPLAINER ENGINE
+
+**Project:** SUPER.INTELLIGENCEEE  
+**Workspace:** `A:\SUPER.INTELLIGENCEEE`  
+**Reference:** `This is what i want.mp4` (inside the project folder)  
+**Regression video:** Phase 5.1 Browser-Use production  
+**Hardware:** Windows 11, Intel Core i5-1135G7, 8 GB RAM, Intel Iris Xe  
+**Mandatory budget:** ₹0  
+**Rendering restriction:** No Blender. No manual scene authoring.  
+**Voice:** Kokoro-82M `am_liam`, General American English.  
+**Publishing:** Human approval mandatory. Kill switch must remain armed.
+
+---
+
+# 0. NON-NEGOTIABLE OBJECTIVE
+
+The previous phases have repeatedly produced videos that look like animated dashboards, browser mockups, cards, code panels and slideshows.
+
+That is not the target.
+
+I want an autonomous system capable of producing genuine, visually rich technical explainer videos that follow the visual quality and storytelling principles of the reference video.
+
+Do not interpret this task as:
+
+- Adding more animations to the existing renderer.
+- Changing the colour palette.
+- Adding more transitions.
+- Creating additional card templates.
+- Increasing the number of scenes.
+- Randomly selecting visual compositions.
+- Repeating the same seven-scene structure with different text.
+- Generating a contact sheet and declaring the work complete.
+
+**The objective is to change how the system thinks visually.**
+
+The system must understand what it is explaining and invent the appropriate visual explanation for each topic.
+
+It must produce different visual sequences for different subjects.
+
+A GPU architecture video, a cybersecurity video, an AI research video, a robotics video and a programming-language video must not all look like the same template with different labels.
+
+# 1. FIRST: FORENSICALLY STUDY THE REFERENCE VIDEO
+
+Before modifying production code, locate and inspect:
+
+`This is what i want.mp4`
+
+Do not assume its location. Search the project directory and identify the exact file.
+
+If it cannot be found, stop and report the missing reference. Do not substitute Phase 5.1 or invent a reference style.
+
+## 1.1 Reference analysis
+
+Use FFmpeg/ffprobe and frame extraction to inspect the reference.
+
+Extract:
+
+- Metadata and actual resolution.
+- Frame rate and duration.
+- Scene boundaries.
+- Approximately 2–3 representative frames per second.
+- Detailed frame sequences around important transitions.
+- Audio and narration timing.
+- Typography and caption positioning.
+- Camera movement.
+- Object movement.
+- Visual composition.
+- Motion intensity.
+- Transitions and pacing.
+
+Build a visual reference report containing:
+
+| Property | What to measure |
+|---|---|
+| Composition | Full-screen, foreground, background, depth |
+| Typography | Font hierarchy, size, placement, animation |
+| Motion | Translation, scale, rotation, deformation |
+| Camera | Pan, zoom, tracking, parallax |
+| Graphics | Diagrams, objects, illustrations, interfaces |
+| Transitions | How one explanation becomes another |
+| Pacing | How frequently the visual state meaningfully changes |
+| Narration | Relationship between spoken explanation and visual events |
+| Scene design | How each scene communicates a different idea |
+
+Create a reference frame gallery.
+
+Do not merely write that the reference looks cinematic. Convert its visual characteristics into measurable implementation requirements.
+
+## 1.2 Build a reusable visual grammar
+
+Extract the reference's reusable storytelling principles without copying its actual subject, text, assets or exact scene sequence.
+
+Separate:
+
+1. Visual language.
+2. Narrative structure.
+3. Animation principles.
+4. Typography system.
+5. Camera language.
+6. Transition language.
+7. Sound and narration synchronization.
+
+The reference is a style and storytelling benchmark, not a content template.
+
+# 2. FORENSIC AUDIT OF PHASE 5.1
+
+Inspect the actual uploaded Phase 5.1 video and its source code.
+
+The previous output had the following problems:
+
+- Repeated browser windows.
+- Repeated HTML warning panels.
+- Repeated benchmark charts.
+- Small visual content surrounded by empty space.
+- Captions that compete with the main composition.
+- Mock UI used where a technical explanation was needed.
+- Insufficient visual progression.
+- Low output resolution and bitrate.
+
+The uploaded Phase 5.1 file is 576 × 1024 at 30 FPS, approximately 121 kbps video bitrate.
+
+Do not repeat these mistakes.
+
+Identify the exact source functions responsible for:
+
+- Scene composition.
+- Scene selection.
+- Animation scheduling.
+- Object positioning.
+- Camera movement.
+- Text rendering.
+- Caption placement.
+- Visual transitions.
+- Final encoding.
+
+Trace the complete production path. Do not make assumptions based on filenames.
+
+Create:
+
+`reports/PHASE52_REFERENCE_FORENSIC_AUDIT.md`
+
+# 3. NEW ARCHITECTURE: EXPLANATION-FIRST VISUAL INTELLIGENCE
+
+Create a new visual planning layer.
+
+Suggested architecture:
+
+`creative/visual_intelligence/`
+
+Modules may include:
+
+- `concept_decomposer.py`
+- `visual_metaphor_engine.py`
+- `visual_story_planner.py`
+- `visual_grammar.py`
+- `composition_reasoner.py`
+- `motion_director.py`
+- `camera_director.py`
+- `visual_continuity.py`
+- `visual_reference_evaluator.py`
+
+Adapt the names to the existing architecture rather than creating duplicate systems.
+
+## 3.1 Concept decomposition
+
+For every researched topic, identify:
+
+- The main concept.
+- The underlying mechanism.
+- The problem it solves.
+- The components involved.
+- How those components interact.
+- What changes over time.
+- The important cause-and-effect relationships.
+- The evidence that supports the explanation.
+
+Break the topic into visualizable concepts.
+
+Do not create scenes by splitting a paragraph into arbitrary chunks.
+
+## 3.2 Visual metaphor generation
+
+For each concept, generate several possible visual explanations.
+
+Examples of visual reasoning:
+
+- A GPU memory bottleneck may be explained through a visualized data-transfer pipeline and memory hierarchy.
+- A neural network may be explained through connected computational layers and flowing activations.
+- A cybersecurity vulnerability may be explained through a controlled architectural attack-path diagram.
+- A distributed agent system may be explained through interacting agents and message flows.
+- A database index may be explained through a visual search journey.
+
+These are examples of reasoning, not templates to reuse blindly.
+
+Choose a metaphor only if it accurately represents the underlying mechanism.
+
+Never sacrifice technical accuracy for visual spectacle.
+
+## 3.3 Storyboard generation
+
+Each scene must specify:
+
+- Concept being explained.
+- Narration segment.
+- Primary visual object.
+- Supporting objects.
+- Spatial relationships.
+- Initial visual state.
+- Intermediate animation states.
+- Final visual state.
+- Camera behaviour.
+- Motion choreography.
+- Transition into the next scene.
+- Evidence and asset references.
+
+The storyboard must be dynamically generated from the researched topic.
+
+There must be no sequence-number-based composition routing.
+
+Do not hardcode topic names, phrases or specific scene layouts.
+
+# 4. VISUAL ENGINE: REAL EXPLANATORY GRAPHICS
+
+Build a rendering system that can create sophisticated motion graphics on the available hardware.
+
+Use existing engines where useful. Do not clone or install more frameworks simply to increase the dependency count.
+
+Preferred implementation:
+
+- Native Motion Engine for procedural 2D animation.
+- Manim for mathematical and scientific visualizations.
+- Three.js for suitable procedural 3D visualizations.
+- FFmpeg for compositing, audio and final encoding.
+- Existing browser automation only when an authentic browser demonstration is useful.
+
+All engines must operate sequentially under the resource guard.
+
+## 4.1 Required visual capabilities
+
+Implement reusable primitives for:
+
+- Vector objects.
+- Complex paths.
+- Connected nodes and edges.
+- Flowing particles.
+- Animated curves.
+- Graphs and coordinate systems.
+- Physical object illustrations.
+- Layered technical diagrams.
+- Procedural 3D objects.
+- Rotating and transforming objects.
+- Camera tracking.
+- Zoom and dolly movements.
+- Parallax.
+- Depth and lighting.
+- Animated typography.
+- Masks and reveals.
+- Morphing between related diagrams.
+- Technical annotations.
+- Visual cause-and-effect demonstrations.
+
+These primitives must be composed into topic-specific scenes.
+
+**A visual explanation is not a collection of decorative objects. Every movement must communicate something.**
+
+## 4.2 Avoid the dashboard anti-pattern
+
+Do not use these as the default visual composition:
+
+- Three-column dashboard.
+- Floating rectangular cards.
+- Repeated browser panels.
+- Repeated code-editor panels.
+- Static title plus subtitle.
+- Large empty background with a small centered UI.
+- Repeated telemetry decorations.
+- Generic glowing borders.
+- Repeated progress bars.
+- Repeated benchmark cards.
+
+A real browser demonstration is acceptable when the topic genuinely concerns browser behaviour.
+
+A real code editor is acceptable when the code itself is important.
+
+Neither should become a substitute for explaining the underlying concept.
+
+## 4.3 Full-screen composition
+
+Target:
+
+- 1080 × 1920.
+- 30 FPS.
+- 9:16.
+- H.264 High Profile.
+- AAC audio.
+
+Use full-screen visual compositions with appropriate negative space.
+
+Objects should have sufficient scale and detail to remain understandable on a mobile screen.
+
+Text must never be clipped.
+
+The final output must not silently fall back to a low-resolution render.
+
+If the machine cannot sustain a particular render, use a documented lower-cost technique while preserving output resolution and visual clarity.
+
+# 5. VISUAL STORYTELLING QUALITY GATES
+
+Create a genuine visual acceptance system.
+
+Do not use a single diversity score to claim quality.
+
+Evaluate:
+
+1. Does each scene explain a distinct concept?
+2. Does the visual state change meaningfully over time?
+3. Is the subject large enough to understand?
+4. Is the movement relevant to the narration?
+5. Does the animation explain a relationship or mechanism?
+6. Is the visual composition appropriate for this particular topic?
+7. Does the next scene develop the previous idea?
+8. Does the video contain unnecessary repeated states?
+9. Are technical labels accurate and readable?
+10. Does the final video resemble the reference's visual quality principles?
+
+A scene is not meaningfully different merely because its background colour or text has changed.
+
+Create a scene similarity detector that compares visual structure, not just raw pixel differences.
+
+Create a temporal-change evaluator to detect scenes that remain visually static for too long.
+
+Use actual frame inspection, not only metadata.
+
+# 6. REAL-TIME TOPIC DISCOVERY AND WEB RESEARCH
+
+Preserve and strengthen the existing research architecture.
+
+The system must discover current topics from reliable public sources.
+
+Possible sources include:
+
+- Official research publications.
+- arXiv.
+- GitHub repositories and releases.
+- Official engineering blogs.
+- Official company announcements.
+- Security advisories.
+- Reputable technology publications.
+- Official product documentation.
+- Research institution websites.
+
+Use RSS, official APIs, public web pages and browser-based research where appropriate.
+
+Use Firecrawl or another extraction service only if it can be used within the ₹0 mandatory-cost constraint. Paid APIs must remain optional.
+
+Do not confuse a GitHub push date with a release date or a news publication date.
+
+For every candidate, record:
+
+- Topic.
+- Publication date.
+- Source URL.
+- Retrieval date.
+- Primary source.
+- Supporting sources.
+- Relevant claims.
+- Evidence.
+- Uncertainty.
+- Rights and licensing information for media.
+
+The system must distinguish new developments from old material that has merely been updated.
+
+## 6.1 Web image and media acquisition
+
+The system may retrieve relevant public web imagery, diagrams, screenshots, videos and official media when permitted.
+
+However:
+
+- Respect website terms and access restrictions.
+- Respect copyright and licensing conditions.
+- Do not bypass authentication, paywalls, CAPTCHAs or access controls.
+- Do not assume an image is free to reuse because it is publicly accessible.
+- Prefer official press assets, openly licensed images, public-domain assets and original procedural graphics.
+- Keep provenance metadata for every acquired asset.
+- Record creator, original URL, source, license, retrieval date, file hash and local path.
+- Do not fabricate asset provenance.
+- Do not use unrelated stock imagery as filler.
+
+When external imagery cannot legally or reliably be acquired, generate original explanatory graphics.
+
+# 7. NARRATION AND AUDIO
+
+Lock the voice to:
+
+`Kokoro-82M / am_liam / General American`
+
+Use the direct local Voicebox backend.
+
+Do not silently switch to Piper, SAPI, British RP or another Kokoro voice.
+
+If the requested voice fails, stop the production and report the error.
+
+Generate narration before final animation timing.
+
+Use actual audio duration and word-level or phrase-level timestamps wherever available.
+
+Synchronize:
+
+- Important words.
+- Visual reveals.
+- Diagram construction.
+- Object movement.
+- Camera movement.
+- Transitions.
+- Sound effects.
+
+Narration must explain the visual, not merely describe what is already visible.
+
+Avoid generic claims such as "revolutionary", "solves everything" or "the future is here".
+
+# 8. PHASE 5.1 CONTENT MUST NOT BECOME THE NEXT TEMPLATE
+
+Use Browser-Use only as a regression topic.
+
+The system must demonstrate that the new architecture can create a visually appropriate explanation for at least three unrelated topics.
+
+Select topics from current, source-verified research.
+
+The three test topics must belong to different technical categories.
+
+For example:
+
+- AI research or model architecture.
+- Cybersecurity or distributed systems.
+- Hardware, robotics or developer infrastructure.
+
+Do not use the same scene compositions across all three.
+
+For each topic, produce a different storyboard and a different visual sequence.
+
+# 9. END-TO-END PRODUCTION
+
+The final system must:
+
+1. Discover current candidate topics.
+2. Rank candidates.
+3. Research the selected topic.
+4. Verify factual claims.
+5. Acquire permitted visual assets.
+6. Build a topic-specific narrative.
+7. Generate a visual storyboard.
+8. Produce narration using the locked voice.
+9. Generate explanatory animation.
+10. Assemble scenes.
+11. Mix audio.
+12. Generate synchronized captions.
+13. Render the clean master.
+14. Render the captioned review master.
+15. Run technical and visual QA.
+16. Generate a contact sheet.
+17. Register the job in SQLite.
+18. Place the job in `AWAITING_HUMAN_APPROVAL`.
+
+No automatic public publishing.
+
+# 10. RESOURCE MANAGEMENT
+
+Hardware is limited to 8 GB RAM.
+
+Requirements:
+
+- Sequential rendering.
+- No concurrent heavyweight rendering engines.
+- Strict subprocess cleanup.
+- Memory preflight.
+- Temporary files on the configured A: scratch location.
+- No Blender.
+- No manual animation.
+- No unnecessary cloud dependency.
+- No mandatory paid API.
+- Preserve the existing production database and approval workflow.
+
+Measure actual resource consumption.
+
+Do not report theoretical memory figures as measured benchmarks.
+
+# 11. TESTING AND ACCEPTANCE
+
+Do not stop when code has been written.
+
+Do not stop when unit tests pass.
+
+Do not stop when one sample video renders.
+
+## Acceptance demonstration
+
+Produce three complete videos using three different, freshly researched technical topics.
+
+Each must:
+
+- Be 1080 × 1920 at 30 FPS.
+- Have clear narration.
+- Have synchronized animation.
+- Contain topic-specific visual explanations.
+- Have distinct scene compositions.
+- Use authentic and properly attributed assets where needed.
+- Have readable typography and captions.
+- Avoid repeated static states.
+- Have complete audio and video streams.
+- Have a clean master and captioned review master.
+
+Create 25-frame contact sheets for all three videos.
+
+Also create a reference-versus-output comparison report.
+
+## Mandatory human inspection
+
+Generate a review package containing:
+
+- Original reference contact sheet.
+- Three output contact sheets.
+- Scene-by-scene comparison.
+- Technical specifications.
+- Source and media provenance.
+- Test results.
+- Known limitations.
+- Resource benchmarks.
+
+Do not declare visual acceptance based solely on automated metrics.
+
+If the output is visibly unlike the reference, the phase is not complete.
+
+If one topic uses the same visual template as another without a justified reason, the phase is not complete.
+
+If a render silently falls back to a test pattern or generic card, the phase is not complete.
+
+If the output is technically valid but visually poor, the phase is not complete.
+
+# 12. REQUIRED DELIVERABLES
+
+Create:
+
+- `reports/PHASE52_REFERENCE_FORENSIC_AUDIT.md`
+- `reports/PHASE52_VISUAL_ARCHITECTURE.md`
+- `reports/PHASE52_IMPLEMENTATION_REPORT.md`
+- `reports/PHASE52_TOPIC_RESEARCH_REPORT.md`
+- `reports/PHASE52_VISUAL_QA_REPORT.md`
+- `reports/PHASE52_REFERENCE_COMPARISON.md`
+- `reports/PHASE52_RESOURCE_BENCHMARK.md`
+- `reports/PHASE52_FINAL_ACCEPTANCE.md`
+
+Keep all generated assets and manifests organized under the existing project structure.
+
+# 13. FINAL INSTRUCTIONS
+
+Do not optimize for the number of files created.
+
+Do not optimize for the number of animations.
+
+Do not optimize for a high automated visual diversity score.
+
+Optimize for the viewer understanding the subject and enjoying the explanation.
+
+First understand the reference. Then build the visual system. Then test it on different subjects.
+
+If a feature cannot be implemented or verified, report it honestly.
+
+**Do not mark this phase complete until three genuinely different, high-quality explainer videos have been rendered and inspected.**
+
+The publishing kill switch must remain armed throughout this entire phase.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-15T16:26:04+05:30.
+
+The user's current state is as follows:
+Other open documents:
+- a:\SUPER.INTELLIGENCEEE\core\orchestrator.py (LANGUAGE_UNSPECIFIED)
+- a:\SUPER.INTELLIGENCEEE\core\owner_config.py (LANGUAGE_UNSPECIFIED)
+- a:\SUPER.INTELLIGENCEEE\tests\test_governance_orchestration.py (LANGUAGE_UNSPECIFIED)
+- a:\SUPER.INTELLIGENCEEE\core\departments.py (LANGUAGE_UNSPECIFIED)
+- a:\SUPER.INTELLIGENCEEE\creative\tech_documentary\screen_demonstration\terminal_animator.py (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

@@ -141,7 +141,7 @@ class AgentReachConnector:
         data = self._run_reach(["youtube", "read", target])
         if data.get("ok") and data.get("items"):
             item = data["items"][0]
-            raw = item.get("raw", {})
+            raw = item.get("raw") or {}
             return {
                 "ok": True,
                 "title": item.get("title"),
@@ -175,7 +175,9 @@ class AgentReachConnector:
         results = []
         if data.get("ok") and data.get("items"):
             for item in data["items"]:
-                raw = item.get("raw", {})
+                if not isinstance(item, dict):
+                    continue
+                raw = item.get("raw") or {}
                 results.append({
                     "title": item.get("title"),
                     "url": item.get("url"),
@@ -194,6 +196,8 @@ class AgentReachConnector:
         results = []
         if data.get("ok") and data.get("items"):
             for item in data["items"]:
+                if not isinstance(item, dict):
+                    continue
                 results.append({
                     "title": item.get("title"),
                     "url": item.get("url"),

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #07090e;
+      }
+      #root {
+        width: 1080px;
+        height: 1920px;
+        position: relative;
+        background: radial-gradient(circle at 50% 40%, #111827 0%, #07090e 100%);
+      }
+      #three-canvas {
+        width: 1080px;
+        height: 1920px;
+        display: block;
+      }
+      .hud-title {
+        position: absolute;
+        top: 240px;
+        left: 80px;
+        right: 80px;
+        text-align: center;
+        color: #00e5ff;
+        font-family: sans-serif;
+        font-size: 38px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+      }
+      .hud-badge {
+        position: absolute;
+        bottom: 280px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+      }
+      .hud-badge span {
+        background: rgba(15, 23, 42, 0.9);
+        border: 1px solid #38bdf8;
+        color: #f8fafc;
+        padding: 10px 24px;
+        border-radius: 20px;
+        font-size: 24px;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"
+         data-composition-id="threejs_test"
+         data-start="0"
+         data-duration="3.00"
+         data-width="1080"
+         data-height="1920"
+         data-fps="30">
+      <canvas id="three-canvas" width="1080" height="1920"></canvas>
+      <div class="hud-title">3D ACCELERATOR CLUSTER</div>
+      <div class="hud-badge"><span>PROCEDURAL THREE.JS · NO BLENDER</span></div>
+    </div>
+
+    <script>
+      const canvas = document.getElementById("three-canvas");
+      const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+      renderer.setSize(1080, 1920);
+      renderer.setPixelRatio(1);
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(45, 1080 / 1920, 0.1, 100);
+      camera.position.set(0, 0, 7);
+
+      // 3D Objects: Central Wafer Core + Orbiting Nodes
+      const coreGeo = new THREE.TorusKnotGeometry(1.2, 0.35, 100, 16);
+      const coreMat = new THREE.MeshStandardMaterial({
+        color: 0x00e5ff,
+        metalness: 0.8,
+        roughness: 0.2,
+        wireframe: true
+      });
+      const coreMesh = new THREE.Mesh(coreGeo, coreMat);
+      scene.add(coreMesh);
+
+      // Inner glowing core
+      const innerGeo = new THREE.SphereGeometry(0.7, 32, 32);
+      const innerMat = new THREE.MeshBasicMaterial({ color: 0x8b5cf6, wireframe: false });
+      const innerMesh = new THREE.Mesh(innerGeo, innerMat);
+      scene.add(innerMesh);
+
+      // Lights
+      const pointLight1 = new THREE.PointLight(0x00e5ff, 2, 20);
+      pointLight1.position.set(4, 5, 4);
+      scene.add(pointLight1);
+
+      const pointLight2 = new THREE.PointLight(0xffd43b, 1.5, 20);
+      pointLight2.position.set(-4, -5, 2);
+      scene.add(pointLight2);
+
+      const ambientLight = new THREE.AmbientLight(0x1e293b, 1.0);
+      scene.add(ambientLight);
+
+      function renderAt(t) {
+        // Deterministic rotational movement from time t
+        coreMesh.rotation.x = t * 0.8;
+        coreMesh.rotation.y = t * 1.2;
+        innerMesh.scale.setScalar(1.0 + 0.15 * Math.sin(t * 4.0));
+        
+        // Orbital camera movement
+        camera.position.x = Math.sin(t * 0.5) * 1.5;
+        camera.position.y = Math.cos(t * 0.5) * 0.8;
+        camera.lookAt(0, 0, 0);
+
+        renderer.render(scene, camera);
+      }
+
+      window.addEventListener("hf-seek", (e) => {
+        renderAt(e.detail.time);
+      });
+
+      // Initial frame render
+      renderAt(0);
+    </script>
+  </body>
+</html>
+

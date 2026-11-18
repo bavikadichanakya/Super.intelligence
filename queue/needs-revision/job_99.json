@@ -1,0 +1,17 @@
+{
+  "task_id": "TASK-REV-01",
+  "production_job_id": 99,
+  "title": "Test Reel #99",
+  "artifact_path": "output/drafts/test.mp4",
+  "agent_responsible": "production_agent",
+  "evidence_refs": [],
+  "quality_check_results": {
+    "qa_passed": true
+  },
+  "reason_approval_required": "Mandatory owner approval before social media distribution.",
+  "owner_decision": "REQUEST_REVISION",
+  "reviewer": "Lead Editor",
+  "reviewer_notes": "Adjust lower margin",
+  "submitted_at": "2026-11-16T17:14:09.248219+00:00",
+  "decision_timestamp": "2026-11-16T17:14:09.299691+00:00"
+}

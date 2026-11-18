@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>HyperFrames 5s Benchmark</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --ground: #07090e;
+        --cyan: #00e5ff;
+        --purple: #8b5cf6;
+        --gold: #ffd43b;
+        --ink: #f8fafc;
+        --sub: #94a3b8;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--ground);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      #root {
+        width: 1080px;
+        height: 1920px;
+        position: relative;
+        background: radial-gradient(circle at 50% 35%, #111827 0%, #07090e 100%);
+        overflow: hidden;
+      }
+      .scene {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1080px;
+        height: 1920px;
+        padding: 240px 80px 240px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0;
+      }
+      .hud-pill {
+        background: rgba(15, 23, 42, 0.85);
+        border: 2px solid var(--cyan);
+        color: var(--cyan);
+        padding: 12px 32px;
+        border-radius: 24px;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        box-shadow: 0 0 20px rgba(0, 229, 255, 0.25);
+      }
+      .scene-2-pill {
+        border-color: var(--purple);
+        color: var(--purple);
+        box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
+      }
+      .headline {
+        color: var(--ink);
+        font-size: 52px;
+        font-weight: 800;
+        text-align: center;
+        line-height: 1.25;
+        letter-spacing: -0.5px;
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+      }
+      .center-visual {
+        width: 720px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .metric-badge {
+        background: rgba(30, 41, 59, 0.9);
+        border: 1px solid #38bdf8;
+        color: var(--gold);
+        padding: 16px 36px;
+        border-radius: 20px;
+        font-size: 30px;
+        font-family: monospace;
+        font-weight: 700;
+      }
+      .scanlines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1080px;
+        height: 1920px;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.2) 50%);
+        background-size: 100% 4px;
+        pointer-events: none;
+        z-index: 10;
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"
+         data-composition-id="benchmark_hyperframes_5s"
+         data-start="0"
+         data-duration="5.00"
+         data-width="1080"
+         data-height="1920"
+         data-fps="30">
+      
+      <!-- Scene 1: 0.0s - 2.5s -->
+      <div id="scene-1" class="scene" data-start="0.00" data-duration="2.50">
+        <div class="hud-pill">HYPERFRAMES ENGINE · ACT 01</div>
+        <div class="center-visual">
+          <svg width="400" height="400" viewBox="0 0 100 100" id="s1-svg">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="#00e5ff" stroke-width="3" stroke-dasharray="8 4" id="s1-ring1" />
+            <circle cx="50" cy="50" r="28" fill="none" stroke="#8b5cf6" stroke-width="2" id="s1-ring2" />
+            <circle cx="50" cy="50" r="14" fill="#00e5ff" id="s1-core" />
+          </svg>
+        </div>
+        <div class="headline" id="s1-title">TIMELINE ORCHESTRATION</div>
+        <div class="metric-badge" id="s1-badge">DETERMINISTIC 30 FPS</div>
+      </div>
+
+      <!-- Scene 2: 2.5s - 5.0s -->
+      <div id="scene-2" class="scene" data-start="2.50" data-duration="2.50">
+        <div class="hud-pill scene-2-pill">HYPERFRAMES ENGINE · ACT 02</div>
+        <div class="center-visual">
+          <svg width="500" height="300" viewBox="0 0 500 300" id="s2-svg">
+            <line x1="50" y1="250" x2="450" y2="250" stroke="#334155" stroke-width="3" />
+            <line x1="50" y1="50" x2="50" y2="250" stroke="#334155" stroke-width="3" />
+            <path d="M 50 250 Q 250 220 450 80" fill="none" stroke="#ffd43b" stroke-width="6" id="s2-curve" />
+          </svg>
+        </div>
+        <div class="headline" id="s2-title">MULTI-SCENE SYNCHRONIZATION</div>
+        <div class="metric-badge" id="s2-badge">ZERO JITTER · LOSSLESS AUDIO</div>
+      </div>
+
+      <div class="scanlines"></div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      // Scene 1 Animation (0.0s - 2.5s)
+      tl.set("#scene-1", { opacity: 1 }, 0);
+      tl.from("#scene-1 .hud-pill", { opacity: 0, y: -20, duration: 0.4, ease: "power2.out" }, 0.1);
+      tl.from("#s1-title", { opacity: 0, y: 30, duration: 0.5, ease: "power2.out" }, 0.2);
+      tl.from("#s1-core", { scale: 0, transformOrigin: "50% 50%", duration: 0.6, ease: "back.out(1.7)" }, 0.3);
+      tl.to("#s1-ring1", { rotation: 180, transformOrigin: "50% 50%", duration: 2.2, ease: "none" }, 0.3);
+      tl.to("#s1-ring2", { rotation: -180, transformOrigin: "50% 50%", duration: 2.2, ease: "none" }, 0.3);
+      tl.from("#s1-badge", { opacity: 0, scale: 0.85, duration: 0.4, ease: "back.out(1.5)" }, 0.5);
+
+      // Scene 1 Out / Scene 2 In Crossfade (at 2.5s)
+      tl.to("#scene-1", { opacity: 0, duration: 0.3, ease: "power2.in" }, 2.2);
+      tl.set("#scene-2", { opacity: 1 }, 2.5);
+
+      // Scene 2 Animation (2.5s - 5.0s)
+      tl.from("#scene-2 .hud-pill", { opacity: 0, y: -20, duration: 0.4, ease: "power2.out" }, 2.5);
+      tl.from("#s2-title", { opacity: 0, y: 30, duration: 0.5, ease: "power2.out" }, 2.6);
+      tl.from("#s2-curve", { strokeDasharray: 600, strokeDashoffset: 600, duration: 1.5, ease: "power2.out" }, 2.7);
+      tl.from("#s2-badge", { opacity: 0, scale: 0.85, duration: 0.4, ease: "back.out(1.5)" }, 2.9);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
+

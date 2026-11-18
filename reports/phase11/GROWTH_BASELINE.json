@@ -1,0 +1,43 @@
+{
+  "system": "SUPER.INTELLIGENCEEE V2",
+  "audit_date": "2026-11-16T21:35:00Z",
+  "status": "INITIAL_CALIBRATION",
+  "youtube_baseline": {
+    "account_status": "AWAITING_OAUTH_AUTHORIZATION",
+    "client_id": "143461518329-a7ifsu6begk4c9h7tim8vqul4dl4qoeu.apps.googleusercontent.com",
+    "redirect_uri": "http://127.0.0.1:5000/auth/youtube/callback",
+    "subscribers": "INSUFFICIENT_DATA",
+    "monthly_audience": "INSUFFICIENT_DATA",
+    "new_viewers": "INSUFFICIENT_DATA",
+    "returning_viewers": "INSUFFICIENT_DATA",
+    "views_30d": "INSUFFICIENT_DATA",
+    "impressions_ctr": "INSUFFICIENT_DATA",
+    "average_view_duration": "INSUFFICIENT_DATA",
+    "shorts_viewed_vs_swiped_percent": "INSUFFICIENT_DATA",
+    "target_viewed_percent": 75.0,
+    "target_apv_percent": 100.0,
+    "target_privacy_default": "private"
+  },
+  "instagram_baseline": {
+    "account_status": "AWAITING_OAUTH_AUTHORIZATION",
+    "meta_app_id": "995939360234396",
+    "business_portfolio_id": "1765114544578811",
+    "config_id": "1681040066712391",
+    "redirect_uri": "http://127.0.0.1:5000/oauth/instagram/callback",
+    "followers": "INSUFFICIENT_DATA",
+    "accounts_reached_30d": "INSUFFICIENT_DATA",
+    "non_follower_reach_percent": "INSUFFICIENT_DATA",
+    "average_watch_time_sec": "INSUFFICIENT_DATA",
+    "shares_dm_sends": "INSUFFICIENT_DATA",
+    "saves_bookmarks": "INSUFFICIENT_DATA",
+    "profile_visits": "INSUFFICIENT_DATA",
+    "target_non_follower_reach_percent": 60.0,
+    "target_shares_per_1k_views": 15.0
+  },
+  "governance": {
+    "human_approval_mandatory": true,
+    "kill_switch_armed": true,
+    "auto_publish_permitted": false,
+    "zero_budget_cap_inr": 0.0
+  }
+}

@@ -188,7 +188,7 @@ class InstagramIntegration:
             os.environ.get("INSTAGRAM_REDIRECT_URI")
             or self.config.get(
                 "publishing.instagram.redirect_uri",
-                "http://127.0.0.1:5000/oauth/instagram/callback",
+                "http://localhost:5000/oauth/instagram/callback",
             )
         )
 
@@ -644,13 +644,18 @@ class InstagramIntegration:
         """
         Publishes a scheduled Reel using official Meta Graph API Resumable Upload.
         STRICT SECURITY & INTEGRITY REQUIREMENTS:
-        1. explicit_approval must be True (manual human confirmation check).
-        2. Queue item must exist and have an approved status in SQLite persistent storage.
-        3. Underlying production job must have status == 'APPROVED'.
-        4. Rejects items that are REJECTED, PENDING review, already PUBLISHED, or currently PUBLISHING.
-        5. Atomically transitions queue status to PUBLISHING to prevent duplicate submission races.
-        6. Implements resumable upload with timeout handling, retry, and container status polling.
+        1. Kill switch check strictly enforced before any publishing action.
+        2. explicit_approval must be True (manual human confirmation check).
+        3. Queue item must exist and have an approved status in SQLite persistent storage.
+        4. Underlying production job must have status == 'APPROVED'.
+        5. Rejects items that are REJECTED, PENDING review, already PUBLISHED, or currently PUBLISHING.
+        6. Atomically transitions queue status to PUBLISHING to prevent duplicate submission races.
+        7. Implements resumable upload with timeout handling, retry, and container status polling.
         """
+        # Step 0: Kill switch guard (strict emergency halt enforcement)
+        from core.kill_switch import get_kill_switch
+        get_kill_switch().assert_not_active("InstagramIntegration:publish_reel")
+
         # Step 1: Explicit human confirmation guard
         if not explicit_approval:
             raise PermissionError(

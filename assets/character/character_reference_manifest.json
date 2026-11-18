@@ -1,0 +1,110 @@
+{
+  "manifest_version": "1.0.0",
+  "schema_type": "CANONICAL_CHARACTER_REFERENCE_MANIFEST",
+  "created_at": "2026-11-17T17:20:00+05:30",
+  "canonical_source": {
+    "workspace_path": "character.me.png",
+    "asset_library_path": "assets/character/character.me.png",
+    "sha256": "d17de5c978e153a8ef8b332849e4ea653eb7e9fddf7d03b5dbdaf02daac96fde",
+    "dimensions": [
+      2048,
+      2048
+    ],
+    "file_size_bytes": 6034031,
+    "status": "CANONICAL_MASTER_REFERENCE",
+    "provenance": "Provided directly by workspace owner as official visual identity for recurring host"
+  },
+  "derived_assets": {
+    "cutout_transparent": {
+      "path": "assets/character/character_cutout_transparent.png",
+      "sha256": "6bfa9fab7c6cd66d7173dd291cba54490d6f9fba07808479f558c0e2b397c185",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "file_size_bytes": 4860313,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    "bust_cropped": {
+      "path": "assets/character/character_bust_cropped.png",
+      "sha256": "f7647fd54d42f17f39dec61ec42ea26c6eeb3579f0dd99814ec7e799e9dafa9c",
+      "dimensions": [
+        1610,
+        1755
+      ],
+      "file_size_bytes": 3664704,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    "blinking_expression": {
+      "path": "assets/character/expressions/character_blinking.png",
+      "sha256": "772362273aa7f605d9db4bcf05df614bbca84af817776177b9b0b346fe2aca77",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "file_size_bytes": 4837440,
+      "format": "PNG",
+      "mode": "RGBA"
+    },
+    "eyelid_blink_overlay": {
+      "path": "assets/character/expressions/eyelid_blink_overlay.png",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "purpose": "Alpha eyelid overlay for deterministic blink animation cycles"
+    }
+  },
+  "facial_landmarks_2048": {
+    "left_eye_center": [
+      980,
+      790
+    ],
+    "left_eye_bounds": [
+      905,
+      750,
+      1045,
+      825
+    ],
+    "right_eye_center": [
+      1250,
+      790
+    ],
+    "right_eye_bounds": [
+      1195,
+      750,
+      1335,
+      825
+    ],
+    "glasses_bridge_center": [
+      1120,
+      775
+    ],
+    "mouth_center": [
+      1080,
+      980
+    ],
+    "pivot_anchor_neck_chest": [
+      1024,
+      1550
+    ],
+    "notebook_center": [
+      1350,
+      1650
+    ]
+  },
+  "framing_guidelines": {
+    "aspect_ratio": "1:1 square canvas, bust framing",
+    "vertical_safe_zone_y_range": [
+      200,
+      1600
+    ],
+    "prohibited_clipping_regions": [
+      "hair_top",
+      "glasses_outer_rim",
+      "notebook"
+    ]
+  }
+}

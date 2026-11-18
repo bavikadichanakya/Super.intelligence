@@ -92,7 +92,7 @@ class CaptionGenerator:
 
         for sc in scenes:
             duration = float(sc.get("duration", 5.0))
-            text = sc.get("narration_text", sc.get("voiceover", "")).strip()
+            text = (sc.get("narration_text") or sc.get("narration") or sc.get("voiceover") or "").strip()
 
             chunks = self.chunk_narration_into_lines(text, max_words=4)
             if not chunks:

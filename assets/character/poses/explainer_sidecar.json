@@ -1,0 +1,16 @@
+{
+  "pose_id": "explainer_sidecar",
+  "default_screen_position": "lower_right",
+  "default_scale": 0.6,
+  "head_rotation_deg_range": [
+    -3.0,
+    -1.0
+  ],
+  "breathing_amplitude_px": 3.0,
+  "blink_interval_sec_range": [
+    2.8,
+    3.8
+  ],
+  "gaze_target": "subject_diagram",
+  "supporting_action": "Poised observing dataflow with affirmative nod"
+}

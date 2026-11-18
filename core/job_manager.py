@@ -1,3 +1,4 @@
+import queue
 import threading
 import uuid
 import time
@@ -68,13 +69,33 @@ class JobManager:
     _instance = None
     _lock = threading.Lock()
 
-    def __new__(cls, *args, **kwargs):
+    def __new__(cls, max_workers: int = 1, *args, **kwargs):
         with cls._lock:
             if cls._instance is None:
                 cls._instance = super(JobManager, cls).__new__(cls)
+                cls._instance.max_workers = max_workers
                 cls._instance.jobs: Dict[str, Job] = {}
+                cls._instance._queue = queue.Queue()
                 cls._instance._render_lock = threading.Lock()
+                cls._instance._worker_thread = threading.Thread(
+                    target=cls._instance._worker_loop, daemon=True, name="JobManagerWorker"
+                )
+                cls._instance._worker_thread.start()
+            else:
+                cls._instance.max_workers = max_workers
         return cls._instance
+
+    def _worker_loop(self):
+        """Worker loop processing jobs sequentially from queue to ensure 8 GB RAM safety."""
+        while True:
+            try:
+                job = self._queue.get()
+                if job is None:
+                    break
+                job.run()
+                self._queue.task_done()
+            except Exception as e:
+                logger.error(f"Error in JobManager worker loop: {e}", exc_info=True)
 
     def is_render_active(self) -> bool:
         with self._lock:
@@ -89,10 +110,7 @@ class JobManager:
         
         with self._lock:
             self.jobs[job_id] = job
-
-        thread = threading.Thread(target=job.run, daemon=True)
-        job.thread = thread
-        thread.start()
+            self._queue.put(job)
         return job_id
 
     def get_job(self, job_id: str) -> Optional[Dict[str, Any]]:
@@ -105,4 +123,4 @@ class JobManager:
             return {jid: j.to_dict() for jid, j in self.jobs.items()}
 
 def get_job_manager() -> JobManager:
-    return JobManager()
+    return JobManager(max_workers=1)

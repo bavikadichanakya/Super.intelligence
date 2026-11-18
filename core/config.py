@@ -2,8 +2,12 @@ import os
 import yaml
 from pathlib import Path
 from typing import Any, Dict, Optional
+from dotenv import load_dotenv
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+# Automatically load environment variables from .env
+load_dotenv(PROJECT_ROOT / ".env")
 
 class Config:
     """Central configuration manager for SUPER.INTELLIGENCEEE."""

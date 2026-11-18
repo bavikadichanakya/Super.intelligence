@@ -7,6 +7,7 @@ Zero-budget, local-first execution.
 from __future__ import annotations
 
 import datetime
+import json
 import logging
 import re
 from pathlib import Path
@@ -30,6 +31,9 @@ from video.hyperframes_runner import HyperFramesRunner
 from video.template_builder import HyperFramesTemplateBuilder
 from video.video_validator import VideoValidator
 from visuals.stock_provider import StockProvider
+from visuals.visual_intelligence import VisualIntelligenceEngine
+from rendering.visual_qa import VisualQASubsystem
+from core.provenance import AssetProvenanceManifest
 
 logger = logging.getLogger("super_intelligence.pipeline")
 
@@ -57,6 +61,8 @@ class SuperIntelligencePipeline:
         self.ffmpeg_pipeline = FFmpegVideoPipeline(self.config)
         self.video_validator = VideoValidator(self.config)
         self.approval_mgr = ApprovalManager(self.db, self.config)
+        self.visual_intelligence = VisualIntelligenceEngine(self.config)
+        self.visual_qa = VisualQASubsystem(self.config)
 
         self.drafts_dir = self.config.resolve_path("output/drafts")
         self.drafts_dir.mkdir(parents=True, exist_ok=True)
@@ -136,13 +142,16 @@ class SuperIntelligencePipeline:
             # 3. Fact Checking & Verification
             fc_report = self.fact_checker.check_script(script_data, script_id=script_id)
             logger.info(f"Fact check passed: {fc_report['verified']}")
+            if not fc_report.get("verified", False):
+                issues = fc_report.get("issues", ["Factual claims unverified against evidence"])
+                raise RuntimeError(f"Fact-checking gate failed for Reel #{prod_job_id}: {'; '.join(issues)}")
 
             # 4. Generate Storyboard
             raw_storyboard = self.storyboard_gen.generate_storyboard(script_data, script_id=script_id)
             scenes = raw_storyboard if isinstance(raw_storyboard, list) else raw_storyboard.get("scenes", [])
             storyboard = {"scenes": scenes}
 
-            # 5. Synthesize Scene Narration via Piper TTS (with fallback)
+            # 5. Synthesize Scene Narration via Piper TTS (with fallback & exact audio sync)
             scene_audio_files = []
             for i, sc in enumerate(scenes):
                 sc_idx = i + 1
@@ -153,12 +162,73 @@ class SuperIntelligencePipeline:
                 )
                 scene_audio_files.append(audio_res["path"])
 
+                # Synchronize scene duration with actual WAV audio duration
+                real_dur = float(audio_res.get("duration_seconds", 0.0))
+                if real_dur <= 0.0 and Path(audio_res["path"]).exists():
+                    try:
+                        import wave
+                        with wave.open(str(audio_res["path"]), "rb") as wf:
+                            real_dur = wf.getnframes() / float(wf.getframerate())
+                    except Exception:
+                        real_dur = 0.0
+
+                if real_dur > 0.5:
+                    sc["duration_seconds"] = round(real_dur, 2)
+                    sc["duration"] = round(real_dur, 2)
+                    logger.info(f"Scene #{sc_idx} synchronized to actual audio duration: {real_dur:.2f}s")
+
+            # Update storyboard with exact audio-synchronized timings
+            storyboard["scenes"] = scenes
+            storyboard_path = self.drafts_dir / f"{reel_slug}_storyboard.json"
+            try:
+                with open(storyboard_path, "w", encoding="utf-8") as f:
+                    json.dump(storyboard, f, indent=2)
+            except Exception as e:
+                logger.warning(f"Could not save storyboard JSON: {e}")
+
+            # 5b. Visual Storytelling Intelligence & Scene Creative Briefs
+            logger.info("Formulating independent scene-by-scene creative visual briefs...")
+            creative_plan = self.visual_intelligence.plan_reel_creative(topic=topic, storyboard=storyboard)
+            creative_plan_path = self.drafts_dir / f"{reel_slug}_creative_plan.json"
+            try:
+                with open(creative_plan_path, "w", encoding="utf-8") as f:
+                    json.dump(creative_plan.to_dict(), f, indent=2)
+            except Exception as e:
+                logger.warning(f"Could not save creative plan JSON: {e}")
+
+            # Initialize cryptographic asset provenance manifest
+            manifest = AssetProvenanceManifest(manifest_id=f"manifest_{reel_slug}", reel_slug=reel_slug)
+
             # 6. Audio Mixing & Loudness Normalization (-16 LUFS)
             raw_master_audio = self.drafts_dir / f"{reel_slug}_audio_raw.wav"
             self.audio_mixer.concatenate_scenes(scene_audio_files, raw_master_audio)
 
             master_audio = self.drafts_dir / f"{reel_slug}_audio_master.wav"
             self.audio_mixer.normalize_loudness(raw_master_audio, master_audio, target_lufs=-16.0)
+
+            # 6b. Subtle Cinematic Sound Effects (SFX) Overlay at Scene Transitions
+            scene_durations = [float(sc.get("duration_seconds", 5.0)) for sc in scenes]
+            sfx_master_audio = self.drafts_dir / f"{reel_slug}_audio_sfx.wav"
+            try:
+                self.audio_mixer.mix_with_sound_effects(
+                    master_audio_path=master_audio,
+                    scene_durations=scene_durations,
+                    output_path=sfx_master_audio,
+                    sfx_name="whoosh-cinematic.mp3",
+                    sfx_volume=0.18,
+                )
+                if sfx_master_audio.exists() and sfx_master_audio.stat().st_size > 1000:
+                    master_audio = sfx_master_audio
+                    logger.info("Successfully overlaid cinematic transition SFX across scenes")
+            except Exception as e:
+                logger.warning(f"SFX overlay warning (proceeding with voice master): {e}")
+
+            # Audio QA via Whisper / Acoustic Heuristics
+            full_narration = " ".join([sc.get("narration_text", sc.get("narration", "")) for sc in scenes])
+            audio_qa_report = self.whisper_qa.verify_audio(master_audio, expected_text=full_narration)
+            logger.info(f"Narration QA ({audio_qa_report.get('qa_method')}): passed={audio_qa_report.get('passed')}, score={audio_qa_report.get('score')}")
+            if not audio_qa_report.get("passed", False) and audio_qa_report.get("score", 1.0) < 0.40:
+                raise RuntimeError(f"Audio QA Hard Gate Failed: {audio_qa_report.get('details')}")
 
             # 7. Captions Generation (SRT, VTT, ASS, JSON)
             captions_res = self.caption_gen.generate_captions_from_storyboard(
@@ -167,31 +237,43 @@ class SuperIntelligencePipeline:
                 base_name=f"{reel_slug}_captions",
             )
 
-            # 8. Visual Assets Preparation (Branded 1080x1920 Editorial Tech Cards)
+            # 8. Visual Assets Preparation (Multi-Archetype Production Modes with Provenance)
             scene_visuals = []
             for i, sc in enumerate(scenes):
                 sc_idx = i + 1
+                brief = creative_plan.scenes[i] if (creative_plan and i < len(creative_plan.scenes)) else None
                 visual_path = self.stock_provider.prepare_scene_visual(
                     scene=sc,
                     scene_index=sc_idx,
                     total_scenes=len(scenes),
                     reel_slug=reel_slug,
+                    brief=brief,
+                    manifest=manifest,
                 )
                 scene_visuals.append(visual_path)
 
-            # 9. HyperFrames Composition & Visual Rendering
+            manifest_path = self.drafts_dir / f"{reel_slug}_provenance_manifest.json"
+            try:
+                manifest.save_json(manifest_path)
+            except Exception as e:
+                logger.warning(f"Could not save provenance manifest: {e}")
+
+            # 9. HyperFrames Composition & Visual Rendering with Exact Audio Sync
             comp_file = self.template_builder.build_reel_composition(
                 storyboard=storyboard,
                 scene_visuals=scene_visuals,
                 reel_slug=reel_slug,
             )
 
+            scene_durations = [float(sc.get("duration_seconds", 5.0)) for sc in scenes]
             raw_video_path = self.drafts_dir / f"{reel_slug}_raw_visuals.mp4"
             self.hyperframes_runner.render_composition(
                 output_path=raw_video_path,
                 composition_rel_path=f"compositions/{comp_file.name}",
                 fps=30,
                 quality="looks",
+                scene_visuals=scene_visuals,
+                scene_durations=scene_durations,
             )
 
             # 10. Final FFmpeg Post-Processing (Muxing, Subtitle Burning, H.264/AAC Export)
@@ -204,8 +286,26 @@ class SuperIntelligencePipeline:
                 burn_captions=True,
             )
 
-            # 11. Technical Quality Assurance Inspection via FFprobe
+            # 11. Technical Quality Assurance Inspection via FFprobe (Hard Quality Gate)
             validation_report = self.video_validator.validate_reel(final_video_path)
+            if not validation_report.get("valid", False):
+                issues = validation_report.get("issues", ["Technical video validation criteria not satisfied"])
+                err_msg = f"Technical QA validation failed for Reel #{prod_job_id}: {'; '.join(issues)}"
+                logger.error(err_msg)
+                raise RuntimeError(err_msg)
+
+            # 11b. Deep Visual QA Inspection (Perceptual Diversity, Black Frames, Contact Sheet)
+            visual_qa_report = self.visual_qa.run_full_visual_audit(
+                video_path=final_video_path,
+                audio_path=master_audio,
+                scene_briefs=creative_plan.scenes,
+            )
+            vqa_path = self.drafts_dir / f"{reel_slug}_visual_qa.json"
+            try:
+                with open(vqa_path, "w", encoding="utf-8") as f:
+                    json.dump(visual_qa_report, f, indent=2)
+            except Exception as e:
+                logger.warning(f"Could not save Visual QA JSON: {e}")
 
             # 12. Submit for Human Review & Update Database
             self.approval_mgr.record_submission(prod_job_id)
@@ -232,6 +332,13 @@ class SuperIntelligencePipeline:
                 "fps": validation_report.get("fps", 30),
                 "dimensions": f"{validation_report.get('width', 1080)}x{validation_report.get('height', 1920)}",
                 "validation": validation_report,
+                "audio_qa": audio_qa_report,
+                "fact_check": fc_report,
+                "visual_qa": visual_qa_report,
+                "contact_sheet_path": visual_qa_report.get("contact_sheet_path"),
+                "creative_plan_path": str(creative_plan_path),
+                "manifest_path": str(manifest_path),
+                "storyboard_path": str(storyboard_path),
                 "captions": {k: str(v) for k, v in captions_res.items()},
             }
 

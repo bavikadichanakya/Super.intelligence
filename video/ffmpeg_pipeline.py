@@ -74,17 +74,37 @@ class FFmpegVideoPipeline:
         if vf_filters:
             cmd.extend(["-vf", ",".join(vf_filters)])
 
+        # Check exact audio duration to prevent mid-sentence cutoff
+        audio_dur = 0.0
+        try:
+            dur_cmd = [
+                self.ffprobe_cmd, "-v", "error",
+                "-show_entries", "format=duration",
+                "-of", "default=noprint_wrappers=1:nokey=1",
+                str(a_in),
+            ]
+            dur_res = subprocess.run(dur_cmd, capture_output=True, text=True)
+            if dur_res.returncode == 0:
+                audio_dur = float(dur_res.stdout.strip())
+        except Exception:
+            pass
+
         cmd.extend([
             "-c:v", "libx264",
             "-pix_fmt", "yuv420p",
-            "-preset", "medium",
+            "-preset", "fast",
             "-crf", "20",
             "-c:a", "aac",
             "-b:a", "192k",
-            "-ar", "44100",
-            "-shortest",
-            str(out_path),
+            "-ar", "48000",
         ])
+
+        if audio_dur > 0:
+            cmd.extend(["-t", f"{audio_dur:.2f}"])
+        else:
+            cmd.append("-shortest")
+
+        cmd.append(str(out_path))
 
         logger.info(f"Encoding final Reel to {out_path.name}...")
         try:
@@ -100,9 +120,12 @@ class FFmpegVideoPipeline:
                     "-pix_fmt", "yuv420p",
                     "-c:a", "aac",
                     "-b:a", "192k",
-                    "-shortest",
-                    str(out_path),
                 ]
+                if audio_dur > 0:
+                    fallback_cmd.extend(["-t", f"{audio_dur:.2f}"])
+                else:
+                    fallback_cmd.append("-shortest")
+                fallback_cmd.append(str(out_path))
                 f_res = subprocess.run(fallback_cmd, capture_output=True, text=True)
                 if f_res.returncode != 0:
                     raise FFmpegPipelineError(f"FFmpeg final mux failed: {f_res.stderr}")

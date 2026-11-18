@@ -1,0 +1,104 @@
+<USER_REQUEST>
+# PHASE 5.2 — REFERENCE-FAITHFUL VISUAL RECONSTRUCTION & AUTONOMOUS EXPLAINER ENGINE
+
+**Project:** SUPER.INTELLIGENCEEE  
+**Workspace:** `A:\SUPER.INTELLIGENCEEE`  
+**Reference:** `This is what i want.mp4` (inside the project folder)  
+**Regression video:** Phase 5.1 Browser-Use production  
+**Hardware:** Windows 11, Intel Core i5-1135G7, 8 GB RAM, Intel Iris Xe  
+**Mandatory budget:** ₹0  
+**Rendering restriction:** No Blender. No manual scene authoring.  
+**Voice:** Kokoro-82M `am_liam`, General American English.  
+**Publishing:** Human approval mandatory. Kill switch must remain armed.
+
+---
+
+# 0. NON-NEGOTIABLE OBJECTIVE
+
+The previous phases have repeatedly produced videos that look like animated dashboards, browser mockups, cards, code panels and slideshows.
+
+That is not the target.
+
+I want an autonomous system capable of producing genuine, visually rich technical explainer videos that follow the visual quality and storytelling principles of the reference video.
+
+Do not interpret this task as:
+
+- Adding more animations to the existing renderer.
+- Changing the colour palette.
+- Adding more transitions.
+- Creating additional card templates.
+- Increasing the number of scenes.
+- Randomly selecting visual compositions.
+- Repeating the same seven-scene structure with different text.
+- Generating a contact sheet and declaring the work complete.
+
+**The objective is to change how the system thinks visually.**
+
+The system must understand what it is explaining and invent the appropriate visual explanation for each topic.
+
+It must produce different visual sequences for different subjects.
+
+A GPU architecture video, a cybersecurity video, an AI research video, a robotics video and a programming-language video must not all look like the same template with different labels.
+
+# 1. FIRST: FORENSICALLY STUDY THE REFERENCE VIDEO
+
+Before modifying production code, locate and inspect:
+
+`This is what i want.mp4`
+
+Do not assume its location. Search the project directory and identify the exact file.
+
+If it cannot 
+<truncated 14418 bytes>
+y unlike the reference, the phase is not complete.
+
+If one topic uses the same visual template as another without a justified reason, the phase is not complete.
+
+If a render silently falls back to a test pattern or generic card, the phase is not complete.
+
+If the output is technically valid but visually poor, the phase is not complete.
+
+# 12. REQUIRED DELIVERABLES
+
+Create:
+
+- `reports/PHASE52_REFERENCE_FORENSIC_AUDIT.md`
+- `reports/PHASE52_VISUAL_ARCHITECTURE.md`
+- `reports/PHASE52_IMPLEMENTATION_REPORT.md`
+- `reports/PHASE52_TOPIC_RESEARCH_REPORT.md`
+- `reports/PHASE52_VISUAL_QA_REPORT.md`
+- `reports/PHASE52_REFERENCE_COMPARISON.md`
+- `reports/PHASE52_RESOURCE_BENCHMARK.md`
+- `reports/PHASE52_FINAL_ACCEPTANCE.md`
+
+Keep all generated assets and manifests organized under the existing project structure.
+
+# 13. FINAL INSTRUCTIONS
+
+Do not optimize for the number of files created.
+
+Do not optimize for the number of animations.
+
+Do not optimize for a high automated visual diversity score.
+
+Optimize for the viewer understanding the subject and enjoying the explanation.
+
+First understand the reference. Then build the visual system. Then test it on different subjects.
+
+If a feature cannot be implemented or verified, report it honestly.
+
+**Do not mark this phase complete until three genuinely different, high-quality explainer videos have been rendered and inspected.**
+
+The publishing kill switch must remain armed throughout this entire phase.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-15T16:26:04+05:30.
+
+The user's current state is as follows:
+Other open documents:
+- a:\SUPER.INTELLIGENCEEE\core\orchestrator.py (LANGUAGE_UNSPECIFIED)
+- a:\SUPER.INTELLIGENCEEE\core\owner_config.py (LANGUAGE_UNSPECIFIED)
+- a:\SUPER.INTELLIGENCEEE\tests\test_governance_orchestration.py (LANGUAGE_UNSPECIFIED)
+- a:\SUPER.INTELLIGENCEEE\core\departments.py (LANGUAGE_UNSPECIFIED)
+- a:\SUPER.INTELLIGENCEEE\creative\tech_documentary\screen_demonstration\terminal_animator.py (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

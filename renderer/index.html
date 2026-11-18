@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1080, height=1920" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
     <style>
       :root {
@@ -10,8 +13,12 @@
         --ink: #f8fafc;
         --cyan: #00e5ff;
         --purple: #8b5cf6;
-        --gold: #ffd700;
-        --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        --gold: #ffd43b;
+        --win-marker: #ffd43b;
+        --strike: #e5484d;
+        --font-main: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        --font-sketch: "Caveat", cursive, sans-serif;
+        --font-mono: "JetBrains Mono", monospace;
       }
       * {
         margin: 0;
@@ -59,7 +66,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 240px 80px 320px 80px;
+        padding: 240px 80px 340px 80px;
         pointer-events: none;
       }
       .tech-hud {
@@ -67,7 +74,7 @@
         justify-content: center;
       }
       .hud-pill {
-        background: rgba(14, 20, 36, 0.85);
+        background: rgba(14, 20, 36, 0.88);
         color: var(--cyan);
         border: 2px solid var(--cyan);
         padding: 12px 32px;
@@ -77,6 +84,20 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         box-shadow: 0 0 20px rgba(0, 229, 255, 0.25);
+        backdrop-filter: blur(8px);
+      }
+      .archetype-sketch_title .hud-pill,
+      .archetype-sketch_stat .hud-pill,
+      .archetype-sketch_list .hud-pill,
+      .archetype-sketch_quote .hud-pill {
+        color: var(--gold);
+        border-color: var(--gold);
+        box-shadow: 0 0 20px rgba(255, 212, 59, 0.25);
+      }
+      .headline-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
       }
       .scene-headline {
         color: var(--ink);
@@ -85,7 +106,14 @@
         text-align: center;
         line-height: 1.25;
         letter-spacing: -0.5px;
-        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+      }
+      .archetype-sketch_title .scene-headline,
+      .archetype-sketch_stat .scene-headline,
+      .archetype-sketch_quote .scene-headline {
+        font-family: var(--font-sketch);
+        font-size: 64px;
+        line-height: 1.15;
       }
       .scanlines {
         position: absolute;
@@ -97,7 +125,7 @@
         background-size: 100% 4px;
         pointer-events: none;
         z-index: 10;
-        opacity: 0.4;
+        opacity: 0.35;
       }
     </style>
   </head>
@@ -111,31 +139,37 @@
          data-fps="30">
       
       
-      <!-- SCENE 1 -->
-      <div id="scene-1" class="clip scene-container" 
+      <!-- SCENE 1 (editorial_hud) -->
+      <div id="scene-1" class="clip scene-container archetype-editorial_hud" 
            data-start="0.00" 
            data-duration="4.00" 
-           data-track-index="0">
+           data-track-index="0"
+           data-archetype="editorial_hud">
         <img class="scene-bg" src="assets/v1.png" alt="Scene Visual" />
         <div class="scene-overlay">
           <div class="tech-hud">
             <span class="hud-pill">⚡ PULSE 01 / 02</span>
           </div>
-          <h2 class="scene-headline">HOOK HEADLINE</h2>
+          <div class="headline-wrapper">
+            <h2 class="scene-headline">HOOK HEADLINE</h2>
+          </div>
         </div>
       </div>
 
-      <!-- SCENE 2 -->
-      <div id="scene-2" class="clip scene-container" 
+      <!-- SCENE 2 (editorial_hud) -->
+      <div id="scene-2" class="clip scene-container archetype-editorial_hud" 
            data-start="4.00" 
            data-duration="5.00" 
-           data-track-index="0">
+           data-track-index="0"
+           data-archetype="editorial_hud">
         <img class="scene-bg" src="assets/v2.png" alt="Scene Visual" />
         <div class="scene-overlay">
           <div class="tech-hud">
             <span class="hud-pill">⚡ PULSE 02 / 02</span>
           </div>
-          <h2 class="scene-headline">DEVELOPMENT DETAILS</h2>
+          <div class="headline-wrapper">
+            <h2 class="scene-headline">DEVELOPMENT DETAILS</h2>
+          </div>
         </div>
       </div>
 
@@ -148,7 +182,6 @@
       // HyperFrames Paused Timeline Contract
       const tl = gsap.timeline({ paused: true });
       
-      // Build subtle cinematic punch-in and text animations for each scene
       const sceneCount = 2;
       let curStart = 0;
       
@@ -158,22 +191,32 @@
         const sDur = parseFloat(scEl.getAttribute("data-duration") || "5.0");
         const bg = scEl.querySelector(".scene-bg");
         const title = scEl.querySelector(".scene-headline");
+        const pill = scEl.querySelector(".hud-pill");
         
-        // Background slow push/zoom
+        // Background push
         if (bg) {
           tl.fromTo(bg, 
             { scale: 1.0, transformOrigin: "50% 50%" }, 
-            { scale: 1.05, duration: sDur, ease: "none" }, 
+            { scale: 1.04, duration: sDur, ease: "none" }, 
             curStart
           );
         }
         
-        // Headline fade-in and rise
+        // HUD pill pulse
+        if (pill) {
+          tl.fromTo(pill,
+            { opacity: 0, scale: 0.9 },
+            { opacity: 1, scale: 1.0, duration: 0.4, ease: "back.out(1.5)" },
+            curStart + 0.1
+          );
+        }
+
+        // Headline entrance
         if (title) {
           tl.fromTo(title, 
-            { opacity: 0, y: 30 }, 
-            { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 
-            curStart + 0.15
+            { opacity: 0, y: 25 }, 
+            { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 
+            curStart + 0.2
           );
         }
         

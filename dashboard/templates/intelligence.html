@@ -110,6 +110,7 @@
   <button class="intel-tab" onclick="switchTab('retention-tab')">📉 Retention Curve Analyzer</button>
   <button class="intel-tab" onclick="switchTab('reach-tab')">🌐 Agent Reach Multi-Source</button>
   <button class="intel-tab" onclick="switchTab('accounts-tab')">🔑 Channel Connections</button>
+  <button class="intel-tab" onclick="switchTab('growth-tab')">📊 Growth Diagnostics & Benchmarks</button>
 </div>
 
 <!-- PANE 1: HOOK & BEAT LAB -->
@@ -291,14 +292,66 @@ Here is how consumer GPUs run million-token contexts locally.</textarea>
 <div id="accounts-tab" class="intel-pane">
   <div class="grid-2">
     <div class="card">
-      <h2 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--cyan);">YouTube Data API v3 (Google OAuth)</h2>
-      <p style="color: var(--text-muted); margin-bottom: 1rem;">
-        Official OAuth 2.0 connection. Videos are uploaded with privacy status <code>private</code> or <code>unlisted</code> only after explicit human approval.
+      <h2 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--cyan);">YouTube Data API v3 (Google OAuth)</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.85rem;">
+        Official OAuth 2.0 connection. Videos default to <code>private</code> to preserve safety. Non-private visibility requires explicit owner confirmation.
       </p>
       <div id="ytAuthStatus" class="result-box" style="margin-bottom: 1rem;">
         Checking connection...
       </div>
-      <a href="/oauth/youtube/connect" class="btn">Connect YouTube Channel</a>
+
+      <!-- Owner Visibility Selector & Policy Control (Phase 12.1) -->
+      <div style="background: rgba(15,23,42,0.6); border: 1px solid rgba(56,189,248,0.2); border-radius: 6px; padding: 12px; margin-top: 1rem;">
+        <div style="font-size: 0.95rem; font-weight: 700; color: var(--cyan); margin-bottom: 6px;">
+          🛡️ Publishing Visibility Selector (Owner-Facing)
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 10px;">
+          Select the visibility state before publishing. <b>YouTube Policy Warning:</b> <code>Private</code> and <code>Unlisted</code> videos do <b>NOT</b> enter YouTube search or the Shorts Feed recommendation carousel.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
+          <label style="display: flex; align-items: flex-start; gap: 8px; cursor: pointer;">
+            <input type="radio" name="ytVisibility" value="private" checked onchange="updateVisibilityDesc('private')" style="margin-top: 3px;" />
+            <div>
+              <b style="color: #f8fafc;">Private (Default Safe Mode)</b>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Visible only to owner and invited accounts. Completely excluded from Shorts Feed & search.</div>
+            </div>
+          </label>
+
+          <label style="display: flex; align-items: flex-start; gap: 8px; cursor: pointer;">
+            <input type="radio" name="ytVisibility" value="unlisted" onchange="updateVisibilityDesc('unlisted')" style="margin-top: 3px;" />
+            <div>
+              <b style="color: #f8fafc;">Unlisted (Link Sharing Only)</b>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Accessible only via direct URL. Bypasses Shorts Feed recommendation carousel.</div>
+            </div>
+          </label>
+
+          <label style="display: flex; align-items: flex-start; gap: 8px; cursor: pointer;">
+            <input type="radio" name="ytVisibility" value="public" onchange="updateVisibilityDesc('public')" style="margin-top: 3px;" />
+            <div>
+              <b style="color: var(--green);">Public (Audience Discovery Mode)</b>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Indexed in search and submitted immediately to YouTube Shorts recommendation pools.</div>
+            </div>
+          </label>
+
+          <label style="display: flex; align-items: flex-start; gap: 8px; cursor: pointer;">
+            <input type="radio" name="ytVisibility" value="scheduled" onchange="updateVisibilityDesc('scheduled')" style="margin-top: 3px;" />
+            <div>
+              <b style="color: var(--purple);">Scheduled (Staged Release)</b>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Private staging until future UTC timestamp, then launched into Shorts Feed with fresh momentum.</div>
+            </div>
+          </label>
+        </div>
+
+        <div id="visDetailBox" style="margin-top: 10px; padding: 8px; background: rgba(0,0,0,0.4); border-radius: 4px; font-size: 0.75rem; color: #94a3b8;">
+          Selected: <b>Private</b> — Excluded from public YouTube recommendations.
+        </div>
+
+        <div style="margin-top: 10px; display: flex; align-items: center; gap: 8px; font-size: 0.8rem;">
+          <input type="checkbox" id="ytOwnerConfirm" />
+          <label for="ytOwnerConfirm" style="color: var(--gold);">I explicitly confirm changing visibility from Private to Public/Unlisted/Scheduled.</label>
+        </div>
+      </div>
     </div>
 
     <div class="card">
@@ -314,6 +367,150 @@ Here is how consumer GPUs run million-token contexts locally.</textarea>
         <button id="igDisconnectBtn" class="btn btn-secondary" style="display:none; border-color:var(--red); color:var(--red);" onclick="disconnectInstagram()">Disconnect</button>
         <button class="btn btn-secondary" onclick="checkPublishingStatus()">Refresh Status</button>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- PANE 7: GROWTH DIAGNOSTICS & BENCHMARKS (PHASE 12) -->
+<div id="growth-tab" class="intel-pane">
+  <!-- Channel Identity & Benchmarks Banner -->
+  <div class="grid-2" style="margin-bottom: 1.5rem;">
+    <div class="card" style="border-left: 4px solid var(--cyan);">
+      <h2 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--cyan);">📊 Empirical Channel Baselines (Job #69)</h2>
+      <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+        <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+          <span>Instagram Reel #1 (17982638913132487):</span>
+          <strong style="color: #f8fafc;">134 views | 121 reach | 70.5% skip rate | 4.53s avg watch</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+          <span>YouTube Short #1 (p_2bfJK-nBQ):</span>
+          <strong style="color: #f8fafc;">3 views | 1 like | 74s duration | <code>private</code> upload</strong>
+        </div>
+        <div style="margin-top: 8px; font-size: 0.8rem; color: var(--accent);">
+          💡 <strong>Key Finding:</strong> No algorithmic shadowban detected. Instagram reached 100% non-followers but stalled due to a 70.5% early skip rate; YouTube Short was uploaded in private sandbox mode.
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="border-left: 4px solid var(--purple);">
+      <h2 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--purple);">📈 Account-Relative Baselines & Segmentation</h2>
+      <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+        <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+          <span>Account Baseline Status:</span>
+          <strong style="color: var(--gold); font-family: monospace;">INSUFFICIENT_BASELINE_DATA</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+          <span>Sample Size / Required Minimum:</span>
+          <strong style="color: #f8fafc;">2 Snapshots / Min 5 Publications</strong>
+        </div>
+        <div style="margin-top: 8px; font-size: 0.8rem; color: #94a3b8;">
+          ⚖️ <b>Account-Relative Governance:</b> Universal thresholds (e.g. VVSA &gt;70%, Skip &lt;35%) have been removed. Baselines are established strictly using historical median/mean across content duration, pillar, hook archetype, and visual format once ≥5 videos are recorded.
+        </div>
+        <div style="margin-top: 6px; font-size: 0.75rem; color: var(--text-muted); font-style: italic;">
+          Notice: Metric correlations are observational heuristics, not proven platform ranking causation.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Hook Engine & Diagnostic Suite -->
+  <div class="grid-2">
+    <!-- Hook Batch Generator -->
+    <div class="card">
+      <h2 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--cyan);">⚡ Multi-Archetype 3-Layer Hook Generator</h2>
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">
+        Generate 8 distinct hook angles complying with the 3-layer standard: First-frame visual + &lt;12 words spoken + &lt;7 words on-screen text.
+      </p>
+
+      <div class="form-group">
+        <label>Topic / Breakthrough Title</label>
+        <input type="text" id="growthTopic" class="form-control" value="DeepSeek R1 Open Reasoning Shockwave" />
+      </div>
+      <div class="form-group">
+        <label>Core Mechanism / Empirical Evidence</label>
+        <textarea id="growthMechanism" class="form-control" style="min-height: 60px;">Large language model trained entirely with Pure Reinforcement Learning (GRPO) without human labeled demonstrations, discovering chain-of-thought reflection natively for $6M cost.</textarea>
+      </div>
+      <div class="form-group">
+        <label>Content Pillar</label>
+        <select id="growthPillar" class="form-control">
+          <option value="open_frontier">Open Frontier (Open-source AI models & open weights)</option>
+          <option value="autonomous_systems">Autonomous Systems (AI agents & tool use)</option>
+          <option value="hardware_physics">Hardware Physics (GPUs, TPUs & silicon architecture)</option>
+          <option value="systems_security">Systems Security (Jailbreaks, defense & memory safety)</option>
+        </select>
+      </div>
+
+      <button class="btn" onclick="generateGrowthHooks()">Generate 8 Archetype Hooks</button>
+      <div id="growthHookResults" style="margin-top: 1rem; display: none;"></div>
+    </div>
+
+    <!-- Algorithmic Diagnostic Calculator -->
+    <div class="card">
+      <h2 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--red);">🩺 Algorithmic Root Cause Diagnostic</h2>
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">
+        Diagnose actual upload metrics against empirical failure thresholds. Identifies Hook Cliff, Escalation Drag, Distribution Choke, or Audience Mismatch.
+      </p>
+
+      <div class="grid-2">
+        <div class="form-group">
+          <label>Platform</label>
+          <select id="diagPlatform" class="form-control">
+            <option value="instagram">Instagram Reels</option>
+            <option value="youtube">YouTube Shorts</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Video Duration (s)</label>
+          <input type="number" id="diagDuration" class="form-control" value="45" />
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="form-group">
+          <label>Total Views / Plays</label>
+          <input type="number" id="diagViews" class="form-control" value="134" />
+        </div>
+        <div class="form-group">
+          <label>Accounts Reached</label>
+          <input type="number" id="diagReach" class="form-control" value="121" />
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="form-group">
+          <label>3s Skip / Drop Rate (%)</label>
+          <input type="number" id="diagSkipRate" class="form-control" value="70.5" step="0.1" />
+        </div>
+        <div class="form-group">
+          <label>Avg Percentage Viewed (%)</label>
+          <input type="number" id="diagApv" class="form-control" value="6.2" step="0.1" />
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="form-group">
+          <label>Shares / DMs Sent</label>
+          <input type="number" id="diagShares" class="form-control" value="0" />
+        </div>
+        <div class="form-group">
+          <label>New Followers Gained</label>
+          <input type="number" id="diagFollows" class="form-control" value="0" />
+        </div>
+      </div>
+
+      <button class="btn btn-secondary" onclick="runGrowthDiagnosis()">Run Failure Mode Analysis</button>
+      <div id="diagResultBox" class="result-box" style="margin-top: 1rem; display: none;"></div>
+    </div>
+  </div>
+
+  <!-- Historical Telemetry Snapshots Table -->
+  <div class="card" style="margin-top: 1.5rem;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+      <h2 style="font-size: 1.2rem; color: #f8fafc;">📡 Empirical Performance Snapshots (Database Telemetry)</h2>
+      <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 4px 10px;" onclick="loadGrowthSnapshots()">Refresh Telemetry</button>
+    </div>
+    <div id="growthSnapshotsTable" style="overflow-x: auto;">
+      <p style="color: var(--text-muted); font-size: 0.85rem;">Loading stored telemetry snapshots...</p>
     </div>
   </div>
 </div>
@@ -628,14 +825,67 @@ Here is how consumer GPUs run million-token contexts locally.</textarea>
     outDiv.innerHTML = html;
   }
 
+  function updateVisibilityDesc(vis) {
+    const box = document.getElementById('visDetailBox');
+    if (!box) return;
+    if (vis === 'private') {
+      box.innerHTML = 'Selected: <b style="color:#f8fafc;">Private</b> — Safe default. Excluded from public YouTube search and Shorts Feed.';
+    } else if (vis === 'unlisted') {
+      box.innerHTML = 'Selected: <b style="color:#f8fafc;">Unlisted</b> — Accessible only to users with direct URL. Bypasses Shorts Feed carousel.';
+    } else if (vis === 'public') {
+      box.innerHTML = 'Selected: <b style="color:var(--green);">Public</b> — Immediate discovery mode. Indexed in search and eligible for Shorts Feed recommendation pool. Requires explicit confirmation.';
+    } else if (vis === 'scheduled') {
+      box.innerHTML = 'Selected: <b style="color:var(--purple);">Scheduled</b> — Staged privately until future release timestamp, then published to Shorts Feed with fresh algorithmic momentum.';
+    }
+  }
+
   async function checkPublishingStatus() {
     const resp = await fetch('/api/publishing/status');
     const data = await resp.json();
 
-    document.getElementById('ytAuthStatus').innerHTML = `
-      <div>Status: <b style="color: ${data.youtube.authenticated ? 'var(--green)' : 'var(--gold)'};">${data.youtube.status}</b></div>
-      <div style="font-size: 0.85rem; color: var(--text-muted);">Client ID: ${data.youtube.client_id ? 'Configured' : 'Missing'}</div>
-    `;
+    const yt = data.youtube || {};
+    let ytHtml = '';
+    if (yt.connected) {
+      ytHtml += `
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+          <span style="display:inline-flex; align-items:center; gap:6px; background:rgba(34,197,94,0.15); color:var(--green); padding:4px 10px; border-radius:20px; font-weight:bold; font-size:0.85rem;">
+            ● CONNECTED
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-muted);">Google OAuth 2.0</span>
+        </div>
+        <div style="margin-bottom:6px;">
+          <b>Channel:</b> <span style="color:var(--cyan); font-weight:700;">${yt.channel_title || 'Authenticated Channel'}</span>
+        </div>
+        <div style="margin-bottom:6px; font-size:0.85rem; color:var(--text-muted);">
+          <b>Channel ID:</b> <code style="color:var(--gold); font-size:0.8rem;">${yt.channel_id || 'N/A'}</code>
+        </div>
+        ${yt.subscriber_count !== null && yt.subscriber_count !== undefined ? `<div style="margin-bottom:6px; font-size:0.85rem; color:var(--text-muted);"><b>Subscribers:</b> ${yt.subscriber_count.toLocaleString()}</div>` : ''}
+        <div style="margin-bottom:6px; font-size:0.85rem;">
+          <b>Token Status:</b> <span style="color:${yt.token_status === 'VALID' ? 'var(--green)' : 'var(--gold)'}; font-weight:bold;">${yt.token_status}</span>
+        </div>
+        <div style="display:flex; gap:10px; margin-top:10px;">
+          <a href="/auth/youtube/connect" class="btn btn-secondary">Reconnect</a>
+          <button class="btn btn-secondary" style="border-color:var(--red); color:var(--red);" onclick="disconnectYouTube()">Disconnect</button>
+        </div>
+      `;
+    } else {
+      ytHtml += `
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+          <span style="display:inline-flex; align-items:center; gap:6px; background:rgba(239,68,68,0.15); color:var(--red); padding:4px 10px; border-radius:20px; font-weight:bold; font-size:0.85rem;">
+            ○ ${yt.status || 'DISCONNECTED'}
+          </span>
+          <span style="font-size:0.8rem; color:var(--text-muted);">YouTube Data API v3</span>
+        </div>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:6px;">
+          ${yt.is_configured ? 'Google OAuth credentials configured in .env. Ready to authenticate channel.' : 'Client ID and Secret missing from .env.'}
+        </p>
+        <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:10px;">
+          <b>Redirect URI:</b> <code>${yt.redirect_uri || 'http://127.0.0.1:5000/auth/youtube/callback'}</code>
+        </div>
+        <a href="/auth/youtube/connect" class="btn">Connect YouTube Channel</a>
+      `;
+    }
+    document.getElementById('ytAuthStatus').innerHTML = ytHtml;
 
     const ig = data.instagram || {};
     const igConnectBtn = document.getElementById('igConnectBtn');
@@ -712,6 +962,22 @@ Here is how consumer GPUs run million-token contexts locally.</textarea>
     }
   }
 
+  async function disconnectYouTube() {
+    if (!confirm('Are you sure you want to disconnect your YouTube channel and wipe stored credentials?')) {
+      return;
+    }
+    try {
+      const resp = await fetch('/auth/youtube/disconnect', {method: 'POST'});
+      const data = await resp.json();
+      if (data.ok) {
+        alert('YouTube channel disconnected.');
+        checkPublishingStatus();
+      }
+    } catch (e) {
+      alert('Error disconnecting YouTube: ' + e);
+    }
+  }
+
   // Check URL parameters for OAuth status notifications
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.get('connected') === 'instagram') {
@@ -720,8 +986,181 @@ Here is how consumer GPUs run million-token contexts locally.</textarea>
     alert('YouTube Channel successfully authenticated via Google OAuth!');
   }
 
+  // Phase 12 Content Intelligence Growth Functions
+  async function generateGrowthHooks() {
+    const topic = document.getElementById('growthTopic').value;
+    const mechanism = document.getElementById('growthMechanism').value;
+    const pillar = document.getElementById('growthPillar').value;
+    const container = document.getElementById('growthHookResults');
+
+    container.style.display = 'block';
+    container.innerHTML = '<div style="color:var(--cyan); padding:1rem;">⚡ Synthesizing 8 distinct archetyped hooks...</div>';
+
+    try {
+      const resp = await fetch('/api/content-intelligence/generate-hooks', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({topic, mechanism, pillar})
+      });
+      const data = await resp.json();
+      if (!data.ok) {
+        container.innerHTML = `<div style="color:var(--red);">Error: ${data.error || 'Failed to generate hooks'}</div>`;
+        return;
+      }
+
+      let html = `<div style="display:grid; grid-template-columns: 1fr; gap: 10px; margin-top: 10px;">`;
+      data.hooks.forEach((h, idx) => {
+        html += `
+          <div style="background: rgba(15,23,42,0.8); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 12px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 6px;">
+              <span style="font-weight: 700; color: var(--cyan); text-transform: uppercase; font-size: 0.75rem;">
+                #${idx + 1} Archetype: ${h.archetype.replace('_', ' ')}
+              </span>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">${h.spoken_word_count} words | ${h.on_screen_word_count} text</span>
+            </div>
+            <div style="font-size: 0.95rem; font-weight: 600; color: #f8fafc; margin-bottom: 4px;">
+              🎙️ "${h.spoken_hook}"
+            </div>
+            <div style="font-size: 0.85rem; color: #38bdf8; margin-bottom: 4px;">
+              🔤 Text: "${h.on_screen_text}"
+            </div>
+            <div style="font-size: 0.8rem; color: #94a3b8; font-style: italic; margin-bottom: 4px;">
+              👁️ Visual: ${h.visual_hook}
+            </div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">
+              🎯 Gap: ${h.curiosity_gap} | Payoff: ${h.payoff_promise}
+            </div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+      container.innerHTML = html;
+    } catch (e) {
+      container.innerHTML = `<div style="color:var(--red);">Network error generating hooks: ${e}</div>`;
+    }
+  }
+
+  async function runGrowthDiagnosis() {
+    const platform = document.getElementById('diagPlatform').value;
+    const duration = parseFloat(document.getElementById('diagDuration').value) || 45;
+    const views = parseInt(document.getElementById('diagViews').value) || 0;
+    const reach = parseInt(document.getElementById('diagReach').value) || 0;
+    const skip_rate = parseFloat(document.getElementById('diagSkipRate').value) || 0;
+    const apv = parseFloat(document.getElementById('diagApv').value) || 0;
+    const shares = parseInt(document.getElementById('diagShares').value) || 0;
+    const follows = parseInt(document.getElementById('diagFollows').value) || 0;
+
+    const resBox = document.getElementById('diagResultBox');
+    resBox.style.display = 'block';
+    resBox.innerHTML = '<span style="color:var(--cyan);">Evaluating algorithmic failure modes...</span>';
+
+    try {
+      const resp = await fetch('/api/content-intelligence/diagnose', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          platform,
+          metrics: {
+            views,
+            reach,
+            skip_rate,
+            avg_percentage_viewed: apv,
+            shares,
+            follows
+          },
+          duration
+        })
+      });
+      const data = await resp.json();
+      if (!data.ok) {
+        resBox.innerHTML = `<div style="color:var(--red);">Error: ${data.error || 'Diagnostic failed'}</div>`;
+        return;
+      }
+
+      const diag = data.diagnosis;
+      let sevColor = diag.severity === 'CRITICAL' ? 'var(--red)' : (diag.severity === 'HIGH' ? '#f59e0b' : 'var(--cyan)');
+
+      let html = `
+        <div style="margin-bottom: 8px;">
+          <span style="display:inline-block; padding: 2px 8px; border-radius: 4px; background: ${sevColor}22; color: ${sevColor}; font-size: 0.8rem; font-weight: 700;">
+            ${diag.severity} — ${diag.primary_failure.replace(/_/g, ' ')}
+          </span>
+        </div>
+        <div style="font-size: 0.9rem; color: #f8fafc; margin-bottom: 8px;">
+          <strong>Root Cause:</strong> ${diag.root_cause}
+        </div>
+        <div style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 8px; background: rgba(0,0,0,0.3); padding: 8px; border-radius: 4px;">
+          <strong>Algorithmic Context:</strong> ${diag.platform_context}
+        </div>
+        <div style="font-size: 0.85rem; color: var(--green);">
+          <strong>Prescribed Creative Actions:</strong>
+          <ul style="margin: 4px 0 0 16px; padding: 0;">
+            ${diag.remedies.map(r => `<li>${r}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+      resBox.innerHTML = html;
+    } catch (e) {
+      resBox.innerHTML = `<div style="color:var(--red);">Diagnostic error: ${e}</div>`;
+    }
+  }
+
+  async function loadGrowthSnapshots() {
+    const tableDiv = document.getElementById('growthSnapshotsTable');
+    try {
+      const resp = await fetch('/api/content-intelligence/snapshots');
+      const data = await resp.json();
+      if (!data.ok || !data.snapshots || data.snapshots.length === 0) {
+        tableDiv.innerHTML = '<p style="color: var(--text-muted); font-size: 0.85rem;">No performance snapshots recorded yet.</p>';
+        return;
+      }
+
+      let html = `
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+          <thead>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+              <th style="padding: 6px 10px;">Platform</th>
+              <th style="padding: 6px 10px;">Content ID / Job</th>
+              <th style="padding: 6px 10px;">Views</th>
+              <th style="padding: 6px 10px;">Reach</th>
+              <th style="padding: 6px 10px;">Skip Rate</th>
+              <th style="padding: 6px 10px;">Avg Watch</th>
+              <th style="padding: 6px 10px;">Shares</th>
+              <th style="padding: 6px 10px;">Captured At</th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+      data.snapshots.forEach(s => {
+        html += `
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); color: #f8fafc;">
+            <td style="padding: 8px 10px;">
+              <span style="color: ${s.platform === 'instagram' ? 'var(--purple)' : 'var(--red)'}; font-weight: 700;">
+                ${s.platform.toUpperCase()}
+              </span>
+            </td>
+            <td style="padding: 8px 10px;"><code>${s.external_media_id || 'Job #' + s.job_id}</code></td>
+            <td style="padding: 8px 10px;"><strong>${s.views}</strong></td>
+            <td style="padding: 8px 10px;">${s.reach}</td>
+            <td style="padding: 8px 10px; color: ${s.skip_rate > 50 ? 'var(--red)' : 'var(--green)'};">
+              ${s.skip_rate != null ? s.skip_rate + '%' : '—'}
+            </td>
+            <td style="padding: 8px 10px;">${s.avg_watch_time != null ? s.avg_watch_time + 's' : '—'}</td>
+            <td style="padding: 8px 10px;">${s.shares}</td>
+            <td style="padding: 8px 10px; color: var(--text-muted); font-size: 0.75rem;">${s.captured_at ? s.captured_at.substring(0, 19).replace('T', ' ') : '—'}</td>
+          </tr>
+        `;
+      });
+      html += `</tbody></table>`;
+      tableDiv.innerHTML = html;
+    } catch (e) {
+      tableDiv.innerHTML = `<p style="color: var(--red); font-size: 0.85rem;">Failed loading snapshots: ${e}</p>`;
+    }
+  }
+
   // Initial check
   checkPublishingStatus();
+  loadGrowthSnapshots();
 </script>
 {% endblock %}
 

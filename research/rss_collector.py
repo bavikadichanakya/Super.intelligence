@@ -32,6 +32,14 @@ class RSSCollector:
         try:
             # feedparser handles redirects and gzip
             feed = feedparser.parse(url)
+            
+            # arXiv weekend fallback: RSS feeds have skipDays=Saturday,Sunday and return 0 items.
+            # Fall back to official arXiv Search API query endpoint for fresh papers.
+            if len(feed.entries) == 0 and "arxiv" in url.lower():
+                logger.info(f"arXiv RSS empty (weekend skipDays). Triggering arXiv Search API fallback for {name}.")
+                api_url = "https://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL&sortBy=submittedDate&sortOrder=descending&max_results=15"
+                feed = feedparser.parse(api_url)
+
             if feed.bozo and not feed.entries:
                 logger.warning(f"Feed parser reported issue for {name}: {feed.bozo_exception}")
                 return []

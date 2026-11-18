@@ -69,11 +69,12 @@ class VisualAssetManager:
             cursor.execute(
                 """
                 INSERT INTO assets (
-                    name, asset_type, file_path, file_hash, file_size_bytes,
+                    filename, name, asset_type, file_path, file_hash, file_size_bytes,
                     license_type, source_url, author, tags, is_verified
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 1)
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 1)
                 """,
                 (
+                    path.name,
                     name,
                     asset_type,
                     str(path.resolve()),

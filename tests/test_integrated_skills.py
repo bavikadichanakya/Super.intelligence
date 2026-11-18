@@ -286,14 +286,24 @@ def test_youtube_publishing_approval_gate_preservation(test_db, tmp_path):
         )
         job_id = cursor.lastrowid
 
-    # Attempt to upload unapproved job
-    res = yt.upload_video(
-        video_path=dummy_video,
-        title="Unapproved Draft",
-        description="Testing approval gate",
-        production_job_id=job_id,
-    )
+    # Attempt to upload unapproved job - blocked by Gate 1 (explicit_approval False) or Gate 4 (job not APPROVED)
+    with pytest.raises(PermissionError) as exc_info:
+        yt.upload_video(
+            video_path=dummy_video,
+            title="Unapproved Draft",
+            description="Testing approval gate",
+            production_job_id=job_id,
+            explicit_approval=False,
+        )
+    assert "Explicit human editorial approval is required" in str(exc_info.value)
 
-    # Must be blocked by approval gate
-    assert res["ok"] is False
-    assert "APPROVAL_GATE_BLOCKED" in res["error"]
+    # Even with explicit_approval=True, Gate 4 must block unapproved production job
+    with pytest.raises(PermissionError) as exc_info2:
+        yt.upload_video(
+            video_path=dummy_video,
+            title="Unapproved Draft",
+            description="Testing approval gate",
+            production_job_id=job_id,
+            explicit_approval=True,
+        )
+    assert "APPROVED status" in str(exc_info2.value)

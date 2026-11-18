@@ -1,0 +1,46 @@
+[
+  {
+    "filename": "accuracy_by_model_light.png",
+    "source_url": "https://raw.githubusercontent.com/browser-use/browser-use/main/static/accuracy_by_model_light.png",
+    "publisher": "browser-use",
+    "license": "MIT",
+    "size_bytes": 120815,
+    "sha256": "1de6087925a4ce2ecac69f74a507a58baef5d2947abf2dc86e0cb6e2d33a0906",
+    "local_path": "assets\\acquired\\browser_use\\accuracy_by_model_light.png",
+    "asset_type": "official_benchmark_diagram",
+    "commercial_reuse_permitted": true
+  },
+  {
+    "filename": "accuracy_by_model_dark.png",
+    "source_url": "https://raw.githubusercontent.com/browser-use/browser-use/main/static/accuracy_by_model_dark.png",
+    "publisher": "browser-use",
+    "license": "MIT",
+    "size_bytes": 120187,
+    "sha256": "017bf3e9b2759e3bb2acec51c0cb9cd6e9ae4ebcf7eb798d3fb760e50bd40890",
+    "local_path": "assets\\acquired\\browser_use\\accuracy_by_model_dark.png",
+    "asset_type": "official_benchmark_diagram",
+    "commercial_reuse_permitted": true
+  },
+  {
+    "filename": "browser-use.png",
+    "source_url": "https://raw.githubusercontent.com/browser-use/browser-use/main/static/browser-use.png",
+    "publisher": "browser-use",
+    "license": "MIT",
+    "size_bytes": 31186,
+    "sha256": "04d9bd9aa9962d772469cc11e96f23a9a2afb78ae7282d23d4194cf1b4de65e5",
+    "local_path": "assets\\acquired\\browser_use\\browser-use.png",
+    "asset_type": "logo_branding",
+    "commercial_reuse_permitted": true
+  },
+  {
+    "filename": "hard_benchmark_v2.jpg",
+    "source_url": "https://raw.githubusercontent.com/browser-use/browser-use/main/static/hard_benchmark_v2.jpg",
+    "publisher": "browser-use",
+    "license": "MIT",
+    "size_bytes": 235742,
+    "sha256": "f7eb9e7a7569fc3bd33c97f9003476875e6d3d3a2c36a7a8a142243a5298de8a",
+    "local_path": "assets\\acquired\\browser_use\\hard_benchmark_v2.jpg",
+    "asset_type": "official_benchmark_diagram",
+    "commercial_reuse_permitted": true
+  }
+]

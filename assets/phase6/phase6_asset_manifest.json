@@ -1,0 +1,28 @@
+[
+  {
+    "asset_id": "asset_deepseek_v3_repo_card",
+    "title": "DeepSeek-V3 Official GitHub Repository Card & MLA Kernel Definition",
+    "original_url": "https://github.com/deepseek-ai/DeepSeek-V3",
+    "creator": "DeepSeek-AI Open Source Research",
+    "source": "Official GitHub Repository & Source Code (inference/model.py)",
+    "license": "MIT License",
+    "retrieval_date": "2026-11-15",
+    "sha256": "430fc604e0763ca249cc1ebd4f1d2be0f71a6de0e16f2af4f5ff671fdc669a6b",
+    "local_file_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\phase6\\deepseek_v3_repo_card.png",
+    "intended_scene": "mla_source_grounding",
+    "attribution_requirements": "Attribution to DeepSeek-AI under MIT License"
+  },
+  {
+    "asset_id": "asset_mla_vs_gqa_schematic",
+    "title": "Architectural Schematic: MHA vs GQA vs Multi-Head Latent Attention",
+    "original_url": "https://arxiv.org/abs/2412.19437",
+    "creator": "DeepSeek-AI & Open Source Systems Analysis",
+    "source": "arXiv:2412.19437 Figure 2 Architectural Comparison",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "retrieval_date": "2026-11-15",
+    "sha256": "db064c723342ff643000548de72389dfc34d6c747adcf825999e52858af39687",
+    "local_file_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\phase6\\mla_vs_gqa_architecture_schematic.png",
+    "intended_scene": "mla_mechanism_breakdown",
+    "attribution_requirements": "Citation of DeepSeek-V3 Technical Report (arXiv:2412.19437)"
+  }
+]

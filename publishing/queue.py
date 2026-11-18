@@ -71,6 +71,16 @@ class PublishingQueue:
 
         with self.db.transaction() as conn:
             cursor = conn.cursor()
+            # Prevent duplicate queue entries for the same production job
+            cursor.execute(
+                "SELECT id FROM publishing_queue WHERE production_job_id = ? AND status IN ('SCHEDULED', 'QUEUED', 'PUBLISHED')",
+                (production_job_id,),
+            )
+            existing = cursor.fetchone()
+            if existing:
+                logger.info(f"Reel #{production_job_id} already exists in publishing queue with ID #{existing['id']}. Skipping duplicate.")
+                return existing["id"]
+
             cursor.execute(
                 """
                 INSERT INTO publishing_queue (

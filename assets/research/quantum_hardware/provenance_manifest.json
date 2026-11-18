@@ -1,0 +1,116 @@
+{
+  "manifest_version": "1.0",
+  "generated_at": "2026-11-16T17:48:00+05:30",
+  "project": "SUPER.INTELLIGENCEEE",
+  "research_phase": "Phase 9.3 Quantum Hardware Visual Research",
+  "references": [
+    {
+      "id": "ref_ibm_quantum_system_two",
+      "architecture": "Superconducting",
+      "institution": "IBM Quantum",
+      "source_url": "https://www.ibm.com/quantum/systems",
+      "hardware_components": ["Cryostat Chandelier", "Heron Processor Packaging", "High-Density Coaxial Looms"],
+      "observed_materials": ["OFHC Copper (Gold-Plated)", "316L Stainless Steel", "NbTi Superconducting Wire"],
+      "sampled_colors": {
+        "gold_flange": "#D4AF37",
+        "stainless_coax": "#949699",
+        "chassis_charcoal": "#1A1D24"
+      },
+      "licensing_status": "Documentary Research Citation (Fair Use)",
+      "production_usage": "Color palette and physical proportion reference"
+    },
+    {
+      "id": "ref_google_quantum_ai_willow",
+      "architecture": "Superconducting",
+      "institution": "Google Quantum AI",
+      "source_url": "https://quantumai.google/hardware",
+      "hardware_components": ["105-Qubit Willow QPU", "Surface Code Interconnects", "Dilution Refrigerator Cold Finger"],
+      "observed_materials": ["Gold-Plated Sample Puck", "Silicon Substrate", "Aluminum Superconducting Thin Films"],
+      "sampled_colors": {
+        "gold_puck": "#F4C430",
+        "silicon_die": "#1E2530",
+        "superconducting_trace": "#00F0FF"
+      },
+      "licensing_status": "Published Scientific Literature (Nature Vol 636)",
+      "production_usage": "Scientific data curve and QPU lattice geometry reference"
+    },
+    {
+      "id": "ref_bluefors_xld_cryostat",
+      "architecture": "Superconducting",
+      "institution": "Bluefors Oy",
+      "source_url": "https://bluefors.com/products/xld-dilution-refrigerator/",
+      "hardware_components": ["Multi-Stage Dilution Refrigerator", "50K/4K Radiation Shields", "Still/Mixing Chamber"],
+      "observed_materials": ["Electroplated Gold", "Titanium Ti-6Al-4V Support Rods", "Mu-Metal Magnetic Shield"],
+      "sampled_colors": {
+        "gold_plate": "#D4AF37",
+        "titanium_rod": "#686D76",
+        "mumetal_can": "#8C929A"
+      },
+      "licensing_status": "Manufacturer Technical Specification",
+      "production_usage": "Chandelier stage dimensions and mechanical hierarchy"
+    },
+    {
+      "id": "ref_ionq_forte_aria",
+      "architecture": "Trapped-Ion",
+      "institution": "IonQ Inc.",
+      "source_url": "https://ionq.com/technology",
+      "hardware_components": ["Spherical Octagonal UHV Chamber", "Optical Viewports", "355nm/369nm Laser Paths"],
+      "observed_materials": ["316L Stainless Steel", "Fused Silica Quartz AR Glass", "Black Anodized Aluminum"],
+      "sampled_colors": {
+        "steel_chamber": "#8B9096",
+        "ar_coating": "#5D2A78",
+        "laser_violet": "#6F00FF",
+        "ion_fluor": "#38BDF8"
+      },
+      "licensing_status": "Documentary Research Citation (Fair Use)",
+      "production_usage": "Trapped-ion palette and optical bench geometry reference"
+    },
+    {
+      "id": "ref_quera_aquila_neutral_atom",
+      "architecture": "Neutral-Atom",
+      "institution": "QuEra Computing / Harvard",
+      "source_url": "https://www.quera.com/aquila",
+      "hardware_components": ["Fused Quartz Science Cell", "Spatial Light Modulator", "Optical Tweezers Matrix"],
+      "observed_materials": ["Ultra-Pure Quartz Glass", "Enamelled Copper Magnet Wire", "Rubidium-87 Vapor"],
+      "sampled_colors": {
+        "quartz_cell": "#DDE8F0",
+        "copper_coil": "#A6522E",
+        "atom_fluor": "#00FF88",
+        "rydberg_cyan": "#00F0FF"
+      },
+      "licensing_status": "Documentary Research Citation (Nature Vol 596)",
+      "production_usage": "Neutral-atom palette and laser tweezer array reference"
+    },
+    {
+      "id": "ref_psiquantum_xanadu_photonic",
+      "architecture": "Photonic",
+      "institution": "PsiQuantum / Xanadu",
+      "source_url": "https://psiquantum.com/technology",
+      "hardware_components": ["300mm Silicon Photonic Wafer", "Si3N4 Waveguides", "Cryogenic SNSPDs"],
+      "observed_materials": ["Silicon-on-Insulator", "Silicon Nitride", "Fiber Optic PM Jackets"],
+      "sampled_colors": {
+        "silicon_wafer": "#1C2938",
+        "waveguide_core": "#F59E0B",
+        "fiber_orange": "#E87722",
+        "snspd_gold": "#E8B838"
+      },
+      "licensing_status": "Documentary Research Citation (Nature Vol 606)",
+      "production_usage": "Photonic palette and waveguide routing reference"
+    },
+    {
+      "id": "ref_intel_tunnel_falls_spin",
+      "architecture": "Silicon Spin Qubit",
+      "institution": "Intel Corporation",
+      "source_url": "https://www.intel.com/content/www/us/en/research/quantum-computing.html",
+      "hardware_components": ["Tunnel Falls 12-Qubit Chip", "Cryogenic Interposer", "Horse Ridge SoC"],
+      "observed_materials": ["Isotopically Pure Si-28", "ENIG Immersion Gold PCB", "25-Micron Gold Wirebonds"],
+      "sampled_colors": {
+        "silicon_die": "#1F2429",
+        "enig_gold_trace": "#D6A535",
+        "wirebond_gold": "#FFD24C"
+      },
+      "licensing_status": "Documentary Research Citation (Intel Newsroom)",
+      "production_usage": "Semiconductor spin qubit palette reference"
+    }
+  ]
+}

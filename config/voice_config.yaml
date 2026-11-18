@@ -1,0 +1,74 @@
+# SUPER.INTELLIGENCEEE — Central Voice & Professional Audio Engineering Configuration
+# Enforces strictly offline, natural, mature MALE voice narration and calibrated mobile audio.
+
+voice:
+  # Selected Model: Piper ONNX British RP Male Voice ('Jarvis' High-Quality Documentary)
+  model_name: "jarvis-high"
+  model_file: "assets/voices/jarvis-high.onnx"
+  config_file: "assets/voices/jarvis-high.onnx.json"
+  gender: "MALE"
+  sample_rate_native: 22050
+  language: "en_GB"
+  style: "authoritative, articulate, confident, tech-analyst"
+
+narration:
+  primary_engine: "piper"
+  length_scale: 1.0
+  noise_scale: 0.667
+  noise_w: 0.8
+  
+  # Fail-safe constraints: Female fallback is strictly prohibited
+  allow_female_fallback: false
+  fallback_engine: "pyttsx3"
+  pyttsx3_voice_preference: "MALE" # Microsoft David Desktop on Windows; prohibit Zira
+  
+  # Pronunciation Preprocessing
+  pronunciation_dictionary:
+    enabled: true
+    case_sensitive_lexicon: true
+    expand_acronyms: true
+    expand_quantization_units: true
+    expand_speedups: true
+
+audio_engineering:
+  # Master Target Specifications (Instagram Reels / YouTube Shorts Standards)
+  target_lufs: -16.0
+  lufs_tolerance: 1.0
+  true_peak_limit_dbtp: -1.0
+  loudness_range_lra: 7.0
+  master_sample_rate_hz: 48000
+  master_channels: 2 # Stereo standard
+
+  # Vocal Chain Mastering Filters
+  vocal_chain:
+    highpass_filter_hz: 80
+    mud_cut_freq_hz: 300
+    mud_cut_gain_db: -1.5
+    presence_boost_freq_hz: 3000
+    presence_boost_gain_db: 2.0
+    compressor:
+      threshold_db: -20.0
+      ratio: 3.0
+      attack_ms: 5
+      release_ms: 50
+
+  # Dynamic Music Ducking (Speech Sidechain)
+  ducking:
+    enabled: true
+    attenuation_db: -16.0
+    music_base_volume: 0.12
+    attack_ms: 200
+    release_ms: 400
+
+  # Sound Effects (SFX) Integration
+  sound_effects:
+    enabled: true
+    sfx_dir: ".agents/skills/media-use/audio/assets/sfx"
+    sfx_manifest: ".agents/skills/media-use/audio/assets/sfx/manifest.json"
+    volume: 0.20
+    transitions:
+      scene_transition: "whoosh-cinematic.mp3"
+      hero_impact: "impact-bass-1.mp3"
+      accent_reveal: "glitch-1.mp3"
+      stat_counter: "ping.mp3"
+

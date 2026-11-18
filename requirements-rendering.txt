@@ -1,0 +1,19 @@
+# SUPER.INTELLIGENCEEE — Rendering & Multi-Engine Dependencies
+# Pinned for Python 3.11.15 on Windows 11 Home 64-bit
+
+# Core Modeling & Validation
+pydantic>=2.10.0,<3.0.0
+psutil>=5.9.0
+
+# Mathematical & Scientific Animation
+manim==0.22.1
+manimpango>=0.5.0
+pycairo>=1.26.0
+
+# Audio Processing & Loudness Normalization
+numpy>=1.26.0
+scipy>=1.11.0
+soundfile>=0.12.1
+
+# Image Inspection & Frame Analysis
+Pillow>=10.0.0

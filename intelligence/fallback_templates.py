@@ -6,26 +6,41 @@ class FallbackTemplates:
     """Produces structured, factual 7-section video scripts completely offline without any paid APIs."""
 
     @classmethod
-    def generate_script(cls, article: Dict[str, Any]) -> Dict[str, Any]:
+    def generate_script(cls, article: Dict[str, Any], dossier: Any = None) -> Dict[str, Any]:
         title = article.get("title", "Recent AI Development")
         publisher = article.get("publisher", "Official Announcement")
         summary = article.get("summary", "")
         category = article.get("category", "Artificial Intelligence News")
-        source_url = article.get("url", "")
+        source_url = article.get("url", "") or article.get("source_url", "")
 
-        # Extract core summary sentence
+        # Extract core summary sentences
         clean_summary = summary.replace("\n", " ").strip()
         sentences = [s.strip() for s in re.split(r'[.!?]+', clean_summary) if len(s.strip()) > 10]
         core_point = sentences[0] if sentences else f"Researchers and engineers have unveiled {title}."
-        second_point = sentences[1] if len(sentences) > 1 else "Early evaluations demonstrate notable performance improvements across target tasks."
+        second_point = sentences[1] if len(sentences) > 1 else ""
+
+        # Use dossier context if provided
+        active_dossier = dossier or article.get("dossier") or article.get("research_dossier")
+        if active_dossier:
+            tech_exp = getattr(active_dossier, "technical_explanation", "") or (active_dossier.get("technical_explanation") if isinstance(active_dossier, dict) else "")
+            lims = getattr(active_dossier, "limitations", []) or (active_dossier.get("limitations") if isinstance(active_dossier, dict) else [])
+            imps = getattr(active_dossier, "potential_implications", []) or (active_dossier.get("potential_implications") if isinstance(active_dossier, dict) else [])
+        else:
+            tech_exp = ""
+            lims = []
+            imps = []
 
         hook = HookGenerator.generate_hook(title, category)
-        context = f"Published via {publisher}, this milestone addresses persistent challenges in computational scalability and real-world system reliability."
-        development = f"{core_point}. {second_point}."
-        explanation = "Architecturally, this advance leverages refined algorithmic optimizations and focused data pipelines rather than just raw brute-force compute."
-        implications = "For engineers and builders, this unlocks more efficient inference, reduced operational latency, and smarter autonomous workflows."
-        limitations = "However, researchers note that edge-case validation and broader stress testing in complex production environments are still underway."
-        takeaway = "As frontier models evolve, efficiency and verified execution are becoming the real competitive moats."
+        context = f"Published via {publisher}, this milestone focuses on verified implementation and reproducible results."
+        development = f"{core_point}. {second_point}." if second_point else f"{core_point}."
+        explanation = tech_exp if tech_exp else (
+            sentences[2] if len(sentences) > 2 else f"The underlying design prioritizes targeted optimizations within the core architecture of {title}."
+        )
+        implications = imps[0] if imps else (
+            sentences[3] if len(sentences) > 3 else "For developers, this provides more predictable execution in production pipelines."
+        )
+        limitations = lims[0] if lims else "Production deployment requires independent benchmark validation under live real-world constraints."
+        takeaway = "Understanding the underlying architectural trade-offs is essential as emerging models mature."
 
         # Compute word counts
         sections = [hook, context, development, explanation, implications, limitations, takeaway]

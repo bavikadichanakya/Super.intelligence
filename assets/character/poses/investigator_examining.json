@@ -1,0 +1,16 @@
+{
+  "pose_id": "investigator_examining",
+  "default_screen_position": "lower_left",
+  "default_scale": 0.65,
+  "head_rotation_deg_range": [
+    1.5,
+    4.0
+  ],
+  "breathing_amplitude_px": 3.0,
+  "blink_interval_sec_range": [
+    3.0,
+    4.5
+  ],
+  "gaze_target": "subject_semiconductor",
+  "supporting_action": "Pencil gesturing toward silicon die interconnects"
+}

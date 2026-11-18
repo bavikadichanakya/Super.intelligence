@@ -1,6 +1,10 @@
 from enum import Enum
-from dataclasses import dataclass
-from typing import Dict, Any, Tuple, Optional
+from dataclasses import dataclass, field, asdict
+from typing import Dict, Any, Tuple, Optional, List
+import hashlib
+import json
+from pathlib import Path
+import datetime
 
 class LicenseType(str, Enum):
     EDITORIAL_GENERATED = "Editorial Generated"
@@ -94,3 +98,91 @@ class ProvenanceManager:
             "permissions": "Full Editorial Rights Authorized",
             "risk_level": PERMITTED_LICENSES[license_name]["risk_level"]
         }
+
+
+@dataclass
+class AssetProvenanceRecord:
+    """Detailed provenance tracking for an individual visual asset."""
+    asset_id: str
+    file_path: str
+    file_name: str
+    sha256_hash: str
+    file_size_bytes: int
+    asset_category: str
+    license_type: str
+    source_url: str
+    author_creator: str
+    verification_timestamp: str
+    is_cc0_verified: bool = False
+    verification_notes: str = ""
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass
+class AssetProvenanceManifest:
+    """Project-wide legal and cryptographic provenance manifest for a video production."""
+    manifest_id: str
+    reel_slug: str
+    created_at: str = field(default_factory=lambda: datetime.datetime.now().isoformat())
+    records: List[AssetProvenanceRecord] = field(default_factory=list)
+
+    @staticmethod
+    def calculate_sha256(file_path: Path | str) -> str:
+        """Computes SHA-256 hash of a file on disk."""
+        p = Path(file_path)
+        if not p.exists() or not p.is_file():
+            return "0" * 64
+        sha = hashlib.sha256()
+        with open(p, "rb") as f:
+            for chunk in iter(lambda: f.read(65536), b""):
+                sha.update(chunk)
+        return sha.hexdigest()
+
+    def add_asset(
+        self,
+        file_path: Path | str,
+        asset_category: str,
+        license_type: str,
+        source_url: str,
+        author_creator: str,
+        asset_id: Optional[str] = None,
+        notes: str = ""
+    ) -> AssetProvenanceRecord:
+        p = Path(file_path)
+        sha = self.calculate_sha256(p)
+        size = p.stat().st_size if p.exists() else 0
+        aid = asset_id or f"asset_{len(self.records) + 1:03d}_{p.stem}"
+        is_cc0 = license_type == LicenseType.CC0.value or license_type == "CC0"
+
+        record = AssetProvenanceRecord(
+            asset_id=aid,
+            file_path=str(p.resolve()),
+            file_name=p.name,
+            sha256_hash=sha,
+            file_size_bytes=size,
+            asset_category=asset_category,
+            license_type=license_type,
+            source_url=source_url,
+            author_creator=author_creator,
+            verification_timestamp=datetime.datetime.now().isoformat(),
+            is_cc0_verified=is_cc0,
+            verification_notes=notes or f"Cryptographically verified SHA256: {sha[:16]}..."
+        )
+        self.records.append(record)
+        return record
+
+    def save_json(self, output_path: Path | str) -> Path:
+        out = Path(output_path)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        data = {
+            "manifest_id": self.manifest_id,
+            "reel_slug": self.reel_slug,
+            "created_at": self.created_at,
+            "total_assets": len(self.records),
+            "assets": [r.to_dict() for r in self.records]
+        }
+        with open(out, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+        return out

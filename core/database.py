@@ -307,6 +307,85 @@ class Database:
                 consumed_at REAL
             );
             CREATE INDEX IF NOT EXISTS idx_oauth_states_expires ON oauth_states(expires_at);
+
+            -- Master YouTube Publications Table (Audit trail & Idempotency)
+            CREATE TABLE IF NOT EXISTS youtube_publications (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                job_id INTEGER,
+                video_id TEXT UNIQUE,
+                youtube_url TEXT,
+                privacy_status TEXT DEFAULT 'private',
+                title TEXT NOT NULL,
+                description TEXT,
+                tags TEXT,
+                artifact_hash TEXT NOT NULL,
+                approval_id INTEGER,
+                uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                status TEXT DEFAULT 'UPLOADED',
+                error_message TEXT,
+                FOREIGN KEY (job_id) REFERENCES production_jobs(id) ON DELETE SET NULL
+            );
+            CREATE INDEX IF NOT EXISTS idx_yt_video_id ON youtube_publications(video_id);
+            CREATE INDEX IF NOT EXISTS idx_yt_hash ON youtube_publications(artifact_hash);
+
+            -- Phase 12: Content Performance Snapshots Table (Historical Telemetry & Audits)
+            CREATE TABLE IF NOT EXISTS content_performance_snapshots (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                production_job_id INTEGER NOT NULL,
+                platform TEXT NOT NULL,                     -- 'youtube_shorts' or 'instagram_reels'
+                platform_media_id TEXT NOT NULL,
+                title TEXT NOT NULL,
+                topic TEXT NOT NULL,
+                content_pillar TEXT NOT NULL,
+                hook_archetype TEXT,
+                hook_script TEXT,
+                video_length REAL NOT NULL,
+                published_at TIMESTAMP NOT NULL,
+                caption_version TEXT,
+                hashtag_version TEXT,
+                visual_format TEXT,
+                narration_version TEXT,
+                reach INTEGER DEFAULT 0,
+                views INTEGER DEFAULT 0,
+                engaged_views INTEGER DEFAULT 0,
+                skip_rate REAL DEFAULT 0.0,
+                avg_watch_time REAL DEFAULT 0.0,
+                retention_pct REAL DEFAULT 0.0,
+                shares INTEGER DEFAULT 0,
+                saves INTEGER DEFAULT 0,
+                profile_visits INTEGER DEFAULT 0,
+                follows_or_subs INTEGER DEFAULT 0,
+                traffic_sources TEXT,                      -- JSON blob
+                diagnostics_json TEXT,                     -- JSON blob of DiagnosticReport
+                next_experiment TEXT,
+                collected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (production_job_id) REFERENCES production_jobs(id) ON DELETE CASCADE
+            );
+            CREATE INDEX IF NOT EXISTS idx_cps_job ON content_performance_snapshots(production_job_id);
+            CREATE INDEX IF NOT EXISTS idx_cps_platform_media ON content_performance_snapshots(platform, platform_media_id);
+            CREATE INDEX IF NOT EXISTS idx_cps_pillar ON content_performance_snapshots(content_pillar);
+
+            -- Phase 12: Content Growth Experiments Table
+            CREATE TABLE IF NOT EXISTS content_experiments (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                experiment_id TEXT UNIQUE NOT NULL,
+                hypothesis TEXT NOT NULL,
+                variable_tested TEXT NOT NULL,
+                control_job_id INTEGER,
+                control_metrics TEXT,                      -- JSON blob
+                variant_description TEXT NOT NULL,
+                status TEXT DEFAULT 'PROPOSED',            -- 'PROPOSED', 'IN_PRODUCTION', 'PUBLISHED', 'CONCLUDED'
+                variant_job_id INTEGER,
+                outcome_metrics TEXT,                      -- JSON blob
+                verdict TEXT,                              -- 'REPEAT', 'MODIFY', 'DISCARD'
+                confidence_level TEXT DEFAULT 'LOW',
+                learning_notes TEXT,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                concluded_at TIMESTAMP,
+                FOREIGN KEY (control_job_id) REFERENCES production_jobs(id) ON DELETE SET NULL,
+                FOREIGN KEY (variant_job_id) REFERENCES production_jobs(id) ON DELETE SET NULL
+            );
+            CREATE INDEX IF NOT EXISTS idx_exp_status ON content_experiments(status);
             """)
 
             # Safe automated migrations for schema evolution
@@ -740,6 +819,164 @@ class Database:
             # Prune states older than 24 hours
             cursor.execute("DELETE FROM oauth_states WHERE expires_at < ?", (now - 86400,))
             return consumed
+
+    # -------------------------------------------------------------
+    # YouTube Publication Operations (Audit & Idempotency)
+    # -------------------------------------------------------------
+    def record_youtube_publication(self, record: Dict[str, Any]) -> int:
+        """Records a successful YouTube upload in SQLite for idempotency and audit."""
+        with self.transaction() as conn:
+            cur = conn.execute("""
+                INSERT OR REPLACE INTO youtube_publications (
+                    job_id, video_id, youtube_url, privacy_status, title,
+                    description, tags, artifact_hash, approval_id, status, error_message
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (
+                record.get("job_id"),
+                record.get("video_id"),
+                record.get("youtube_url"),
+                record.get("privacy_status", "private"),
+                record.get("title", ""),
+                record.get("description", ""),
+                json.dumps(record.get("tags", [])) if isinstance(record.get("tags"), list) else record.get("tags", ""),
+                record.get("artifact_hash", ""),
+                record.get("approval_id"),
+                record.get("status", "UPLOADED"),
+                record.get("error_message", "")
+            ))
+            return cur.lastrowid
+
+    def get_youtube_publications(self, limit: int = 50) -> List[Dict[str, Any]]:
+        """Retrieves history of YouTube publications."""
+        with self.get_connection() as conn:
+            cur = conn.execute("SELECT * FROM youtube_publications ORDER BY uploaded_at DESC LIMIT ?", (limit,))
+            return [dict(r) for r in cur.fetchall()]
+
+    def is_youtube_video_published(self, artifact_hash: str) -> bool:
+        """Checks if a video with the identical artifact hash has already been published to YouTube."""
+        if not artifact_hash:
+            return False
+        with self.get_connection() as conn:
+            cur = conn.execute(
+                "SELECT COUNT(*) as c FROM youtube_publications WHERE artifact_hash = ? AND status = 'UPLOADED'",
+                (artifact_hash,)
+            )
+            row = cur.fetchone()
+            return (row["c"] > 0) if row else False
+
+    # -------------------------------------------------------------
+    # Phase 12: Content Performance & Experiment Operations
+    # -------------------------------------------------------------
+    def save_performance_snapshot(self, data: Dict[str, Any]) -> int:
+        """Records an immutable point-in-time performance snapshot for a published video."""
+        with self.transaction() as conn:
+            cur = conn.execute("""
+                INSERT INTO content_performance_snapshots (
+                    production_job_id, platform, platform_media_id, title, topic,
+                    content_pillar, hook_archetype, hook_script, video_length,
+                    published_at, caption_version, hashtag_version, visual_format,
+                    narration_version, reach, views, engaged_views, skip_rate,
+                    avg_watch_time, retention_pct, shares, saves, profile_visits,
+                    follows_or_subs, traffic_sources, diagnostics_json, next_experiment
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (
+                data.get("production_job_id"),
+                data.get("platform"),
+                data.get("platform_media_id"),
+                data.get("title", ""),
+                data.get("topic", ""),
+                data.get("content_pillar", "open_frontier"),
+                data.get("hook_archetype", ""),
+                data.get("hook_script", ""),
+                data.get("video_length", 0.0),
+                data.get("published_at", datetime.now(timezone.utc).isoformat()),
+                data.get("caption_version", ""),
+                data.get("hashtag_version", ""),
+                data.get("visual_format", "Cleanroom Light"),
+                data.get("narration_version", "Kokoro-82M am_liam"),
+                data.get("reach", 0),
+                data.get("views", 0),
+                data.get("engaged_views", 0),
+                data.get("skip_rate", 0.0),
+                data.get("avg_watch_time", 0.0),
+                data.get("retention_pct", 0.0),
+                data.get("shares", 0),
+                data.get("saves", 0),
+                data.get("profile_visits", 0),
+                data.get("follows_or_subs", 0),
+                json.dumps(data.get("traffic_sources", {})) if isinstance(data.get("traffic_sources"), dict) else data.get("traffic_sources", ""),
+                json.dumps(data.get("diagnostics_json", {})) if isinstance(data.get("diagnostics_json"), dict) else data.get("diagnostics_json", ""),
+                data.get("next_experiment", ""),
+            ))
+            return cur.lastrowid
+
+    def get_performance_snapshots(
+        self,
+        job_id: Optional[int] = None,
+        platform: Optional[str] = None,
+        limit: int = 50,
+    ) -> List[Dict[str, Any]]:
+        """Retrieves historical performance snapshots ordered by recency."""
+        with self.get_connection() as conn:
+            query = "SELECT * FROM content_performance_snapshots"
+            params: List[Any] = []
+            conditions: List[str] = []
+
+            if job_id is not None:
+                conditions.append("production_job_id = ?")
+                params.append(job_id)
+            if platform:
+                conditions.append("platform = ?")
+                params.append(platform)
+
+            if conditions:
+                query += " WHERE " + " AND ".join(conditions)
+
+            query += " ORDER BY collected_at DESC LIMIT ?"
+            params.append(limit)
+
+            cur = conn.execute(query, tuple(params))
+            return [dict(r) for r in cur.fetchall()]
+
+    def save_experiment(self, data: Dict[str, Any]) -> int:
+        """Stores a new controlled growth experiment."""
+        with self.transaction() as conn:
+            cur = conn.execute("""
+                INSERT OR REPLACE INTO content_experiments (
+                    experiment_id, hypothesis, variable_tested, control_job_id,
+                    control_metrics, variant_description, status, variant_job_id,
+                    outcome_metrics, verdict, confidence_level, learning_notes,
+                    concluded_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (
+                data.get("experiment_id"),
+                data.get("hypothesis"),
+                data.get("variable_tested"),
+                data.get("control_job_id"),
+                json.dumps(data.get("control_metrics", {})) if isinstance(data.get("control_metrics"), dict) else data.get("control_metrics", ""),
+                data.get("variant_description", ""),
+                data.get("status", "PROPOSED"),
+                data.get("variant_job_id"),
+                json.dumps(data.get("outcome_metrics", {})) if isinstance(data.get("outcome_metrics"), dict) else data.get("outcome_metrics", ""),
+                data.get("verdict"),
+                data.get("confidence_level", "LOW"),
+                data.get("learning_notes", ""),
+                data.get("concluded_at"),
+            ))
+            return cur.lastrowid
+
+    def get_experiments(self, status: Optional[str] = None, limit: int = 50) -> List[Dict[str, Any]]:
+        """Retrieves growth experiments."""
+        with self.get_connection() as conn:
+            query = "SELECT * FROM content_experiments"
+            params: List[Any] = []
+            if status:
+                query += " WHERE status = ?"
+                params.append(status)
+            query += " ORDER BY created_at DESC LIMIT ?"
+            params.append(limit)
+            cur = conn.execute(query, tuple(params))
+            return [dict(r) for r in cur.fetchall()]
 
 
 def get_db() -> Database:

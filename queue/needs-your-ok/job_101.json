@@ -1,0 +1,17 @@
+{
+  "task_id": "TASK-DIST-3DB56D",
+  "production_job_id": 101,
+  "title": "Reel #101",
+  "artifact_path": "",
+  "agent_responsible": "distribution_agent",
+  "evidence_refs": [],
+  "quality_check_results": {
+    "qa_passed": true
+  },
+  "reason_approval_required": "Mandatory owner approval before social media distribution.",
+  "owner_decision": "PENDING",
+  "reviewer": null,
+  "reviewer_notes": null,
+  "submitted_at": "2026-11-16T17:14:11.645417+00:00",
+  "decision_timestamp": null
+}

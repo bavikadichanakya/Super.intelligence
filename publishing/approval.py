@@ -52,7 +52,19 @@ class ApprovalManager:
     ) -> Dict[str, Any]:
         """
         Approves a reel: moves file to output/approved/, updates database, and enqueues to weekly queue.
+        Enforces kill switch check and blocks agent self-approval.
         """
+        # Kill switch guard
+        from core.kill_switch import get_kill_switch
+        get_kill_switch().assert_not_active("ApprovalManager:approve_reel")
+
+        # Anti-self-approval and bot check
+        clean_name = (reviewer_name or "").strip().lower()
+        if not clean_name or clean_name in {"production_agent", "script_writer", "content_engine", "bot", "automated", "pipeline", "self"}:
+            raise PermissionError(
+                f"Reviewer '{reviewer_name}' is unauthorized. Human editorial review is mandatory; agents cannot self-approve."
+            )
+
         now = datetime.datetime.now().isoformat()
 
         with self.db.transaction() as conn:

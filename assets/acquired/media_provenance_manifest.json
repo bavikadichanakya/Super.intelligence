@@ -1,0 +1,2282 @@
+{
+  "asset_gh_58ce80f66b36": {
+    "asset_id": "asset_gh_58ce80f66b36",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_prefill.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_prefill.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "58ce80f66b369f2d26951171caab7c90ef7fc2b84b11b42e590c1184e5f493be",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_prefill.png",
+    "dimensions": [
+      1218,
+      327
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_41d9295b2c0f": {
+    "asset_id": "asset_gh_41d9295b2c0f",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/main_architecture_with_spongbob.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/main_architecture_with_spongbob.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "41d9295b2c0f224cc306da5359fb3cefc82169d578d7da19a9c66645714025dd",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_main_architecture_with_spongbob.png",
+    "dimensions": [
+      2037,
+      1457
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_f2b339c657db": {
+    "asset_id": "asset_gh_f2b339c657db",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/resident_vs_streamed.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/resident_vs_streamed.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "f2b339c657db86728c592d78652c18e36a0aef9bcdf4ce5d532c313f48eec7ea",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_resident_vs_streamed.png",
+    "dimensions": [
+      1906,
+      729
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_562aab4fa92c": {
+    "asset_id": "asset_gh_562aab4fa92c",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/shard_sizes.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/shard_sizes.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "562aab4fa92ca6babd8874c9535f3670b890e5ee2b73e5e57bd0bfe342d70e59",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_shard_sizes.png",
+    "dimensions": [
+      1642,
+      806
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_e55321be79d9": {
+    "asset_id": "asset_gh_e55321be79d9",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_kda_recurrence.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_kda_recurrence.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "e55321be79d9f61cb4e71be07b5da0f18367a6b820846b4a7bd718452ce2d18a",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_kda_recurrence.png",
+    "dimensions": [
+      1295,
+      333
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_cacaa529678b": {
+    "asset_id": "asset_gh_cacaa529678b",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_io_share.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_io_share.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "cacaa529678bf43a2e9d1443e59d4eb4ff77099459ad219781f74c9d68d017b7",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_io_share.png",
+    "dimensions": [
+      1312,
+      341
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_f10055bc88a7": {
+    "asset_id": "asset_gh_f10055bc88a7",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/bytes_census.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/bytes_census.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "f10055bc88a76707fb706902f079d47c73813beb42c99db50451017dbd3cfc1c",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_bytes_census.png",
+    "dimensions": [
+      1694,
+      778
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_18a2a6e32b5c": {
+    "asset_id": "asset_gh_18a2a6e32b5c",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_tolerance.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_tolerance.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "18a2a6e32b5c2e069c54e04c924aae2e1a60b8001936f378122da3919ff3d16b",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_tolerance.png",
+    "dimensions": [
+      1421,
+      337
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_81173739a7b4": {
+    "asset_id": "asset_gh_81173739a7b4",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/gb_read_shelf.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/gb_read_shelf.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "81173739a7b4cb6d136f907fbc53cffb2c83eda0d71b1851fea0236ea9e10617",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_gb_read_shelf.png",
+    "dimensions": [
+      1594,
+      837
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_7881599349c2": {
+    "asset_id": "asset_gh_7881599349c2",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_bf16_widen.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_bf16_widen.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "7881599349c276fb9e2c8b29517f0fa23f8bd2023ee3e5a12ab320db1fa0399c",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_bf16_widen.png",
+    "dimensions": [
+      1112,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_015849a908f5": {
+    "asset_id": "asset_gh_015849a908f5",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/io_share.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/io_share.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "015849a908f55a72dfc2f830ae60e3c9ea89bdb1f7349551897471dbd0104b1c",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_io_share.png",
+    "dimensions": [
+      1594,
+      806
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_fedb69efb091": {
+    "asset_id": "asset_gh_fedb69efb091",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_layer_map.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_layer_map.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "fedb69efb091a58b709e0815320beb06c7fa15e8acd72558948ca159316ce850",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_layer_map.png",
+    "dimensions": [
+      1565,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_c2908b0942ee": {
+    "asset_id": "asset_gh_c2908b0942ee",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/trace-replay.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/trace-replay.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "c2908b0942ee64224fa078972a3f803ddd895a27ddae6d98e79c08df1493cdcb",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_trace-replay.png",
+    "dimensions": [
+      2352,
+      378
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_94286d2ee279": {
+    "asset_id": "asset_gh_94286d2ee279",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/build-flow.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/build-flow.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "94286d2ee279b49d77a649f4f8f7f4a6e781145a5e49d948389f1e37c4273e6a",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_build-flow.png",
+    "dimensions": [
+      2352,
+      567
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_d6ae7db01656": {
+    "asset_id": "asset_gh_d6ae7db01656",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_st_layout.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_st_layout.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "d6ae7db01656c215ab6cc9180c4283bb3c50d6345db18061c01ea2c0a276ca9b",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_st_layout.png",
+    "dimensions": [
+      1654,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_bd35f364243e": {
+    "asset_id": "asset_gh_bd35f364243e",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/moe-dispatch.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/moe-dispatch.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "bd35f364243e67f81a2958e5e3cf4a1b5b782363a384b47187d7216d1e5894b2",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_moe-dispatch.png",
+    "dimensions": [
+      2352,
+      402
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_9e0da1390fe1": {
+    "asset_id": "asset_gh_9e0da1390fe1",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/tok-flow.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/tok-flow.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "9e0da1390fe16dd61e6699aba125b984e9275521131c8c5bb57dba91768309e2",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_tok-flow.png",
+    "dimensions": [
+      2352,
+      309
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_e2a6e777f954": {
+    "asset_id": "asset_gh_e2a6e777f954",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/preset_ladder.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/preset_ladder.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "e2a6e777f954852cc4b3f9b53367f78ceb2d9ddc3283dcdcbbdaa16546b32592",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_preset_ladder.png",
+    "dimensions": [
+      1677,
+      837
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_96d53f37d919": {
+    "asset_id": "asset_gh_96d53f37d919",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_mxfp4.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_mxfp4.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "96d53f37d9198db061ddc926a43474c5d28365a2bd93ecdbdd9d8e99ed2f9c95",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_mxfp4.png",
+    "dimensions": [
+      1239,
+      331
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_e7066a6fe47b": {
+    "asset_id": "asset_gh_e7066a6fe47b",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_absmax.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_absmax.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "e7066a6fe47b1f5f71e83b0c04d78981c79604a776ae617f9243b3ec0e5eb3af",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_absmax.png",
+    "dimensions": [
+      1318,
+      355
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_f183bdd33944": {
+    "asset_id": "asset_gh_f183bdd33944",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/forward-pass.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/forward-pass.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "f183bdd339441386b80a39aee9c41eeaca7224cd7e564c20120c799a9b9cb3d5",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_forward-pass.png",
+    "dimensions": [
+      2352,
+      174
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_7ee64d4dc00e": {
+    "asset_id": "asset_gh_7ee64d4dc00e",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/trunk_cache_split.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/trunk_cache_split.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "7ee64d4dc00e03fbd12a75c5db5ac7ab2bcd0539cbb7d688c81ebf3444b50ecf",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_trunk_cache_split.png",
+    "dimensions": [
+      1590,
+      868
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_761acf7f158f": {
+    "asset_id": "asset_gh_761acf7f158f",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_resident_set.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_resident_set.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "761acf7f158f26a795dea2c097299683838686367440c0465eaee433f61de65e",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_resident_set.png",
+    "dimensions": [
+      2195,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_c7c9b8c6eea1": {
+    "asset_id": "asset_gh_c7c9b8c6eea1",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/kda-flow.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/kda-flow.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "c7c9b8c6eea1cceb5a0f67364c619669476f3812367d951d94600913b1e763ec",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_kda-flow.png",
+    "dimensions": [
+      2352,
+      387
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_2d6e1c858aaf": {
+    "asset_id": "asset_gh_2d6e1c858aaf",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_stream_vs_quantize.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_stream_vs_quantize.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "2d6e1c858aaf3f778714dc416e7cafd32b4e35dc8a348c8254eb7713a2d44e12",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_stream_vs_quantize.png",
+    "dimensions": [
+      1976,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_4429a0ee6862": {
+    "asset_id": "asset_gh_4429a0ee6862",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/quant_error.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/quant_error.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "4429a0ee686281c360926b12e253fd0ec3d0fc289272f287e5de41b7b086ce6b",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_quant_error.png",
+    "dimensions": [
+      1723,
+      868
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_5c9e591ad586": {
+    "asset_id": "asset_gh_5c9e591ad586",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_mla_latent.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_mla_latent.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "5c9e591ad5867d7ab708fdbae548933fda6c187bcf51f6c2a68154ca4c1a997f",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_mla_latent.png",
+    "dimensions": [
+      1185,
+      333
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_aa67cf06c37b": {
+    "asset_id": "asset_gh_aa67cf06c37b",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/context_scaling.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/context_scaling.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "aa67cf06c37b62c553c037d1acc13fe3c94c30e4c18db46a299bad18647f9116",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_context_scaling.png",
+    "dimensions": [
+      1576,
+      903
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_56b013cf6fe8": {
+    "asset_id": "asset_gh_56b013cf6fe8",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_traffic.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_traffic.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "56b013cf6fe82360e86a10a6c7ff234bb023f6e86904311cb7204ea0cadc6eed",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_traffic.png",
+    "dimensions": [
+      1515,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_e5a2972ef8be": {
+    "asset_id": "asset_gh_e5a2972ef8be",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/token_time_split.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/token_time_split.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "e5a2972ef8bec3914bbc6984f2dd434ba26badb4cdaade132b0ade0c36021e43",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_token_time_split.png",
+    "dimensions": [
+      1517,
+      575
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_9aed195b5817": {
+    "asset_id": "asset_gh_9aed195b5817",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/mla-latent.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/mla-latent.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "9aed195b5817012494ed1a3fd295c6c130f9aeb87c13987ed28f2756dd64af95",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_mla-latent.png",
+    "dimensions": [
+      2352,
+      513
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_fa4f8e6b2f5e": {
+    "asset_id": "asset_gh_fa4f8e6b2f5e",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_router.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_router.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "fa4f8e6b2f5eaffc3cf7fbe1a333b58165331526a2e77775cdb80ec13a7fee02",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_router.png",
+    "dimensions": [
+      1329,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_dcf597aca791": {
+    "asset_id": "asset_gh_dcf597aca791",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/kda-nine-steps.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/kda-nine-steps.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "dcf597aca7912b44e8ee125d4745d7137bc949e162233e7512823ee00b03ab35",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_kda-nine-steps.png",
+    "dimensions": [
+      2352,
+      423
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_01cf73cae3cc": {
+    "asset_id": "asset_gh_01cf73cae3cc",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_situ_glu.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_situ_glu.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "01cf73cae3ccd133b099df73b2e0445e1179ead64d63f5ae70f1364f378473dc",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_situ_glu.png",
+    "dimensions": [
+      1317,
+      335
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_173f86aaaab2": {
+    "asset_id": "asset_gh_173f86aaaab2",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_mla_kv.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_mla_kv.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "173f86aaaab29fb875446d9a93fb3c1d1b792b8c07974066bcde6610430cd3f9",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_mla_kv.png",
+    "dimensions": [
+      1212,
+      337
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_2f419c0af4fe": {
+    "asset_id": "asset_gh_2f419c0af4fe",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/belady_vs_lru.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/belady_vs_lru.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "2f419c0af4fe6865652fb6347a8bca236e79a893a441a5bc05dfa4104427d552",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_belady_vs_lru.png",
+    "dimensions": [
+      1581,
+      872
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_e41ca3d57aa5": {
+    "asset_id": "asset_gh_e41ca3d57aa5",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/bytes_paradox.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/bytes_paradox.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "e41ca3d57aa56ec9d1a79c35b39a2ab51fde8a4cb07505076469e0991455b9a3",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_bytes_paradox.png",
+    "dimensions": [
+      1474,
+      868
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_4104e1499ee3": {
+    "asset_id": "asset_gh_4104e1499ee3",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/cache-3phase.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/cache-3phase.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "4104e1499ee3bfcda41e3d5bfad2fb16e1e3a5f90decf6435d0d133bb71c4533",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_cache-3phase.png",
+    "dimensions": [
+      2352,
+      411
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_c6a1b6dbfd7a": {
+    "asset_id": "asset_gh_c6a1b6dbfd7a",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/storage_regimes.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/storage_regimes.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "c6a1b6dbfd7aae2b915da2410d4276e8759ef3c91c23b0b8a57971502b6d2094",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_storage_regimes.png",
+    "dimensions": [
+      1721,
+      775
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_b93c0cda37a4": {
+    "asset_id": "asset_gh_b93c0cda37a4",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/ladder-harness.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/ladder-harness.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "b93c0cda37a4ca07da2619331594ad2d78beaefd1ff2e3570068929fcbf28757",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_ladder-harness.png",
+    "dimensions": [
+      2352,
+      387
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_c5c6da74ea18": {
+    "asset_id": "asset_gh_c5c6da74ea18",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/cache_wakeup.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/cache_wakeup.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "c5c6da74ea18299827d282642069a2a93bb444371ffd01d0d6a9529c28b576c6",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_cache_wakeup.png",
+    "dimensions": [
+      1581,
+      837
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_e169ac902be3": {
+    "asset_id": "asset_gh_e169ac902be3",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/decoder-layer.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/decoder-layer.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "e169ac902be360b4ce4041dbd315272608cb9b2c3f0bb96b18519f18d40cfa4d",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_decoder-layer.png",
+    "dimensions": [
+      2352,
+      435
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_1ede4f3f484e": {
+    "asset_id": "asset_gh_1ede4f3f484e",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/prefill_cost.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/prefill_cost.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "1ede4f3f484ecd50a989d82f08ac1d3923fb546c4e950662c5ac59a1ea266198",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_prefill_cost.png",
+    "dimensions": [
+      1666,
+      837
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_2575160109ae": {
+    "asset_id": "asset_gh_2575160109ae",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/mxfp4_savings.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/mxfp4_savings.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "2575160109ae2acae35540bde6f340f2f9578d1ea9aefc04b73c4a80c7de5779",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_mxfp4_savings.png",
+    "dimensions": [
+      1232,
+      778
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_ee6bff221c81": {
+    "asset_id": "asset_gh_ee6bff221c81",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/attn-res.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/attn-res.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "ee6bff221c81daafda8838db6feea152468ff126deb0e7eecfdfd4d59289e220",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_attn-res.png",
+    "dimensions": [
+      2352,
+      942
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_02808568308a": {
+    "asset_id": "asset_gh_02808568308a",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_naive_memory.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_naive_memory.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "02808568308a867e3014cb2a18f5c2360d542acc9147c6ca21184023104eb4e0",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_naive_memory.png",
+    "dimensions": [
+      1383,
+      331
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_5b1d60370750": {
+    "asset_id": "asset_gh_5b1d60370750",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/gen-loop.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/gen-loop.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "5b1d603707505fc81b3c0b714085146c8349c1ef2e8486b2b1ab6b5d71c65702",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_gen-loop.png",
+    "dimensions": [
+      2352,
+      558
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_5fb7c2acf92e": {
+    "asset_id": "asset_gh_5fb7c2acf92e",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/config-guard.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/config-guard.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "5fb7c2acf92e8453d0da74f04c663b6cf33f56dfabd25e36c849c79c9b37154a",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_config-guard.png",
+    "dimensions": [
+      2352,
+      456
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_d3987f4e1fa7": {
+    "asset_id": "asset_gh_d3987f4e1fa7",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_kda_decay.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_kda_decay.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "d3987f4e1fa73a8e24a0d01f6474e5087427cdbced94197da22bc623836d9681",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_kda_decay.png",
+    "dimensions": [
+      1092,
+      330
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_1b6882090841": {
+    "asset_id": "asset_gh_1b6882090841",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_trunk_hit.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_trunk_hit.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "1b6882090841847e04ec7e5f0657f6a3256b35d5294561c3def485fc0004a74e",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_trunk_hit.png",
+    "dimensions": [
+      1233,
+      338
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_00ca4fe75031": {
+    "asset_id": "asset_gh_00ca4fe75031",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_nibble_pack.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_nibble_pack.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "00ca4fe750312d6f98c96ccde4137f4e659fe26ef449c058476d304f142ef581",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_nibble_pack.png",
+    "dimensions": [
+      1248,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_cd340a3b6be4": {
+    "asset_id": "asset_gh_cd340a3b6be4",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/pack-trunk.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/pack-trunk.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "cd340a3b6be4c7851a10a473095de861fe191df384854cdd40e2834037a05435",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_pack-trunk.png",
+    "dimensions": [
+      2352,
+      612
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_9b7d736de333": {
+    "asset_id": "asset_gh_9b7d736de333",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/replication_noise.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/replication_noise.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "9b7d736de33316acc0d2d8cd6cc5aec0cbaa3cf64a8738412d37fb8ee5a08604",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_replication_noise.png",
+    "dimensions": [
+      1520,
+      702
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_b43c5c15c892": {
+    "asset_id": "asset_gh_b43c5c15c892",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/metric-bug.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/metric-bug.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "b43c5c15c892cbfad7dcfadf0e7c842a152ccf509a4a188d19a0e49306819385",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_metric-bug.png",
+    "dimensions": [
+      2310,
+      1083
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_1a102f30e7b9": {
+    "asset_id": "asset_gh_1a102f30e7b9",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/activation_spikes.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/activation_spikes.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "1a102f30e7b96d0dc687a42fb773ee10c0491457fd1e768ffc6fd702e365f81e",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_activation_spikes.png",
+    "dimensions": [
+      1805,
+      868
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_e8288f1fe5df": {
+    "asset_id": "asset_gh_e8288f1fe5df",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/memory_ladder.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/memory_ladder.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "e8288f1fe5df0970679bbea25267b9801717f1e8753bd9328214d3a400181b41",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_memory_ladder.png",
+    "dimensions": [
+      1779,
+      868
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_c200eaf52b29": {
+    "asset_id": "asset_gh_c200eaf52b29",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/roundtrip_sizes.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/roundtrip_sizes.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "c200eaf52b29c66e9276d8813c011281aa7802a6c5ca346b9906ebaf6661aff3",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_roundtrip_sizes.png",
+    "dimensions": [
+      1604,
+      837
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_4419cffb0c27": {
+    "asset_id": "asset_gh_4419cffb0c27",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_gb_per_layer.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_gb_per_layer.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "4419cffb0c27e83e93737841b56df1b3ad4173333183f5192b4b117499fac353",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_gb_per_layer.png",
+    "dimensions": [
+      1062,
+      338
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_305e81559de1": {
+    "asset_id": "asset_gh_305e81559de1",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/split-rule.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/split-rule.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "305e81559de1f7d9d994f743410b57dc971bf1eeae76a3ff68271cd9f5e1c587",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_split-rule.png",
+    "dimensions": [
+      2352,
+      585
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_f15359b7844f": {
+    "asset_id": "asset_gh_f15359b7844f",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_working_set.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_working_set.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "f15359b7844f08c876d201f691efec3ad1555b0ffbc183d0f2f99f1c68331680",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_working_set.png",
+    "dimensions": [
+      1166,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_d365aae10974": {
+    "asset_id": "asset_gh_d365aae10974",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_block_count.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_block_count.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "d365aae10974b07989eee5335e512ffd634e0de83bf60a08264ddad3fe70d08b",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_block_count.png",
+    "dimensions": [
+      1175,
+      333
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_4c5c6bbaafab": {
+    "asset_id": "asset_gh_4c5c6bbaafab",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/whats_missing.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/whats_missing.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "4c5c6bbaafab14c01fa9e674aae6bbcb5255a4ecb296b7be45cd7dc7218e3666",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_whats_missing.png",
+    "dimensions": [
+      1443,
+      560
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_7955a5f2f55e": {
+    "asset_id": "asset_gh_7955a5f2f55e",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/kernel-contract.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/kernel-contract.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "7955a5f2f55e010891e72732b82b2ace15bb550b6fb293dfedf8a0398eba7d7f",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_kernel-contract.png",
+    "dimensions": [
+      2352,
+      768
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_7ce8d957d0e6": {
+    "asset_id": "asset_gh_7ce8d957d0e6",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_retention.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_retention.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "7ce8d957d0e646f32b9ab2946a95140976d31ad1ce9e3dc626d10c635baaf192",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_retention.png",
+    "dimensions": [
+      1230,
+      338
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_091eaf41ea82": {
+    "asset_id": "asset_gh_091eaf41ea82",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/hosts-confound.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/hosts-confound.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "091eaf41ea82c6e68d20a6ead68dbacc4a4764988cdd6cedd741838844f3d594",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_hosts-confound.png",
+    "dimensions": [
+      2352,
+      660
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_0cee1cce5415": {
+    "asset_id": "asset_gh_0cee1cce5415",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_moe_latent.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_moe_latent.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "0cee1cce5415c8be6d3b054fb31959d54c60380c798e1864636d0add783f8c2e",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_moe_latent.png",
+    "dimensions": [
+      1627,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_71d5d1d8ae4b": {
+    "asset_id": "asset_gh_71d5d1d8ae4b",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/layer_conformance.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/layer_conformance.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "71d5d1d8ae4bb7f644094e1b5c7fbf34710a0b834504a0100ecad545a59600b1",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_layer_conformance.png",
+    "dimensions": [
+      1625,
+      837
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_e8da49a248df": {
+    "asset_id": "asset_gh_e8da49a248df",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_l2norm.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_l2norm.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "e8da49a248df74dd4ade9c9978356a4d971b372329cd1aba72b27486c22e60dc",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_l2norm.png",
+    "dimensions": [
+      1039,
+      373
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_2701225edb3c": {
+    "asset_id": "asset_gh_2701225edb3c",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_attn_res.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_attn_res.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "2701225edb3c3d6f458fe19cd9a3fda9c8a730ef7b442f68d14a8e94dc4ba1c4",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_attn_res.png",
+    "dimensions": [
+      1087,
+      359
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_68d9a5c869ca": {
+    "asset_id": "asset_gh_68d9a5c869ca",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_fit_ledger.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_fit_ledger.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "68d9a5c869ca609babe5957e19498eda5ddee1bddf0325de07644360e14e312c",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_fit_ledger.png",
+    "dimensions": [
+      1305,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_c1a679889edb": {
+    "asset_id": "asset_gh_c1a679889edb",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_context_ceiling.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_context_ceiling.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "c1a679889edb34c8e088a3df2b69c65c65ed77389ac60ec0d1ac63b03abbd986",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_context_ceiling.png",
+    "dimensions": [
+      1298,
+      331
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_c0692b3de159": {
+    "asset_id": "asset_gh_c0692b3de159",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/first-token.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/first-token.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "c0692b3de1599d3d4741c9019ae098b7469559fd74d1d4f7e351c5fb2d3a34c0",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_first-token.png",
+    "dimensions": [
+      2352,
+      381
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_2030bb68e5fe": {
+    "asset_id": "asset_gh_2030bb68e5fe",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_slot_count.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_slot_count.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "2030bb68e5fe06fbeb29949df97468b025230d7cd92788fdcb4f80155e0e7b62",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_slot_count.png",
+    "dimensions": [
+      1207,
+      338
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_f515e049e493": {
+    "asset_id": "asset_gh_f515e049e493",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_rmsnorm.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_rmsnorm.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "f515e049e493c206abf414d98e5047cb5ce46e55d8036a072668f2ee4b760a84",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_rmsnorm.png",
+    "dimensions": [
+      1210,
+      373
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_e1b6b5cff875": {
+    "asset_id": "asset_gh_e1b6b5cff875",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/fit_cascade.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/fit_cascade.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "e1b6b5cff875190e3e36a5f9e106080f7f743e1764f4626b5251f91f71991341",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_fit_cascade.png",
+    "dimensions": [
+      1700,
+      971
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_43433f5ac74e": {
+    "asset_id": "asset_gh_43433f5ac74e",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_dequant_cost.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_dequant_cost.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "43433f5ac74eb5563e26a98f0ddc9d6e64cdcca2e499f6ae7ae4a2dcba628f57",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_dequant_cost.png",
+    "dimensions": [
+      1278,
+      334
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_219e7fcddb83": {
+    "asset_id": "asset_gh_219e7fcddb83",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/pack_progress.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/pack_progress.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "219e7fcddb834b0aa5abcd3f990a4111e6e9ee2ee0ceff0d602d4e549a616ece",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_pack_progress.png",
+    "dimensions": [
+      1666,
+      837
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_6712cfaf950b": {
+    "asset_id": "asset_gh_6712cfaf950b",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/cache-slot-states.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/cache-slot-states.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "6712cfaf950bda3fc5cbe5da6c4f0df8a0d775516a39f658a7a76d7cf0b7aa47",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_cache-slot-states.png",
+    "dimensions": [
+      2352,
+      420
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_205292a9fd87": {
+    "asset_id": "asset_gh_205292a9fd87",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/machine-model.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/machine-model.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "205292a9fd870ab3dcdf79aff7091a76cd54a5cf5969da80b446b0f35673c3fe",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_machine-model.png",
+    "dimensions": [
+      2352,
+      396
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_2d23e2dcc8ee": {
+    "asset_id": "asset_gh_2d23e2dcc8ee",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/big-picture.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/big-picture.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "2d23e2dcc8ee7b41734d045073411dc90356dd3f8e9c83e512ef49ed3d1e1ed8",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_big-picture.png",
+    "dimensions": [
+      2352,
+      594
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_3f668b6bcc48": {
+    "asset_id": "asset_gh_3f668b6bcc48",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_compulsory.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_compulsory.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "3f668b6bcc48c9c0b65e575ec02793076fd5565eb47aaf70441d95847372d106",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_compulsory.png",
+    "dimensions": [
+      1177,
+      338
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_031b01e1937e": {
+    "asset_id": "asset_gh_031b01e1937e",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_ram_budget.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_ram_budget.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "031b01e1937e7a223e1b8a52d2f298a0bbf916be1a66825fa8d56e09ed153d72",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_ram_budget.png",
+    "dimensions": [
+      1705,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_d76882aba5cd": {
+    "asset_id": "asset_gh_d76882aba5cd",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_bytes_per_weight.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_bytes_per_weight.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "d76882aba5cd6dbe124ad90db1d3404771e3995d955122556e7c5aad839b4ba6",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_bytes_per_weight.png",
+    "dimensions": [
+      1400,
+      343
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_08b6fa33f993": {
+    "asset_id": "asset_gh_08b6fa33f993",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_kda_state.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_kda_state.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "08b6fa33f993cd0069d4173b29f8bd8a610db5262d02c0b5d4d8cb16f4b72b0d",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_kda_state.png",
+    "dimensions": [
+      1430,
+      331
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_1acc0350abeb": {
+    "asset_id": "asset_gh_1acc0350abeb",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/duplicate_config.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/duplicate_config.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "1acc0350abeb3955a3c22e30517d6faac92060feee238d87217c210657a6642f",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_duplicate_config.png",
+    "dimensions": [
+      1942,
+      640
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_af5b38049914": {
+    "asset_id": "asset_gh_af5b38049914",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/kv_layout.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/kv_layout.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "af5b380499149328b980f9dc598e8bf233cc1ee1475772845b0e0d79fea4e90b",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_kv_layout.png",
+    "dimensions": [
+      1167,
+      747
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_c59c4de8aaa4": {
+    "asset_id": "asset_gh_c59c4de8aaa4",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/trunk-stream.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/trunk-stream.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "c59c4de8aaa456aec7512171940744d01f0f8153365984fdfb24529c33d9c4e8",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_trunk-stream.png",
+    "dimensions": [
+      2352,
+      549
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_17a5a8ad844c": {
+    "asset_id": "asset_gh_17a5a8ad844c",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/parity-flow.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/parity-flow.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "17a5a8ad844cd6fa0425f853a5d09c2d3ce48e438980eadf07b1b7a4335b5bcf",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_parity-flow.png",
+    "dimensions": [
+      2352,
+      609
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_6e09ef01d3f1": {
+    "asset_id": "asset_gh_6e09ef01d3f1",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/hit_metrics.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/hit_metrics.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "6e09ef01d3f1fd963750784ca440345d5b1310a69f15a339cae33c02af19ede3",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_hit_metrics.png",
+    "dimensions": [
+      1620,
+      842
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_0cd92d3c9b65": {
+    "asset_id": "asset_gh_0cd92d3c9b65",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/moe-sparsity.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/moe-sparsity.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "0cd92d3c9b651c58e3d7487c0357c6a0d0fed26d84e619c715f2a22f41e7fa45",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_moe-sparsity.png",
+    "dimensions": [
+      2352,
+      465
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_8fdc16ebceec": {
+    "asset_id": "asset_gh_8fdc16ebceec",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/binary_sizes.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/binary_sizes.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "8fdc16ebceecd492d08a834ecb74e50031fbd8abfcb1983e01d27a518d47a921",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_binary_sizes.png",
+    "dimensions": [
+      1604,
+      775
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_94d1bdeb628d": {
+    "asset_id": "asset_gh_94d1bdeb628d",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_accum_order.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_accum_order.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "94d1bdeb628d9eeac7831bdfc22b71cd08b4e59d94bc03b6f1efab58189ceefc",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_accum_order.png",
+    "dimensions": [
+      1378,
+      362
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_195518383c31": {
+    "asset_id": "asset_gh_195518383c31",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/same_answer.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/same_answer.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "195518383c3153d714741e126215981a48fda19bf712e7448f054d1b300ee358",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_same_answer.png",
+    "dimensions": [
+      1563,
+      806
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_813055439b4c": {
+    "asset_id": "asset_gh_813055439b4c",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/quant_by_layer_type.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/quant_by_layer_type.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "813055439b4c0b420872532f34e3d396da4736e71b9dfa9dfb58362458cc90a4",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_quant_by_layer_type.png",
+    "dimensions": [
+      1585,
+      714
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_ff67933ab459": {
+    "asset_id": "asset_gh_ff67933ab459",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_align.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_align.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "ff67933ab45918b375fb380adb123e5da80e2c8ba0999b74d510922e54a08b56",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_align.png",
+    "dimensions": [
+      1307,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_c833cda04a1c": {
+    "asset_id": "asset_gh_c833cda04a1c",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/gate_ladder.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/gate_ladder.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "c833cda04a1cb7b0e8bce2da86dea13064d8ac10919de5f41815ca04558976b6",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_gate_ladder.png",
+    "dimensions": [
+      1465,
+      716
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_f78546fc838e": {
+    "asset_id": "asset_gh_f78546fc838e",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_sparsity_ratio.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_sparsity_ratio.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "f78546fc838e3272561a59cb0ee99ce43a374255e8b77310b23030aa1d8acc3f",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_sparsity_ratio.png",
+    "dimensions": [
+      1156,
+      342
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_9d7d096f5729": {
+    "asset_id": "asset_gh_9d7d096f5729",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/noise-floor.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/noise-floor.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "9d7d096f57290725df7acddf4fea4d9e4734b07c7d92e7ffdf1acd4bdd3b1456",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_noise-floor.png",
+    "dimensions": [
+      2352,
+      882
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_a5a8561443bd": {
+    "asset_id": "asset_gh_a5a8561443bd",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/rss_fidelity.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/rss_fidelity.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "a5a8561443bde06c2970358de59eb34844d3c3cb934385f77c5395e03ca29f6e",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_rss_fidelity.png",
+    "dimensions": [
+      1519,
+      837
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_885249604d73": {
+    "asset_id": "asset_gh_885249604d73",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_prefetch.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_prefetch.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "885249604d73dd3759aa4267e9e1f7fa6e81abeb8241160f13a093fe2d85a22a",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_prefetch.png",
+    "dimensions": [
+      1294,
+      327
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_86c600ece7b2": {
+    "asset_id": "asset_gh_86c600ece7b2",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/step_trace.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/step_trace.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "86c600ece7b2c32ef578b249a75e2e61c6a4a51c89f9209f276774040a683b85",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_step_trace.png",
+    "dimensions": [
+      1643,
+      868
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_538f65e6f904": {
+    "asset_id": "asset_gh_538f65e6f904",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_spread.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_spread.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "538f65e6f904e60e5c22f405a14f7baeda89e44687ae1cf5d0cd356d3382826b",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_spread.png",
+    "dimensions": [
+      1079,
+      334
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_ae3eb3754584": {
+    "asset_id": "asset_gh_ae3eb3754584",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/recap.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/recap.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "ae3eb3754584115bb16b1ecee4a81b1f9d16fb034e89875456e23f5a4e82f0e8",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_recap.png",
+    "dimensions": [
+      2352,
+      432
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_4771b3e03ee4": {
+    "asset_id": "asset_gh_4771b3e03ee4",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/kda-state.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/kda-state.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "4771b3e03ee406f4d6e3ec353cbe3fc0de08ce1d3cd00b7480b1a35988861504",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_kda-state.png",
+    "dimensions": [
+      1932,
+      918
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_b0e0abeb6eb0": {
+    "asset_id": "asset_gh_b0e0abeb6eb0",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/st-load.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/st-load.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "b0e0abeb6eb03a158bb5a30fe191ceb32f537e539dc8c34e86b90a7467c23b5c",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_st-load.png",
+    "dimensions": [
+      2352,
+      435
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_8961d3c059c1": {
+    "asset_id": "asset_gh_8961d3c059c1",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/sim_vs_measured.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/sim_vs_measured.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "8961d3c059c1060cbabd1fe0e89a4b805698b22c00d53e365f7546a08d3b317d",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_sim_vs_measured.png",
+    "dimensions": [
+      1595,
+      842
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_13f78e13ff29": {
+    "asset_id": "asset_gh_13f78e13ff29",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/mxfp4-decode.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/mxfp4-decode.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "13f78e13ff2933c2f72c6a60dfeb4646ed7f333257b9327f4d095e9d297e43a4",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_mxfp4-decode.png",
+    "dimensions": [
+      2352,
+      807
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_452dd0b90f0b": {
+    "asset_id": "asset_gh_452dd0b90f0b",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/expert_reuse.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/expert_reuse.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "452dd0b90f0baea00359798a8ee6d6ca37445ff5e2d56fb56f35dc0608cb5e82",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_expert_reuse.png",
+    "dimensions": [
+      1214,
+      792
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_fae8d35d69fa": {
+    "asset_id": "asset_gh_fae8d35d69fa",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_kv_compression.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_kv_compression.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "fae8d35d69fad7f7779e7de473223928312d48ab70b9d985dca7182d3b31a291",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_kv_compression.png",
+    "dimensions": [
+      1206,
+      347
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_d186e50cee6d": {
+    "asset_id": "asset_gh_d186e50cee6d",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_queue_depth.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_queue_depth.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "d186e50cee6d1ed9424922d89caa23b93622d767d2ec6686ebcda376979f16fe",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_queue_depth.png",
+    "dimensions": [
+      1091,
+      325
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_6a9f1ef20146": {
+    "asset_id": "asset_gh_6a9f1ef20146",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_shortconv.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_shortconv.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "6a9f1ef20146e3c244550aa3024f291f102a91caebd16147db6a9fe2b17005fb",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_shortconv.png",
+    "dimensions": [
+      1227,
+      387
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_ab87f5f713b5": {
+    "asset_id": "asset_gh_ab87f5f713b5",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/patrick_pray.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/patrick_pray.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "ab87f5f713b5c9cba7188e40c03b12f79e2d6514cc8a4b63aa51dd74aca27856",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_patrick_pray.png",
+    "dimensions": [
+      500,
+      500
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_f5dedcba0610": {
+    "asset_id": "asset_gh_f5dedcba0610",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/eq_kda_gate.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/eq_kda_gate.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "f5dedcba061002a76ed4391be89b8b337a90fbe71afa867e01c5e4a08df62073",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_eq_kda_gate.png",
+    "dimensions": [
+      1325,
+      327
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  },
+  "asset_gh_f785a1d3af59": {
+    "asset_id": "asset_gh_f785a1d3af59",
+    "asset_type": "repo_doc_figure",
+    "title": "Documentation Figure: docs/images/oracle-ladder.png",
+    "source_url": "https://raw.githubusercontent.com/FareedKhan-dev/kimi-k3-in-c/main/docs/images/oracle-ladder.png",
+    "original_creator": "FareedKhan-dev",
+    "provider": "GitHub Raw",
+    "license_type": "Apache-2.0",
+    "license_url": "https://github.com/FareedKhan-dev/kimi-k3-in-c/blob/main/LICENSE",
+    "attribution_required": true,
+    "retrieval_date": "2026-11-15T07:07:35.706710+00:00",
+    "sha256_hash": "f785a1d3af593919517936f8d7c15454f65410602df5afd980f76fd3b14a6ea2",
+    "local_path": "A:\\SUPER.INTELLIGENCEEE\\assets\\acquired\\kimi_k3_cpu\\github_doc_oracle-ladder.png",
+    "dimensions": [
+      2352,
+      432
+    ],
+    "is_modified": false,
+    "intended_scene": null
+  }
+}

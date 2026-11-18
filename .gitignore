@@ -31,13 +31,29 @@ venv/
 # Runtimes, Logs & Temp
 .temp/
 .external_repos/
+external/
 logs/
 *.log
+bin/
+node_modules/
+rendering/remotion/node_modules/
+rendering/remotion/.remotion/
+data/tunnel_url.txt
+data/ngrok_url.txt
+scratch/
+
+# Large Model Binaries & Audio Models
+*.onnx
+reports/forensic_scan_raw.json
 
 # Generated Media Outputs & Scratch
 output/
 renderer/assets/reel_*
+renderer/assets/test_*
+renderer/assets/vr_test_*
 renderer/compositions/reel_*
+data/scripts/*.json
+data/scripts/*.md
 assets/voices/*.wav
 *.mp4
 *.mov

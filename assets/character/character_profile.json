@@ -1,0 +1,100 @@
+{
+  "profile_version": "1.0.0",
+  "identity": {
+    "working_name": "Kavi",
+    "name_status": "PROVISIONAL (documented working choice for engineering integration)",
+    "role": "Recurring Documentary Host & Lead Technical Investigator",
+    "channel": "SUPER.INTELLIGENCEEE",
+    "motto": "Understand What\\'s Next."
+  },
+  "physical_appearance": {
+    "hair": "Voluminous, curly dark black hair with distinct locks and subtle warm dimensional rim lighting",
+    "eyes": "Large, expressive dark brown eyes with clear white catchlights and curious, focused gaze",
+    "glasses": "Prominent, thick dark-framed rectangular glasses with rounded corners and metallic corner hinges",
+    "facial_hair": "Neatly groomed, full dark brown/black beard and moustache cleanly defining the jawline and chin",
+    "complexion": "Warm golden-brown / olive skin tone with soft directional cel-shading",
+    "build": "Athletic/compact tech professional framing, upright posture with slight natural lean"
+  },
+  "wardrobe": {
+    "outerwear": {
+      "type": "Technical Field Jacket",
+      "base_color_hex": "#2C2F33",
+      "base_color_name": "Matte Charcoal Grey",
+      "accents": {
+        "collar_and_piping_hex": "#FF6B00",
+        "accent_name": "Safety / Warm Orange",
+        "zipper_hardware": "Industrial brushed titanium"
+      }
+    },
+    "innerwear": {
+      "type": "Technical crew-neck undershirt",
+      "color_hex": "#141414"
+    }
+  },
+  "signature_accessories": [
+    {
+      "item": "Spiral-bound Technical Field Notebook",
+      "description": "Compact reporter-style notebook with silver wire spiral binding and cream/tan pages for recording architecture metrics",
+      "held_in": "Left hand at chest level"
+    },
+    {
+      "item": "Wooden Technical Drafting Pencil",
+      "description": "Classic wooden casing with sharpened graphite lead tip",
+      "held_in": "Right hand, poised ready to note findings or gesture toward hardware"
+    }
+  ],
+  "editorial_role_and_personality": {
+    "archetype": "The Engineering Investigator / Research Builder",
+    "tone": "Inquisitive, scientifically rigorous, enthusiastic, calm authority, articulate",
+    "relationship_to_subject": "The character guides and investigates; the technical breakthrough (silicon, paper, kernel, benchmark) remains the hero.",
+    "voice_narrator_link": "Kokoro-82M neural TTS (voice: am_liam, General American). The character is the visual persona embodiment of this established voice."
+  },
+  "allowed_expressions": [
+    {
+      "expression_id": "curious_inquiry",
+      "description": "Direct eye contact with viewer, slight head tilt (+/- 1.5 deg), confident subtle smile, introducing a mystery or breakthrough.",
+      "primary_use": "Documentary opening hook and scene transitions"
+    },
+    {
+      "expression_id": "focused_investigation",
+      "description": "Gaze directed toward silicon die or hardware component, thoughtful brow line, analytical engagement.",
+      "primary_use": "Examining physical processors, motherboards, or microarchitectures"
+    },
+    {
+      "expression_id": "insight_aha",
+      "description": "Bright catchlight in eyes, slight affirmative nod, open expression celebrating an elegant technical mechanism.",
+      "primary_use": "Explaining algorithmic breakthroughs and performance payoffs"
+    },
+    {
+      "expression_id": "technical_caution",
+      "description": "Slightly raised single eyebrow, inspecting engineering tradeoffs or hardware bottlenecks.",
+      "primary_use": "Explaining the memory wall, thermal dissipation, or power limits"
+    }
+  ],
+  "allowed_poses": [
+    {
+      "pose_id": "presenter_direct",
+      "description": "Chest facing 3/4 right, head turned directly to camera, holding notebook steady, engaging viewer directly.",
+      "recommended_position": "center_hero or lower_left"
+    },
+    {
+      "pose_id": "investigator_examining",
+      "description": "Body and gaze oriented toward technical object (processor or robot), pencil angled toward feature.",
+      "recommended_position": "lower_left with hero object on right"
+    },
+    {
+      "pose_id": "explainer_sidecar",
+      "description": "Positioned in dedicated host anchor zone beside scientific schematic, nodding as data flows.",
+      "recommended_position": "lower_right with schematic on left"
+    }
+  ],
+  "prohibited_alterations": [
+    "Photorealistic face replacements, deepfakes, or human actor live-action swaps.",
+    "Altering glasses shape, removing glasses, or making glasses transparent/invisible.",
+    "Removing beard or changing facial hair styling.",
+    "Changing hair texture from curly black locks to straight, blond, or alternate hairstyles.",
+    "Replacing technical jacket with casual hoodies, business suits, or meme costumes.",
+    "Exaggerated cartoon reactions, jaw drops, or anime facial distortions.",
+    "Placing host directly over subtitle safe-zones (y=1640..1820) or covering active technical data."
+  ]
+}

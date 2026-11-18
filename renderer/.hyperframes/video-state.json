@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c",
-  "currentRevision": "6b4f9f79-6596-43a3-a279-b05c4360d830",
+  "currentRevision": "d9804904-87a8-4f81-8d5b-44a6e0f8246f",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -17,8 +17,8 @@
       "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\53\\53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
     },
     "index.html": {
-      "hash": "eb0ebdee9e540135c0aa9fa8edf0b36178818b9b58fb10f735b994f68db351ab",
-      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\eb0ebdee9e540135c0aa9fa8edf0b36178818b9b58fb10f735b994f68db351ab"
+      "hash": "3099a55ab316ae8e3b7fb60850360c319cedbcdf8d95402f8bd921377deb7086",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\30\\3099a55ab316ae8e3b7fb60850360c319cedbcdf8d95402f8bd921377deb7086"
     },
     "meta.json": {
       "hash": "1a11177a601142e81ced0d9973db6dc328be22eceec99bca56f7d5ca087c8ddf",
@@ -93,8 +93,8 @@
       "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\a6\\a6f553ffb83722f5f8313e34400de30d223802bd8b1baffb8bf4af82d2f5d07d"
     },
     "compositions/test_composition.html": {
-      "hash": "e78a80daaf45984d40b499aff94dc0da974265c1ffd30a6d4b853aba585a7a19",
-      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\e7\\e78a80daaf45984d40b499aff94dc0da974265c1ffd30a6d4b853aba585a7a19"
+      "hash": "3099a55ab316ae8e3b7fb60850360c319cedbcdf8d95402f8bd921377deb7086",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\30\\3099a55ab316ae8e3b7fb60850360c319cedbcdf8d95402f8bd921377deb7086"
     },
     "assets/reel_20261105_082543_neural_memory_scaling_breakthrough_scene_1.png": {
       "hash": "aec186317543a94d95bd2cbf42053d53f7aed93d853e4a950e2c6ce8c929bcb7",
@@ -295,6 +295,670 @@
     "compositions/reel_20261105_205636_neural_memory_scaling_breakthrough.html": {
       "hash": "eb0ebdee9e540135c0aa9fa8edf0b36178818b9b58fb10f735b994f68db351ab",
       "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\eb0ebdee9e540135c0aa9fa8edf0b36178818b9b58fb10f735b994f68db351ab"
+    },
+    "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "aec186317543a94d95bd2cbf42053d53f7aed93d853e4a950e2c6ce8c929bcb7",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ae\\aec186317543a94d95bd2cbf42053d53f7aed93d853e4a950e2c6ce8c929bcb7"
+    },
+    "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "c7530908eef020c7b24f08f440894a02539c63b3ca39199b70a90f1ef3e74814",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c7\\c7530908eef020c7b24f08f440894a02539c63b3ca39199b70a90f1ef3e74814"
+    },
+    "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "56621e15723a8f6c95cd29eb78252bb42afb320a84e484192d87c2ac9cecd44b",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56621e15723a8f6c95cd29eb78252bb42afb320a84e484192d87c2ac9cecd44b"
+    },
+    "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "e1f0dbe7c697cc01ce5fbabb3f4e5d07f1affadffbeb45ade5d2bd00baf2ce5d",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\e1\\e1f0dbe7c697cc01ce5fbabb3f4e5d07f1affadffbeb45ade5d2bd00baf2ce5d"
+    },
+    "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "d8a63be21ff50ca832ee15431122b1d5b336193a3a2c382bd15e9c79bbeaf68d",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d8\\d8a63be21ff50ca832ee15431122b1d5b336193a3a2c382bd15e9c79bbeaf68d"
+    },
+    "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "f47c6df99aae9629a92fc17d13a101e4b85b1e6e3e5e0bea195ac05571ab7582",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\f4\\f47c6df99aae9629a92fc17d13a101e4b85b1e6e3e5e0bea195ac05571ab7582"
+    },
+    "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_7.png": {
+      "hash": "1adc1006c1e6d0aad954770669501a7478b388e9a0334090bdf196933ac08fc5",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1a\\1adc1006c1e6d0aad954770669501a7478b388e9a0334090bdf196933ac08fc5"
+    },
+    "compositions/reel_20261105_213645_neural_memory_scaling_breakthrough.html": {
+      "hash": "b9b575b97ba739a138c85e2fe3248d2fad4ec862517ad2752d6d24f4c9789b3b",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\b9\\b9b575b97ba739a138c85e2fe3248d2fad4ec862517ad2752d6d24f4c9789b3b"
+    },
+    "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a"
+    },
+    "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1c\\1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d"
+    },
+    "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+    },
+    "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+    },
+    "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+    },
+    "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+    },
+    "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_7.mp4": {
+      "hash": "22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+    },
+    "assets/test_slug_scene_1.png": {
+      "hash": "56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af"
+    },
+    "assets/test_slug_scene_2.png": {
+      "hash": "bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\bf\\bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41"
+    },
+    "assets/test_slug_scene_3.png": {
+      "hash": "c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+    },
+    "assets/test_slug_scene_4.png": {
+      "hash": "d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+    },
+    "assets/test_slug_scene_5.png": {
+      "hash": "1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+    },
+    "assets/test_slug_scene_6.png": {
+      "hash": "6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\6b\\6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50"
+    },
+    "assets/test_slug_scene_7.mp4": {
+      "hash": "22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+    },
+    "assets/test_slug2_scene_1.png": {
+      "hash": "56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af"
+    },
+    "assets/test_slug2_scene_2.png": {
+      "hash": "bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\bf\\bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41"
+    },
+    "assets/test_slug2_scene_3.png": {
+      "hash": "c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+    },
+    "assets/test_slug2_scene_4.png": {
+      "hash": "d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+    },
+    "assets/test_slug2_scene_5.png": {
+      "hash": "1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+    },
+    "assets/test_slug2_scene_6.png": {
+      "hash": "6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\6b\\6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50"
+    },
+    "assets/test_slug2_scene_7.mp4": {
+      "hash": "22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+    },
+    "assets/test_slug3_scene_1.png": {
+      "hash": "56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af"
+    },
+    "assets/test_slug3_scene_2.png": {
+      "hash": "bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\bf\\bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41"
+    },
+    "assets/test_slug3_scene_3.png": {
+      "hash": "c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+    },
+    "assets/test_slug3_scene_4.png": {
+      "hash": "d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+    },
+    "assets/test_slug3_scene_5.png": {
+      "hash": "1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+    },
+    "assets/test_slug3_scene_6.png": {
+      "hash": "6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\6b\\6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50"
+    },
+    "assets/test_slug3_scene_7.mp4": {
+      "hash": "22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+    },
+    "assets/test_slug4_scene_1.png": {
+      "hash": "56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af"
+    },
+    "assets/test_slug4_scene_2.png": {
+      "hash": "bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\bf\\bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41"
+    },
+    "assets/test_slug4_scene_3.png": {
+      "hash": "c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+    },
+    "assets/test_slug4_scene_4.png": {
+      "hash": "d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+    },
+    "assets/test_slug4_scene_5.png": {
+      "hash": "1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+    },
+    "assets/test_slug4_scene_6.png": {
+      "hash": "6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\6b\\6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50"
+    },
+    "assets/test_slug4_scene_7.mp4": {
+      "hash": "22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+    },
+    "assets/vr_test_scene_1.png": {
+      "hash": "f8448b79d7a988743a7deae2d59980086506760f114cbbbe25f0623f1df05389",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\f8\\f8448b79d7a988743a7deae2d59980086506760f114cbbbe25f0623f1df05389"
+    },
+    "assets/vr_test_scene_3.png": {
+      "hash": "c18f947131027694613852027caa745f69e8513a2c3928a73a91e413617b4bec",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c1\\c18f947131027694613852027caa745f69e8513a2c3928a73a91e413617b4bec"
+    },
+    "assets/vr_test_scene_4.png": {
+      "hash": "d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+    },
+    "compositions/reel_20261105_215846_neural_memory_scaling_breakthrough.html": {
+      "hash": "35fb20db8bf83385dfc4036f89564ab2fb9a997d8a84089ef2079aef9391a5ec",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\35\\35fb20db8bf83385dfc4036f89564ab2fb9a997d8a84089ef2079aef9391a5ec"
+    },
+    "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a"
+    },
+    "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1c\\1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d"
+    },
+    "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+    },
+    "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+    },
+    "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+    },
+    "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+    },
+    "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_7.mp4": {
+      "hash": "22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+    },
+    "compositions/reel_20261105_220603_neural_memory_scaling_breakthrough.html": {
+      "hash": "e6715c70c31ce84954c6e4b2cb7a61f3962e95aa7542d11c2ea793886a5cf1b6",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\e6\\e6715c70c31ce84954c6e4b2cb7a61f3962e95aa7542d11c2ea793886a5cf1b6"
+    },
+    "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a"
+    },
+    "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1c\\1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d"
+    },
+    "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+    },
+    "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+    },
+    "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+    },
+    "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+    },
+    "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_7.mp4": {
+      "hash": "22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+    },
+    "compositions/reel_20261106_083353_neural_memory_scaling_breakthrough.html": {
+      "hash": "5c47d55e5e275fcaf88d762ccb51ba56c5a1de2848751e7a765cdc7f88bd6589",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\5c\\5c47d55e5e275fcaf88d762ccb51ba56c5a1de2848751e7a765cdc7f88bd6589"
+    },
+    "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_7.thumb.png": {
+      "hash": "15fc3547e15ed51e8b2453cd5c5c048aaa458a25a739b2156e18ca7cc9c62c46",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\15\\15fc3547e15ed51e8b2453cd5c5c048aaa458a25a739b2156e18ca7cc9c62c46"
+    },
+    "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_1.png": {
+      "hash": "ed39510e31adb10e869942997fa85882efd43e8fa47e0374db5d4bb0f170e134",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ed\\ed39510e31adb10e869942997fa85882efd43e8fa47e0374db5d4bb0f170e134"
+    },
+    "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_2.png": {
+      "hash": "0ed638b89c85da4021241b9b9bdc42df7c25e0b9f6350268ac57faf2610b7f84",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0ed638b89c85da4021241b9b9bdc42df7c25e0b9f6350268ac57faf2610b7f84"
+    },
+    "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_3.png": {
+      "hash": "c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+    },
+    "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_4.png": {
+      "hash": "d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+    },
+    "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_5.png": {
+      "hash": "1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+    },
+    "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_6.png": {
+      "hash": "596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+    },
+    "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_7.mp4": {
+      "hash": "22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+    },
+    "compositions/reel_20261106_084717_sub_quadratic_quantization_milestone_for.html": {
+      "hash": "0e584a25025ffd8ffa97b3ddca185729f40c406ac980cba020ddf470e2bc4ad0",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0e584a25025ffd8ffa97b3ddca185729f40c406ac980cba020ddf470e2bc4ad0"
+    },
+    "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_7.thumb.png": {
+      "hash": "15fc3547e15ed51e8b2453cd5c5c048aaa458a25a739b2156e18ca7cc9c62c46",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\15\\15fc3547e15ed51e8b2453cd5c5c048aaa458a25a739b2156e18ca7cc9c62c46"
+    },
+    "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_1.png": {
+      "hash": "ed39510e31adb10e869942997fa85882efd43e8fa47e0374db5d4bb0f170e134",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ed\\ed39510e31adb10e869942997fa85882efd43e8fa47e0374db5d4bb0f170e134"
+    },
+    "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_2.png": {
+      "hash": "0ed638b89c85da4021241b9b9bdc42df7c25e0b9f6350268ac57faf2610b7f84",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0ed638b89c85da4021241b9b9bdc42df7c25e0b9f6350268ac57faf2610b7f84"
+    },
+    "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_3.png": {
+      "hash": "c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+    },
+    "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_4.png": {
+      "hash": "d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+    },
+    "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_5.png": {
+      "hash": "1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+    },
+    "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_6.png": {
+      "hash": "596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+    },
+    "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_7.mp4": {
+      "hash": "22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+    },
+    "compositions/reel_20261106_085619_sub_quadratic_quantization_milestone_for.html": {
+      "hash": "279f33b49dcbf7746b64411eab4ba00f8b81b55feb93618f1da4f922c6f6ab36",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\27\\279f33b49dcbf7746b64411eab4ba00f8b81b55feb93618f1da4f922c6f6ab36"
+    },
+    "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_7.thumb.png": {
+      "hash": "15fc3547e15ed51e8b2453cd5c5c048aaa458a25a739b2156e18ca7cc9c62c46",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\15\\15fc3547e15ed51e8b2453cd5c5c048aaa458a25a739b2156e18ca7cc9c62c46"
+    },
+    "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a"
+    },
+    "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1c\\1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d"
+    },
+    "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+    },
+    "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+    },
+    "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+    },
+    "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+    },
+    "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_7.mp4": {
+      "hash": "be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+    },
+    "compositions/reel_20261106_182223_neural_memory_scaling_breakthrough.html": {
+      "hash": "0ec7a3dd524ad026aba4703ebee8a4aa42e8d3af1855574bf0528063a9e3d5a3",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0ec7a3dd524ad026aba4703ebee8a4aa42e8d3af1855574bf0528063a9e3d5a3"
+    },
+    "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_1.png": {
+      "hash": "1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+    },
+    "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_2.png": {
+      "hash": "8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+    },
+    "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_3.png": {
+      "hash": "758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+    },
+    "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_4.png": {
+      "hash": "3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+    },
+    "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_5.png": {
+      "hash": "576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+    },
+    "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_6.png": {
+      "hash": "98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+    },
+    "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_7.mp4": {
+      "hash": "be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+    },
+    "compositions/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok.html": {
+      "hash": "58738350268d424cbd4df8473b30019c7302bbed77effcdd3edcc9d6c48f38a1",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\58\\58738350268d424cbd4df8473b30019c7302bbed77effcdd3edcc9d6c48f38a1"
+    },
+    "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+    },
+    "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+    },
+    "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+    },
+    "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+    },
+    "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+    },
+    "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+    },
+    "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_7.mp4": {
+      "hash": "be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+    },
+    "compositions/reel_20261106_184827_neural_memory_scaling_breakthrough.html": {
+      "hash": "ee61566480bfe2e7cea1d1f88c3c5d4d402697574ee6a466ab1e4bc9f22d7be9",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\ee61566480bfe2e7cea1d1f88c3c5d4d402697574ee6a466ab1e4bc9f22d7be9"
+    },
+    "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+    },
+    "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+    },
+    "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+    },
+    "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+    },
+    "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+    },
+    "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+    },
+    "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_7.mp4": {
+      "hash": "be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+    },
+    "compositions/reel_20261106_191823_neural_memory_scaling_breakthrough.html": {
+      "hash": "4c9259e49d30a9803c23def8245ff08a3786c38a2a2f3616bfa9f17148f6d521",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\4c\\4c9259e49d30a9803c23def8245ff08a3786c38a2a2f3616bfa9f17148f6d521"
+    },
+    "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+    },
+    "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+    },
+    "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+    },
+    "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+    },
+    "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+    },
+    "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+    },
+    "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_7.mp4": {
+      "hash": "be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+    },
+    "compositions/reel_20261106_193705_neural_memory_scaling_breakthrough.html": {
+      "hash": "dbadd7aa3bf97349e42e9b4956f883a744b119d6eb978c42ebd4f67b1807d89f",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\db\\dbadd7aa3bf97349e42e9b4956f883a744b119d6eb978c42ebd4f67b1807d89f"
+    },
+    "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+    },
+    "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+    },
+    "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+    },
+    "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+    },
+    "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+    },
+    "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+    },
+    "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_7.mp4": {
+      "hash": "be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+    },
+    "compositions/reel_20261106_200528_neural_memory_scaling_breakthrough.html": {
+      "hash": "eecd3bbdbc341c695f8ea127bf9a14d0c1e0cf25620c23ab4ffa19d76258a6ce",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\eecd3bbdbc341c695f8ea127bf9a14d0c1e0cf25620c23ab4ffa19d76258a6ce"
+    },
+    "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+    },
+    "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+    },
+    "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+    },
+    "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+    },
+    "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+    },
+    "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+    },
+    "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_7.mp4": {
+      "hash": "be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+    },
+    "compositions/reel_20261106_220746_neural_memory_scaling_breakthrough.html": {
+      "hash": "ee6d11b7197bfd5de5c80920a2080734c1058138be6d0a2a6f328600caccd214",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\ee6d11b7197bfd5de5c80920a2080734c1058138be6d0a2a6f328600caccd214"
+    },
+    "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+    },
+    "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+    },
+    "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+    },
+    "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+    },
+    "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+    },
+    "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+    },
+    "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_7.png": {
+      "hash": "ea0dca28e18349a29df9dc2f7941f553d47d70f46023b3cfe7bbe9264af577c1",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ea\\ea0dca28e18349a29df9dc2f7941f553d47d70f46023b3cfe7bbe9264af577c1"
+    },
+    "compositions/reel_20261107_172908_neural_memory_scaling_breakthrough.html": {
+      "hash": "47e8be3718ce76170cfe5d704a5c83c823771850a6ac7975373fa7054177bdc8",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\47\\47e8be3718ce76170cfe5d704a5c83c823771850a6ac7975373fa7054177bdc8"
+    },
+    "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+    },
+    "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+    },
+    "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+    },
+    "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+    },
+    "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+    },
+    "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+    },
+    "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_7.png": {
+      "hash": "ea0dca28e18349a29df9dc2f7941f553d47d70f46023b3cfe7bbe9264af577c1",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ea\\ea0dca28e18349a29df9dc2f7941f553d47d70f46023b3cfe7bbe9264af577c1"
+    },
+    "compositions/reel_20261110_213825_neural_memory_scaling_breakthrough.html": {
+      "hash": "9cc96a9995cb64502c56839874446dc6b0200c9feed73ec58d263b82c1be60ee",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\9c\\9cc96a9995cb64502c56839874446dc6b0200c9feed73ec58d263b82c1be60ee"
+    },
+    "compositions/test_threejs_scene.html": {
+      "hash": "f04988be30397acb7f211547a7566e20b4d4a3c64bbacd4ac284dd5745bc4e24",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\f0\\f04988be30397acb7f211547a7566e20b4d4a3c64bbacd4ac284dd5745bc4e24"
+    },
+    "compositions/benchmark_threejs_5s.html": {
+      "hash": "c9de492cf6196bf0cbfef10a890f0e7513288a388165d1f80e9566229b3ce6ef",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c9\\c9de492cf6196bf0cbfef10a890f0e7513288a388165d1f80e9566229b3ce6ef"
+    },
+    "compositions/benchmark_hyperframes_5s.html": {
+      "hash": "aaa996ccde66c02d641f0a55cac5d27571ef5dac078fce3687e9a0dd285eb179",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\aa\\aaa996ccde66c02d641f0a55cac5d27571ef5dac078fce3687e9a0dd285eb179"
+    },
+    "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_1.png": {
+      "hash": "1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+    },
+    "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_2.png": {
+      "hash": "8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+    },
+    "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_3.png": {
+      "hash": "758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+    },
+    "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_4.png": {
+      "hash": "3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+    },
+    "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_5.png": {
+      "hash": "576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+    },
+    "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_6.png": {
+      "hash": "98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+    },
+    "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_7.png": {
+      "hash": "ea0dca28e18349a29df9dc2f7941f553d47d70f46023b3cfe7bbe9264af577c1",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ea\\ea0dca28e18349a29df9dc2f7941f553d47d70f46023b3cfe7bbe9264af577c1"
+    },
+    "compositions/reel_20261113_214457_neural_memory_scaling_breakthrough.html": {
+      "hash": "214b65c2f04578c2152fbbe6625a24d4c3b66c792dfd442bdfd1f3a4948d4cc1",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\21\\214b65c2f04578c2152fbbe6625a24d4c3b66c792dfd442bdfd1f3a4948d4cc1"
+    },
+    "compositions/gen_hf_reel_20261113_224800_metal_sandbox__isolated_execut_scene_03_1794591304178.html": {
+      "hash": "56b5844238142e17713d269f9e7fdfa2e14d86a84e3a51ed2c11224f61f893ed",
+      "content": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56b5844238142e17713d269f9e7fdfa2e14d86a84e3a51ed2c11224f61f893ed"
     }
   },
   "revisions": {
@@ -696,6 +1360,1144 @@
           "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\eb0ebdee9e540135c0aa9fa8edf0b36178818b9b58fb10f735b994f68db351ab"
         }
       }
+    },
+    "b770b182-f660-40ee-af37-d266cf4da43a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793894939300,
+      "endedAt": 1793894939387,
+      "files": {
+        "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ae\\aec186317543a94d95bd2cbf42053d53f7aed93d853e4a950e2c6ce8c929bcb7"
+        },
+        "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c7\\c7530908eef020c7b24f08f440894a02539c63b3ca39199b70a90f1ef3e74814"
+        },
+        "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56621e15723a8f6c95cd29eb78252bb42afb320a84e484192d87c2ac9cecd44b"
+        },
+        "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\e1\\e1f0dbe7c697cc01ce5fbabb3f4e5d07f1affadffbeb45ade5d2bd00baf2ce5d"
+        },
+        "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d8\\d8a63be21ff50ca832ee15431122b1d5b336193a3a2c382bd15e9c79bbeaf68d"
+        },
+        "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\f4\\f47c6df99aae9629a92fc17d13a101e4b85b1e6e3e5e0bea195ac05571ab7582"
+        },
+        "assets/reel_20261105_213645_neural_memory_scaling_breakthrough_scene_7.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1a\\1adc1006c1e6d0aad954770669501a7478b388e9a0334090bdf196933ac08fc5"
+        },
+        "compositions/reel_20261105_213645_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\b9\\b9b575b97ba739a138c85e2fe3248d2fad4ec862517ad2752d6d24f4c9789b3b"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\eb0ebdee9e540135c0aa9fa8edf0b36178818b9b58fb10f735b994f68db351ab",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\b9\\b9b575b97ba739a138c85e2fe3248d2fad4ec862517ad2752d6d24f4c9789b3b"
+        }
+      }
+    },
+    "a93aada7-07c6-454b-8502-a4bd9b700159": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793896155332,
+      "endedAt": 1793896155632,
+      "files": {
+        "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a"
+        },
+        "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1c\\1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d"
+        },
+        "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+        },
+        "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+        },
+        "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+        },
+        "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+        },
+        "assets/reel_20261105_215846_neural_memory_scaling_breakthrough_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+        },
+        "assets/test_slug_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af"
+        },
+        "assets/test_slug_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\bf\\bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41"
+        },
+        "assets/test_slug_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+        },
+        "assets/test_slug_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+        },
+        "assets/test_slug_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+        },
+        "assets/test_slug_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\6b\\6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50"
+        },
+        "assets/test_slug_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+        },
+        "assets/test_slug2_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af"
+        },
+        "assets/test_slug2_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\bf\\bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41"
+        },
+        "assets/test_slug2_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+        },
+        "assets/test_slug2_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+        },
+        "assets/test_slug2_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+        },
+        "assets/test_slug2_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\6b\\6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50"
+        },
+        "assets/test_slug2_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+        },
+        "assets/test_slug3_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af"
+        },
+        "assets/test_slug3_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\bf\\bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41"
+        },
+        "assets/test_slug3_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+        },
+        "assets/test_slug3_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+        },
+        "assets/test_slug3_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+        },
+        "assets/test_slug3_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\6b\\6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50"
+        },
+        "assets/test_slug3_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+        },
+        "assets/test_slug4_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56858e22994c1e8e52942172e2a567e2f2f45f58d10c562a3dfa027933f280af"
+        },
+        "assets/test_slug4_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\bf\\bf2f20c948bad59684f703d569a2c3c86c662a78435004a5f24f9c77d19d8a41"
+        },
+        "assets/test_slug4_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+        },
+        "assets/test_slug4_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+        },
+        "assets/test_slug4_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+        },
+        "assets/test_slug4_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\6b\\6b24ae7e98d5d0937026fe83f1c04a5cfe69fefd3105e39bde623862729c1b50"
+        },
+        "assets/test_slug4_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+        },
+        "assets/vr_test_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\f8\\f8448b79d7a988743a7deae2d59980086506760f114cbbbe25f0623f1df05389"
+        },
+        "assets/vr_test_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c1\\c18f947131027694613852027caa745f69e8513a2c3928a73a91e413617b4bec"
+        },
+        "assets/vr_test_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+        },
+        "compositions/reel_20261105_215846_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\35\\35fb20db8bf83385dfc4036f89564ab2fb9a997d8a84089ef2079aef9391a5ec"
+        },
+        "compositions/test_composition.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\e7\\e78a80daaf45984d40b499aff94dc0da974265c1ffd30a6d4b853aba585a7a19",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\30\\3099a55ab316ae8e3b7fb60850360c319cedbcdf8d95402f8bd921377deb7086"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\b9\\b9b575b97ba739a138c85e2fe3248d2fad4ec862517ad2752d6d24f4c9789b3b",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\35\\35fb20db8bf83385dfc4036f89564ab2fb9a997d8a84089ef2079aef9391a5ec"
+        }
+      }
+    },
+    "34acfa02-4fa9-4ecd-ab3b-294b7fd75b86": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793896581877,
+      "endedAt": 1793896581931,
+      "files": {
+        "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a"
+        },
+        "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1c\\1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d"
+        },
+        "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+        },
+        "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+        },
+        "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+        },
+        "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+        },
+        "assets/reel_20261105_220603_neural_memory_scaling_breakthrough_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+        },
+        "compositions/reel_20261105_220603_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\e6\\e6715c70c31ce84954c6e4b2cb7a61f3962e95aa7542d11c2ea793886a5cf1b6"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\35\\35fb20db8bf83385dfc4036f89564ab2fb9a997d8a84089ef2079aef9391a5ec",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\e6\\e6715c70c31ce84954c6e4b2cb7a61f3962e95aa7542d11c2ea793886a5cf1b6"
+        }
+      }
+    },
+    "aab38601-655e-45ae-8b5e-919f9e883171": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793934293365,
+      "endedAt": 1793934293459,
+      "files": {
+        "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a"
+        },
+        "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1c\\1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d"
+        },
+        "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+        },
+        "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+        },
+        "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+        },
+        "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+        },
+        "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+        },
+        "compositions/reel_20261106_083353_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\5c\\5c47d55e5e275fcaf88d762ccb51ba56c5a1de2848751e7a765cdc7f88bd6589"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\e6\\e6715c70c31ce84954c6e4b2cb7a61f3962e95aa7542d11c2ea793886a5cf1b6",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\5c\\5c47d55e5e275fcaf88d762ccb51ba56c5a1de2848751e7a765cdc7f88bd6589"
+        }
+      }
+    },
+    "a545dd71-c2de-451f-96fe-78fd03c1203e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793935110692,
+      "endedAt": 1793935112566,
+      "files": {
+        "assets/reel_20261106_083353_neural_memory_scaling_breakthrough_scene_7.thumb.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\15\\15fc3547e15ed51e8b2453cd5c5c048aaa458a25a739b2156e18ca7cc9c62c46"
+        },
+        "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ed\\ed39510e31adb10e869942997fa85882efd43e8fa47e0374db5d4bb0f170e134"
+        },
+        "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0ed638b89c85da4021241b9b9bdc42df7c25e0b9f6350268ac57faf2610b7f84"
+        },
+        "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+        },
+        "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+        },
+        "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+        },
+        "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+        },
+        "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+        },
+        "compositions/reel_20261106_084717_sub_quadratic_quantization_milestone_for.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0e584a25025ffd8ffa97b3ddca185729f40c406ac980cba020ddf470e2bc4ad0"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\5c\\5c47d55e5e275fcaf88d762ccb51ba56c5a1de2848751e7a765cdc7f88bd6589",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0e584a25025ffd8ffa97b3ddca185729f40c406ac980cba020ddf470e2bc4ad0"
+        }
+      }
+    },
+    "21772241-e89e-4fc0-a581-7700175e66bd": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793935648381,
+      "endedAt": 1793935648506,
+      "files": {
+        "assets/reel_20261106_084717_sub_quadratic_quantization_milestone_for_scene_7.thumb.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\15\\15fc3547e15ed51e8b2453cd5c5c048aaa458a25a739b2156e18ca7cc9c62c46"
+        },
+        "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ed\\ed39510e31adb10e869942997fa85882efd43e8fa47e0374db5d4bb0f170e134"
+        },
+        "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0ed638b89c85da4021241b9b9bdc42df7c25e0b9f6350268ac57faf2610b7f84"
+        },
+        "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+        },
+        "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+        },
+        "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+        },
+        "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+        },
+        "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\22\\22f7d1b9bbca79933107f0593d684e23aff8a17dfe052b04ad84f9eba43022a0"
+        },
+        "compositions/reel_20261106_085619_sub_quadratic_quantization_milestone_for.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\27\\279f33b49dcbf7746b64411eab4ba00f8b81b55feb93618f1da4f922c6f6ab36"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0e584a25025ffd8ffa97b3ddca185729f40c406ac980cba020ddf470e2bc4ad0",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\27\\279f33b49dcbf7746b64411eab4ba00f8b81b55feb93618f1da4f922c6f6ab36"
+        }
+      }
+    },
+    "2c719428-2d9c-4297-807a-cb1592ef68fc": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793968579069,
+      "endedAt": 1793968579071,
+      "files": {
+        "assets/reel_20261106_085619_sub_quadratic_quantization_milestone_for_scene_7.thumb.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\15\\15fc3547e15ed51e8b2453cd5c5c048aaa458a25a739b2156e18ca7cc9c62c46"
+        }
+      }
+    },
+    "5f04ce58-791d-4292-b995-b053475a26c6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793969602377,
+      "endedAt": 1793969602424,
+      "files": {
+        "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\eb\\ebf9f63cd8b8d5fa08aed7c8ce9a4131e1b4abfbdcd237a7abd9d16110ab9b6a"
+        },
+        "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1c\\1c49ae50baf7a1c178e7de6e8c9d57404b524d53850e97f41a122e4f2125469d"
+        },
+        "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c4\\c447b280440cbd5a9e08888b19c9613250e2c597887172ade7ea7a10322ba92a"
+        },
+        "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\d3\\d37bdb339a18efa1d224c87e3bc8192f2ce288eef16698a27d95b3236f44d621"
+        },
+        "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1f\\1f113138409d188324655ea71aa9f5fbc1c0cc3566cd46354e3702efed580566"
+        },
+        "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\59\\596e305f109003bf55324b008e11f8632b4f539ed0b5f59cf2550f6af96829ab"
+        },
+        "assets/reel_20261106_182223_neural_memory_scaling_breakthrough_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+        },
+        "compositions/reel_20261106_182223_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0ec7a3dd524ad026aba4703ebee8a4aa42e8d3af1855574bf0528063a9e3d5a3"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\27\\279f33b49dcbf7746b64411eab4ba00f8b81b55feb93618f1da4f922c6f6ab36",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0ec7a3dd524ad026aba4703ebee8a4aa42e8d3af1855574bf0528063a9e3d5a3"
+        }
+      }
+    },
+    "e4dfc45e-880c-4afe-80c0-cf51b6d564a0": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793970655488,
+      "endedAt": 1793970655556,
+      "files": {
+        "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+        },
+        "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+        },
+        "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+        },
+        "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+        },
+        "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+        },
+        "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+        },
+        "assets/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+        },
+        "compositions/reel_20261106_184018_sub_quadratic_attention_scaled_to_1m_tok.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\58\\58738350268d424cbd4df8473b30019c7302bbed77effcdd3edcc9d6c48f38a1"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0ec7a3dd524ad026aba4703ebee8a4aa42e8d3af1855574bf0528063a9e3d5a3",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\58\\58738350268d424cbd4df8473b30019c7302bbed77effcdd3edcc9d6c48f38a1"
+        }
+      }
+    },
+    "28b6146e-b4b5-4b36-ae86-482887fe185f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793971157178,
+      "endedAt": 1793971159300,
+      "files": {
+        "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+        },
+        "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+        },
+        "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+        },
+        "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+        },
+        "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+        },
+        "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+        },
+        "assets/reel_20261106_184827_neural_memory_scaling_breakthrough_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+        },
+        "compositions/reel_20261106_184827_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\ee61566480bfe2e7cea1d1f88c3c5d4d402697574ee6a466ab1e4bc9f22d7be9"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\58\\58738350268d424cbd4df8473b30019c7302bbed77effcdd3edcc9d6c48f38a1",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\ee61566480bfe2e7cea1d1f88c3c5d4d402697574ee6a466ab1e4bc9f22d7be9"
+        }
+      }
+    },
+    "e2568e3c-42f6-4353-adc3-24b058fc7bec": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793972987141,
+      "endedAt": 1793972987200,
+      "files": {
+        "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+        },
+        "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+        },
+        "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+        },
+        "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+        },
+        "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+        },
+        "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+        },
+        "assets/reel_20261106_191823_neural_memory_scaling_breakthrough_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+        },
+        "compositions/reel_20261106_191823_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\4c\\4c9259e49d30a9803c23def8245ff08a3786c38a2a2f3616bfa9f17148f6d521"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\ee61566480bfe2e7cea1d1f88c3c5d4d402697574ee6a466ab1e4bc9f22d7be9",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\4c\\4c9259e49d30a9803c23def8245ff08a3786c38a2a2f3616bfa9f17148f6d521"
+        }
+      }
+    },
+    "fe2fef47-174f-41b2-ba32-8a1b3f44d821": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793974099188,
+      "endedAt": 1793974099263,
+      "files": {
+        "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+        },
+        "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+        },
+        "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+        },
+        "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+        },
+        "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+        },
+        "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+        },
+        "assets/reel_20261106_193705_neural_memory_scaling_breakthrough_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+        },
+        "compositions/reel_20261106_193705_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\db\\dbadd7aa3bf97349e42e9b4956f883a744b119d6eb978c42ebd4f67b1807d89f"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\4c\\4c9259e49d30a9803c23def8245ff08a3786c38a2a2f3616bfa9f17148f6d521",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\db\\dbadd7aa3bf97349e42e9b4956f883a744b119d6eb978c42ebd4f67b1807d89f"
+        }
+      }
+    },
+    "5f97c1c3-4e6d-4a91-b48f-fd9d61305e53": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793975779009,
+      "endedAt": 1793975779926,
+      "files": {
+        "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+        },
+        "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+        },
+        "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+        },
+        "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+        },
+        "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+        },
+        "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+        },
+        "assets/reel_20261106_200528_neural_memory_scaling_breakthrough_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+        },
+        "compositions/reel_20261106_200528_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\eecd3bbdbc341c695f8ea127bf9a14d0c1e0cf25620c23ab4ffa19d76258a6ce"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\db\\dbadd7aa3bf97349e42e9b4956f883a744b119d6eb978c42ebd4f67b1807d89f",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\eecd3bbdbc341c695f8ea127bf9a14d0c1e0cf25620c23ab4ffa19d76258a6ce"
+        }
+      }
+    },
+    "18220c26-e517-4ef0-8192-b99f86bbbdaa": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793983165077,
+      "endedAt": 1793983165634,
+      "files": {
+        "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+        },
+        "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+        },
+        "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+        },
+        "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+        },
+        "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+        },
+        "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+        },
+        "assets/reel_20261106_220746_neural_memory_scaling_breakthrough_scene_7.mp4": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\be\\be3662eefad6ee6127c5bd80a4f075b1ca0bed12e183b3e9389a6bac0f55f16a"
+        },
+        "compositions/reel_20261106_220746_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\ee6d11b7197bfd5de5c80920a2080734c1058138be6d0a2a6f328600caccd214"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\eecd3bbdbc341c695f8ea127bf9a14d0c1e0cf25620c23ab4ffa19d76258a6ce",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\ee6d11b7197bfd5de5c80920a2080734c1058138be6d0a2a6f328600caccd214"
+        }
+      }
+    },
+    "e4777b91-6384-47d8-99ea-7d2560eef639": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794052891813,
+      "endedAt": 1794052892525,
+      "files": {
+        "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+        },
+        "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+        },
+        "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+        },
+        "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+        },
+        "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+        },
+        "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+        },
+        "assets/reel_20261107_172908_neural_memory_scaling_breakthrough_scene_7.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ea\\ea0dca28e18349a29df9dc2f7941f553d47d70f46023b3cfe7bbe9264af577c1"
+        },
+        "compositions/reel_20261107_172908_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\47\\47e8be3718ce76170cfe5d704a5c83c823771850a6ac7975373fa7054177bdc8"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ee\\ee6d11b7197bfd5de5c80920a2080734c1058138be6d0a2a6f328600caccd214",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\47\\47e8be3718ce76170cfe5d704a5c83c823771850a6ac7975373fa7054177bdc8"
+        }
+      }
+    },
+    "ae8ec51f-c456-4e4a-b5a8-b79ba4fce05e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794327025908,
+      "endedAt": 1794327027995,
+      "files": {
+        "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+        },
+        "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+        },
+        "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+        },
+        "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+        },
+        "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+        },
+        "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+        },
+        "assets/reel_20261110_213825_neural_memory_scaling_breakthrough_scene_7.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ea\\ea0dca28e18349a29df9dc2f7941f553d47d70f46023b3cfe7bbe9264af577c1"
+        },
+        "compositions/reel_20261110_213825_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\9c\\9cc96a9995cb64502c56839874446dc6b0200c9feed73ec58d263b82c1be60ee"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\47\\47e8be3718ce76170cfe5d704a5c83c823771850a6ac7975373fa7054177bdc8",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\9c\\9cc96a9995cb64502c56839874446dc6b0200c9feed73ec58d263b82c1be60ee"
+        }
+      }
+    },
+    "b2afed97-87b2-4294-bb82-8da2a5d7cadc": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794327933208,
+      "endedAt": 1794327933237,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\9c\\9cc96a9995cb64502c56839874446dc6b0200c9feed73ec58d263b82c1be60ee",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\30\\3099a55ab316ae8e3b7fb60850360c319cedbcdf8d95402f8bd921377deb7086"
+        }
+      }
+    },
+    "a8f2feef-f493-4296-ac40-52db2bdba85d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794328586613,
+      "endedAt": 1794328586626,
+      "files": {
+        "compositions/test_threejs_scene.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0e2ea6b42b0e2f70c0e29c99bb1b5985028bb1b6046f395644bb919565e1af27"
+        }
+      }
+    },
+    "93a2dbce-4229-4cec-9957-3ad94b866e76": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794330754467,
+      "endedAt": 1794330754556,
+      "files": {
+        "compositions/benchmark_threejs_5s.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\78\\785e03ca342fb5082ed1e37538a3937f68b6c5a5f7b40e45082dd3b1575054e9"
+        },
+        "compositions/test_threejs_scene.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\0e\\0e2ea6b42b0e2f70c0e29c99bb1b5985028bb1b6046f395644bb919565e1af27",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\f0\\f04988be30397acb7f211547a7566e20b4d4a3c64bbacd4ac284dd5745bc4e24"
+        }
+      }
+    },
+    "a0a99e9a-e61d-4df3-a3ab-c19df7ba9914": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794330985699,
+      "endedAt": 1794330985775,
+      "files": {
+        "compositions/benchmark_hyperframes_5s.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98c5674f5707425db3337df414e1325776b068f3688305dc6468e2eefbbac13f"
+        }
+      }
+    },
+    "520e7cde-e789-4ce2-bcc7-76272a2d7f27": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794583497127,
+      "endedAt": 1794583497198,
+      "files": {
+        "compositions/benchmark_hyperframes_5s.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98c5674f5707425db3337df414e1325776b068f3688305dc6468e2eefbbac13f",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\aa\\aaa996ccde66c02d641f0a55cac5d27571ef5dac078fce3687e9a0dd285eb179"
+        },
+        "compositions/benchmark_threejs_5s.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\78\\785e03ca342fb5082ed1e37538a3937f68b6c5a5f7b40e45082dd3b1575054e9",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\c9\\c9de492cf6196bf0cbfef10a890f0e7513288a388165d1f80e9566229b3ce6ef"
+        },
+        "compositions/gen_threejs_smoke_threejs_scene_1794583441088.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\73\\7330c04a1a49eb7310564cc07b04663a6e8f0bcb6f4ec8bf28ece04708d845e6"
+        }
+      }
+    },
+    "c62457e6-cda2-4f66-9687-d342795fd3ff": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794584094675,
+      "endedAt": 1794584094726,
+      "files": {
+        "compositions/gen_threejs_smoke_threejs_scene_1794583441088.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\73\\7330c04a1a49eb7310564cc07b04663a6e8f0bcb6f4ec8bf28ece04708d845e6",
+          "after": null
+        },
+        "compositions/gen_threejs_smoke_threejs_scene_1794584032722.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\73\\7330c04a1a49eb7310564cc07b04663a6e8f0bcb6f4ec8bf28ece04708d845e6"
+        }
+      }
+    },
+    "69d605c8-ea74-4915-be54-6bf5792e26b4": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794584764227,
+      "endedAt": 1794584764307,
+      "files": {
+        "compositions/gen_threejs_smoke_threejs_scene_1794584032722.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\73\\7330c04a1a49eb7310564cc07b04663a6e8f0bcb6f4ec8bf28ece04708d845e6",
+          "after": null
+        },
+        "compositions/gen_threejs_smoke_threejs_scene_1794584720821.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\bd\\bd1a7d03d81256000a5793010e59a05ac3cc2737de278641cd9182719c7ad567"
+        }
+      }
+    },
+    "d953d9dc-d9d1-45f3-86cf-c7036bd98d2f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794585173365,
+      "endedAt": 1794585173372,
+      "files": {
+        "compositions/gen_threejs_smoke_threejs_scene_1794584720821.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\bd\\bd1a7d03d81256000a5793010e59a05ac3cc2737de278641cd9182719c7ad567",
+          "after": null
+        }
+      }
+    },
+    "c9da6844-084e-4432-86cc-fa90e483ca40": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794586614738,
+      "endedAt": 1794586615805,
+      "files": {
+        "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_1.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\1d\\1dbf205f68ce278b9d5d37a7efe7604794274a19973d0cb018de4bfd9ec6ced2"
+        },
+        "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_2.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\8d\\8d3cff3e2b3f7c8032999be94bc776bc8a5265f56f7adb9308eff999782d6db8"
+        },
+        "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_3.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\75\\758ecdc7b367202addaef6e086d4b4ebf0acc4ba465c9e34a3aa33ebb256a1d4"
+        },
+        "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_4.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\3e\\3e22ae3de22bb0112a0e48afe2a6b5ae55797e9401fd7249eb560ade9afe3ef9"
+        },
+        "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_5.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\57\\576861eea64c89453f427977f7123ca324a7db7f87179ab5bcb4712d79f69b3b"
+        },
+        "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_6.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\98\\98839b7f696cdb56b5e97b16798f0c2a9143fae53699aaf4469e2d396e805517"
+        },
+        "assets/reel_20261113_214457_neural_memory_scaling_breakthrough_scene_7.png": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ea\\ea0dca28e18349a29df9dc2f7941f553d47d70f46023b3cfe7bbe9264af577c1"
+        },
+        "compositions/reel_20261113_214457_neural_memory_scaling_breakthrough.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\21\\214b65c2f04578c2152fbbe6625a24d4c3b66c792dfd442bdfd1f3a4948d4cc1"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\30\\3099a55ab316ae8e3b7fb60850360c319cedbcdf8d95402f8bd921377deb7086",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\21\\214b65c2f04578c2152fbbe6625a24d4c3b66c792dfd442bdfd1f3a4948d4cc1"
+        }
+      }
+    },
+    "5f7f37d9-2582-4fdc-ae55-194ff78c74ae": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794589377626,
+      "endedAt": 1794589377843,
+      "files": {
+        "compositions/gen_threejs_reel_20261113_222934_metal_sandbox__isolated_execut_scene_01_1794589312256.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\76\\76d369c6a9da8588847fa2f47bf5c4f840c9a78e4d585a3c92639efdd3e5e52f"
+        },
+        "index.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\21\\214b65c2f04578c2152fbbe6625a24d4c3b66c792dfd442bdfd1f3a4948d4cc1",
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\30\\3099a55ab316ae8e3b7fb60850360c319cedbcdf8d95402f8bd921377deb7086"
+        }
+      }
+    },
+    "e207684d-5e89-4bc9-b05d-aab48104e4d8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794589578582,
+      "endedAt": 1794589578631,
+      "files": {
+        "compositions/gen_hf_reel_20261113_222934_metal_sandbox__isolated_execut_scene_01_1794589534692.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ec\\ec6f0f4f780f7dd782057cfce395aa9689347b5ae584dda56ced337bca9cabe8"
+        },
+        "compositions/gen_threejs_reel_20261113_222934_metal_sandbox__isolated_execut_scene_01_1794589312256.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\76\\76d369c6a9da8588847fa2f47bf5c4f840c9a78e4d585a3c92639efdd3e5e52f",
+          "after": null
+        }
+      }
+    },
+    "e2c158ba-3d3a-4e97-a809-e8b4a90f44e9": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794590425790,
+      "endedAt": 1794590425930,
+      "files": {
+        "compositions/gen_hf_reel_20261113_222934_metal_sandbox__isolated_execut_scene_01_1794589534692.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\ec\\ec6f0f4f780f7dd782057cfce395aa9689347b5ae584dda56ced337bca9cabe8",
+          "after": null
+        },
+        "compositions/gen_threejs_reel_20261113_224800_metal_sandbox__isolated_execut_scene_01_1794590381880.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\5a\\5a68a980c130f21b39c94a7a1645077893157f8accd6d4038147a22b204df911"
+        }
+      }
+    },
+    "3faf769e-7de5-4c35-ba12-b23baded2447": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794590821556,
+      "endedAt": 1794590821622,
+      "files": {
+        "compositions/gen_hf_reel_20261113_224800_metal_sandbox__isolated_execut_scene_01_1794590782606.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\78\\787fb0ef14778ef20fe40a5d71b34ba03c499ffc65d3ef942c4e64b7f3f8a9af"
+        },
+        "compositions/gen_threejs_reel_20261113_224800_metal_sandbox__isolated_execut_scene_01_1794590381880.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\5a\\5a68a980c130f21b39c94a7a1645077893157f8accd6d4038147a22b204df911",
+          "after": null
+        }
+      }
+    },
+    "d9804904-87a8-4f81-8d5b-44a6e0f8246f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794591364139,
+      "endedAt": 1794591364340,
+      "files": {
+        "compositions/gen_hf_reel_20261113_224800_metal_sandbox__isolated_execut_scene_01_1794590782606.html": {
+          "before": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\78\\787fb0ef14778ef20fe40a5d71b34ba03c499ffc65d3ef942c4e64b7f3f8a9af",
+          "after": null
+        },
+        "compositions/gen_hf_reel_20261113_224800_metal_sandbox__isolated_execut_scene_03_1794591304178.html": {
+          "before": null,
+          "after": "C:\\Users\\bavik\\.cache\\hyperframes\\history\\cd0d220d-1e7d-4fe0-a9bb-4010c2c34a1c\\blobs\\56\\56b5844238142e17713d269f9e7fdfa2e14d86a84e3a51ed2c11224f61f893ed"
+        }
+      }
     }
   },
   "checks": {
@@ -732,6 +2534,39 @@
           "attribution": "recorded-revision",
           "status": "cleaned",
           "cleanedAfterRender": "1ca2b200-12b3-4636-9ba2-4366e33dfc05"
+        }
+      ],
+      "b2afed97-87b2-4294-bb82-8da2a5d7cadc": [
+        {
+          "id": "f56443f8-b8c6-4b91-b84c-b25fefc327c4",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794327963892,
+          "contentHash": "6c9cf83fb8d871b32f2db68b67e4ef45e22742864ab7e9941e2f47aee4a25074",
+          "revision": "b2afed97-87b2-4294-bb82-8da2a5d7cadc",
+          "inputFingerprint": "ac09f5e830d3a405259ac83b27cbbba861c514bfa4ce3961b4598f2e9b98a4dc",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "91a106f0-0b4f-4ab7-8795-3f130435c979"
         }
       ]
     },
@@ -772,15 +2607,15 @@
   },
   "renders": {
     "latest": {
-      "id": "eb0a6038-eda9-4d12-85ad-542d4afdf9a0",
-      "completedAt": 1793892568073,
-      "output": "A:\\SUPER.INTELLIGENCEEE\\output\\drafts\\reel_20261105_205636_neural_memory_scaling_breakthrough_raw_visuals.mp4",
+      "id": "91a106f0-0b4f-4ab7-8795-3f130435c979",
+      "completedAt": 1794331088230,
+      "output": "A:\\SUPER.INTELLIGENCEEE\\output\\benchmark\\benchmark_hyperframes_5s.mp4",
       "status": "completed",
-      "revision": "6b4f9f79-6596-43a3-a279-b05c4360d830"
+      "revision": "a0a99e9a-e61d-4df3-a3ab-c19df7ba9914"
     },
     "retainedRevisions": [
-      "6b4f9f79-6596-43a3-a279-b05c4360d830",
-      "658c5019-2f2e-4c8c-8d60-c35aae56cafd"
+      "a0a99e9a-e61d-4df3-a3ab-c19df7ba9914",
+      "a8f2feef-f493-4296-ac40-52db2bdba85d"
     ]
   },
   "pendingArtifactCleanup": []
